@@ -2,6 +2,8 @@
 @import "@fontsource-variable/geist";
 @import "@fontsource-variable/geist-mono";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --font-sans: 'Geist Variable', -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   --font-mono: 'Geist Mono Variable', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
@@ -9,10 +11,16 @@
 
 body {
   font-family: var(--font-sans);
-  background-color: #050505;
-  color: #f4f4f5;
+  background-color: #fafafa;
+  color: #09090b;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dark body {
+  background-color: #050505;
+  color: #f4f4f5;
 }
 
 .font-mono, .telemetry-val {
@@ -30,16 +38,27 @@ body {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #27272a;
+  background: #e4e4e7;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
+  background: #d4d4d8;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #27272a;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
   background: #3f3f46;
 }
 
 /* Subtle grid line pattern */
 .bg-grid-pattern {
   background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+}
+.dark .bg-grid-pattern {
   background-image: 
     linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
