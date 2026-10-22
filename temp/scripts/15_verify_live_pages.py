@@ -15,22 +15,23 @@ with sync_playwright() as p:
     page.goto(url, wait_until="networkidle")
     time.sleep(3)
     
-    screenshot_path = os.path.join(output_dir, "01_live_overview.png")
-    page.screenshot(path=screenshot_path)
-    print(f"Saved: {screenshot_path}")
+    # 1. Expanded sidebar
+    p1 = os.path.join(output_dir, "04_sidebar_expanded.png")
+    page.screenshot(path=p1)
+    print(f"Saved expanded screenshot: {p1}")
     
-    # Click to monitor tab
-    page.locator("button:has-text('极夜数字孪生')").click()
-    time.sleep(2)
-    screenshot_path2 = os.path.join(output_dir, "02_live_monitor.png")
-    page.screenshot(path=screenshot_path2)
-    print(f"Saved: {screenshot_path2}")
+    # 2. Toggle collapse
+    page.locator("button[title='收起侧边栏']").first.click()
+    time.sleep(1)
+    p2 = os.path.join(output_dir, "05_sidebar_collapsed.png")
+    page.screenshot(path=p2)
+    print(f"Saved collapsed screenshot: {p2}")
 
-    # Click to assets tab
-    page.locator("button:has-text('资产矩阵')").click()
+    # 3. Open monitor view while collapsed
+    page.locator("button[title='极夜数字孪生']").first.click()
     time.sleep(2)
-    screenshot_path3 = os.path.join(output_dir, "03_live_assets.png")
-    page.screenshot(path=screenshot_path3)
-    print(f"Saved: {screenshot_path3}")
+    p3 = os.path.join(output_dir, "06_sidebar_collapsed_monitor.png")
+    page.screenshot(path=p3)
+    print(f"Saved collapsed monitor view: {p3}")
 
     browser.close()
