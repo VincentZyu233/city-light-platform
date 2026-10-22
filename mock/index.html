@@ -1,12 +1,25 @@
 <!doctype html>
-<html lang="zh-CN" class="dark">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f59e0b'><path d='M12 2C7.58 2 4 5.58 4 10c0 2.8 1.45 5.27 3.66 6.69L8 20h8l.34-3.31C18.55 15.27 20 12.8 20 10c0-4.42-3.58-8-8-8zm-2 20h4v1h-4v-1z'/></svg>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CityLight OS · 智慧照明与空间感知物联网平台</title>
+    <script>
+      (function() {
+        try {
+          const mode = localStorage.getItem('citylight_theme') || 'system';
+          const isDark = mode === 'dark' || (mode === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
-  <body class="bg-black text-zinc-100 antialiased selection:bg-amber-500/20 selection:text-amber-200 overflow-x-hidden min-h-screen">
+  <body class="antialiased selection:bg-amber-500/20 selection:text-amber-500 overflow-x-hidden min-h-screen">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
