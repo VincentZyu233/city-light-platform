@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+.next/
+out/
+dist/
+build/
+
+# Package managers
+.yarn/
+*.log
+
+# Environment variables
+.env*.local
+.env
+
+# Editor & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

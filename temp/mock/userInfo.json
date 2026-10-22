@@ -1,0 +1,15 @@
+{
+  "code": "1",
+  "data": {
+    "loginName": "yewenlai",
+    "departmentCode": "",
+    "name": "叶文来",
+    "tenantId": "1558195823229526016",
+    "id": "1561811879876354048",
+    "isAdmin": false,
+    "projectName": "PLC演示账户"
+  },
+  "detail": "OK",
+  "msg": "",
+  "status": "200"
+}
