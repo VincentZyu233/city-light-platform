@@ -1,0 +1,104 @@
+{
+  "code": "1",
+  "data": [
+    {
+      "belongTenant": "system",
+      "defaultFile": false,
+      "id": "729656211074203648",
+      "link": "https://b.iots.city/system/mediaInfo/preview/729656211074203648",
+      "location": "",
+      "personalizationKey": "islandDev-esso-backgroundImage-system-1594005196924.jpg",
+      "personalizationSystem": "esso",
+      "personalizationType": "backgroundImage",
+      "title": ""
+    },
+    {
+      "belongTenant": "system",
+      "defaultFile": false,
+      "id": "1224321559149281281",
+      "link": "https://b.iots.city/system/mediaInfo/preview/1224321559149281281",
+      "location": "",
+      "personalizationKey": "926570757358432256-1.png",
+      "personalizationSystem": "esso",
+      "personalizationType": "favicon",
+      "title": ""
+    },
+    {
+      "belongTenant": "system",
+      "defaultFile": false,
+      "id": "729656158758649856",
+      "link": "https://b.iots.city/system/mediaInfo/preview/729656158758649856",
+      "location": "",
+      "personalizationKey": "islandDev-esso-imageMap-system-1594005184439.jpg",
+      "personalizationSystem": "esso",
+      "personalizationType": "imageMap",
+      "title": ""
+    },
+    {
+      "belongTenant": "system",
+      "defaultFile": false,
+      "id": "719551467951423488",
+      "link": "https://b.iots.city/system/mediaInfo/preview/719551467951423488",
+      "location": "",
+      "personalizationKey": "islandDev-portal-favicon-system-1591596038466.png",
+      "personalizationSystem": "portal",
+      "personalizationType": "favicon",
+      "title": ""
+    },
+    {
+      "belongTenant": "system",
+      "defaultFile": false,
+      "id": "1224321847864197121",
+      "link": "https://b.iots.city/system/mediaInfo/preview/1224321847864197121",
+      "location": "",
+      "personalizationKey": "926570757358432256-1.png",
+      "personalizationSystem": "portal",
+      "personalizationType": "logo",
+      "title": ""
+    },
+    {
+      "belongTenant": "",
+      "id": "843438344449200128",
+      "link": "",
+      "location": "",
+      "personalizationKey": "",
+      "personalizationSystem": "screen",
+      "personalizationType": "title",
+      "title": "银河智慧物联平台"
+    },
+    {
+      "belongTenant": "",
+      "id": "843510887231164416",
+      "link": "",
+      "location": "",
+      "personalizationKey": "",
+      "personalizationSystem": "esso",
+      "personalizationType": "title",
+      "title": "银河智慧物联平台"
+    },
+    {
+      "belongTenant": "",
+      "id": "843517291211952128",
+      "link": "",
+      "location": "",
+      "personalizationKey": "",
+      "personalizationSystem": "portal",
+      "personalizationType": "title",
+      "title": "银河智慧物联"
+    },
+    {
+      "belongTenant": "system",
+      "defaultFile": false,
+      "id": "1224321612983173120",
+      "link": "https://b.iots.city/system/mediaInfo/preview/1224321612983173120",
+      "location": "",
+      "personalizationKey": "926570757358432256-1.png",
+      "personalizationSystem": "esso",
+      "personalizationType": "logo",
+      "title": ""
+    }
+  ],
+  "detail": "OK",
+  "msg": "",
+  "status": "200"
+}

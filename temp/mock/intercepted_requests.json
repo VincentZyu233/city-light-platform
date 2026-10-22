@@ -1,0 +1,1236 @@
+[
+  {
+    "url": "https://b.iots.city/",
+    "method": "GET",
+    "headers": {
+      "upgrade-insecure-requests": "1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/phone/isSVCode",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "_time": "1792650504988",
+      "notoken": "true",
+      "referer": "https://b.iots.city/",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/system/publicKey",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "_time": "1792650504992",
+      "notoken": "true",
+      "referer": "https://b.iots.city/",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/theme/themeSettings?tenantId=system",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://b.iots.city/",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/mediaInfo/preview/729656211074203648",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://b.iots.city/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/mediaInfo/preview/1224321612983173120",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://b.iots.city/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/mediaInfo/preview/1224321559149281281",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://b.iots.city/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/login",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "_time": "1792650508837",
+      "referer": "https://b.iots.city/",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "multipart/form-data; boundary=----WebKitFormBoundarygcrBpFbZgUU87PNA"
+    },
+    "post_data": "------WebKitFormBoundarygcrBpFbZgUU87PNA\r\nContent-Disposition: form-data; name=\"username\"\r\n\r\nyewenlai\r\n------WebKitFormBoundarygcrBpFbZgUU87PNA\r\nContent-Disposition: form-data; name=\"password\"\r\n\r\nYewenlai@2026\r\n------WebKitFormBoundarygcrBpFbZgUU87PNA\r\nContent-Disposition: form-data; name=\"type\"\r\n\r\nbusiness\r\n------WebKitFormBoundarygcrBpFbZgUU87PNA\r\nContent-Disposition: form-data; name=\"verifyCode\"\r\n\r\n\r\n------WebKitFormBoundarygcrBpFbZgUU87PNA--\r\n"
+  },
+  {
+    "url": "https://b.iots.city/index.html?user=1561811879876354048",
+    "method": "GET",
+    "headers": {
+      "referer": "https://b.iots.city/",
+      "upgrade-insecure-requests": "1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/userInfo",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "_time": "1792650509091",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=utf-8"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/oss/api/tenantInfo/info/1558195823229526016",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/landscape/enabled",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/current/mainMenu",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/workflow/definition/definitionEnum",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/form/batch",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=UTF-8"
+    },
+    "post_data": "{\"businessType\":\"\"}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/area/tree?groupName=Device&leastTree=true",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/department/tree?groupName=Device&leastTree=true",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/dictionaryType/all",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-assets/device/product/list?isPermissionFilter=true",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/dict/getModelType?dictTypeId=829743104193871872&groupName=Facility",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/facilityModel/list/all",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=UTF-8"
+    },
+    "post_data": "{\"permission\":true}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/dict/getModelType?dictTypeId=829743063894999040&groupName=Carrier",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/carrierModel/list/all",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=UTF-8"
+    },
+    "post_data": "{\"permission\":true}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/alarmtype/alarmTree",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/department/tree?groupName=Carrier&leastTree=true",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/area/tree?groupName=Carrier&leastTree=true",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/facilityModel/list",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=UTF-8"
+    },
+    "post_data": "{\"condition\":{},\"pageNum\":1,\"pageSize\":10000}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/alarmtype/alarmTree/valid",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-assets/device/product/list?isPermissionFilter=false",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/dictionary/pageList",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=UTF-8"
+    },
+    "post_data": "{\"condition\":{\"dictTypeId\":\"829743104193871872\"},\"pageNum\":1,\"pageSize\":10000}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/carrierModel/list",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=UTF-8"
+    },
+    "post_data": "{\"condition\":{},\"pageNum\":1,\"pageSize\":10000}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/dictionary/pageList",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=UTF-8"
+    },
+    "post_data": "{\"condition\":{\"dictTypeId\":\"829743063894999040\"},\"pageNum\":1,\"pageSize\":10000}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/department/tree",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/area/tree",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/battery/aiRobot.gif",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/workflow/definition/definitionEnum",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/form/batch",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=UTF-8"
+    },
+    "post_data": "{\"businessType\":\"\"}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/cache/updateInit",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "_time": "1792650510198",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-alarm/alarm/count",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-business/workbench/weather",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "_time": "1792650510199",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=utf-8"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/theme/personalizedSettings",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-business/workbench/list",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "_time": "1792650510222",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=utf-8"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/mp3/prompt.mp3",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "range": "bytes=0-",
+      "sec-ch-ua-mobile": "?0"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/area/tree?groupName=Device&leastTree=true",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/department/tree?groupName=Device&leastTree=true",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/dictionaryType/all",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-assets/device/product/list?isPermissionFilter=true",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/dict/getModelType?dictTypeId=829743104193871872&groupName=Facility",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/facilityModel/list/all",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=UTF-8"
+    },
+    "post_data": "{\"permission\":true}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/dict/getModelType?dictTypeId=829743063894999040&groupName=Carrier",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/carrierModel/list/all",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=UTF-8"
+    },
+    "post_data": "{\"permission\":true}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/alarmtype/alarmTree",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-business/newsCenter/findByPage",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=UTF-8"
+    },
+    "post_data": "{\"pageNum\":1,\"pageSize\":5,\"isRead\":false,\"startTime\":\"2026-10-20 14:28:30\",\"overTime\":\"2026-10-22 14:28:30\"}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/noticeCenter/pages",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "_time": "1792650510311",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=UTF-8"
+    },
+    "post_data": "{\"pageNum\":1,\"pageSize\":5}"
+  },
+  {
+    "url": "https://b.iots.city/workflow/task/taskEnum",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-business/workbench/menus/recent",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "_time": "1792650510313",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=utf-8"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-business/workbench/menus/quick",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "_time": "1792650510314",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=utf-8"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-business/workbench/type/list",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "_time": "1792650510316",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=utf-8"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/area/tree?groupName=Carrier&leastTree=true",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/department/tree?groupName=Carrier&leastTree=true",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/alarmtype/alarmTree/valid",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/island-assets/device/product/list?isPermissionFilter=false",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/dictionary/pageList",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=UTF-8"
+    },
+    "post_data": "{\"condition\":{\"dictTypeId\":\"829743104193871872\"},\"pageNum\":1,\"pageSize\":10000}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/facilityModel/list",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=UTF-8"
+    },
+    "post_data": "{\"condition\":{},\"pageNum\":1,\"pageSize\":10000}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/carrierModel/list",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=UTF-8"
+    },
+    "post_data": "{\"condition\":{},\"pageNum\":1,\"pageSize\":10000}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/dictionary/pageList",
+    "method": "POST",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=UTF-8"
+    },
+    "post_data": "{\"condition\":{\"dictTypeId\":\"829743063894999040\"},\"pageNum\":1,\"pageSize\":10000}"
+  },
+  {
+    "url": "https://b.iots.city/workflow/task/myTaskPageCount",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "_time": "1792650510492",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json;charset=utf-8"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/department/tree",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/system/api/area/tree",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "hideerror": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/chart/panelItemData?id=1558195828153638912",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/chart/panelItemData?id=1558195828187193344",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  },
+  {
+    "url": "https://b.iots.city/chart/panelItemData?id=1558195828132667392",
+    "method": "GET",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "bearer eyJhbGciOiJIUzI1NiJ9.eyJjbGllbnRfaWQiOiJpc2xhbmQiLCJzY29wZSI6W10sImxvZ2luTmFtZSI6Inlld2VubGFpIiwiZGVwYXJ0bWVudENvZGUiOiIiLCJuYW1lIjoi5Y-25paH5p2lIiwidGVuYW50SWQiOiIxNTU4MTk1ODIzMjI5NTI2MDE2IiwiaWQiOiIxNTYxODExODc5ODc2MzU0MDQ4IiwiaXNBZG1pbiI6ZmFsc2UsInByb2plY3ROYW1lIjoiUExD5ryU56S66LSm5oi3IiwianRpIjoiYmVEeHA1d2c1ZDFYS1RnX0ZHY1IyRHh6dV9rIiwiZXhwIjoxNzkyNzM2OTEzfQ.w7YzUinqi8G6w89CtZjKSXUuPJZVIPvSRD6ewAG-2_Y",
+      "referer": "https://b.iots.city/index.html?user=1561811879876354048",
+      "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+      "hidenotify": "true",
+      "sec-ch-ua-mobile": "?0",
+      "hideloading": "true",
+      "access-control-allow-origin": "*",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "accept": "application/json, text/plain, */*"
+    },
+    "post_data": null
+  }
+]

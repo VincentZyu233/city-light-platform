@@ -1,0 +1,1356 @@
+[
+  {
+    "url": "https://b.iots.city/",
+    "status": 200,
+    "headers": {
+      "accept-ranges": "bytes",
+      "connection": "keep-alive",
+      "content-length": "1115",
+      "content-type": "text/html",
+      "date": "Thu, 22 Oct 2026 06:28:29 GMT",
+      "etag": "\"6ac6f331-45b\"",
+      "last-modified": "Thu, 08 Oct 2026 01:34:41 GMT",
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "vary": "Accept-Encoding"
+    },
+    "body": "<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content=\"IE=edge\"><meta name=viewport content=\"width=device-width,initial-scale=1\"><link rel=icon href=\"\"><link rel=stylesheet href=fonts/dn2_base/iconfont.css><title>银河智慧照明</title><script src=tac/js/load.min.js></script><link href=css/chunk-vendors.c2d07f8b.css rel=preload as=style><link href=css/index.069bf49d.css rel=preload as=style><link href=js/chunk-vendors.ced8c9b4.js rel=preload as=script><link href=js/index.6ced9e01.js rel=preload as=script><link href=css/chunk-vendors.c2d07f8b.css rel=stylesheet><link href=css/index.069bf49d.css rel=stylesheet></head><body class=main-body><noscript><strong>We're sorry but framework doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script>// console.log('\"智慧灯杆平台\"版本:',)</script><script src=static/config.js></script><script src=js/chunk-vendors.ced8c9b4.js></script><script src=js/index.6ced9e01.js></script></body><style>body {\n      background-color: #333;\n    }</style></html>"
+  },
+  {
+    "url": "https://b.iots.city/system/api/phone/isSVCode",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "88120f5ce0364afab092912706ffd43b",
+      "expires": "0",
+      "content-length": "63",
+      "date": "Thu, 22 Oct 2026 06:28:29 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+      "x-frame-options": "DENY"
+    },
+    "body": "{\"code\":\"1\",\"data\":false,\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/system/publicKey",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "expires": "0",
+      "content-length": "119",
+      "date": "Thu, 22 Oct 2026 06:28:29 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"0\",\"data\":null,\"detail\":\"用户认证异常\",\"msg\":\"访问此资源需要完全身份验证\",\"status\":\"A0200\"}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/theme/themeSettings?tenantId=system",
+    "status": 200,
+    "headers": {
+      "transfer-encoding": "chunked",
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "content-encoding": "gzip",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "0452fdbdf23b4cf6aee3ae1d24a35a6a",
+      "expires": "0",
+      "date": "Thu, 22 Oct 2026 06:28:29 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "origin,access-control-request-method,access-control-request-headers,accept-encoding"
+    },
+    "body": "{\"code\":\"1\",\"data\":[{\"belongTenant\":\"system\",\"defaultFile\":false,\"id\":\"729656211074203648\",\"link\":\"https://b.iots.city/system/mediaInfo/preview/729656211074203648\",\"location\":\"\",\"personalizationKey\":\"islandDev-esso-backgroundImage-system-1594005196924.jpg\",\"personalizationSystem\":\"esso\",\"personalizationType\":\"backgroundImage\",\"title\":\"\"},{\"belongTenant\":\"system\",\"defaultFile\":false,\"id\":\"1224321559149281281\",\"link\":\"https://b.iots.city/system/mediaInfo/preview/1224321559149281281\",\"location\":\"\",\"personalizationKey\":\"926570757358432256-1.png\",\"personalizationSystem\":\"esso\",\"personalizationType\":\"favicon\",\"title\":\"\"},{\"belongTenant\":\"system\",\"defaultFile\":false,\"id\":\"729656158758649856\",\"link\":\"https://b.iots.city/system/mediaInfo/preview/729656158758649856\",\"location\":\"\",\"personalizationKey\":\"islandDev-esso-imageMap-system-1594005184439.jpg\",\"personalizationSystem\":\"esso\",\"personalizationType\":\"imageMap\",\"title\":\"\"},{\"belongTenant\":\"system\",\"defaultFile\":false,\"id\":\"719551467951423488\",\"link\":\"https://b.iots.city/system/mediaInfo/preview/719551467951423488\",\"location\":\"\",\"personalizationKey\":\"islandDev-portal-favicon-system-1591596038466.png\",\"personalizationSystem\":\"portal\",\"personalizationType\":\"favicon\",\"title\":\"\"},{\"belongTenant\":\"system\",\"defaultFile\":false,\"id\":\"1224321847864197121\",\"link\":\"https://b.iots.city/system/mediaInfo/preview/1224321847864197121\",\"location\":\"\",\"personalizationKey\":\"926570757358432256-1.png\",\"personalizationSystem\":\"portal\",\"personalizationType\":\"logo\",\"title\":\"\"},{\"belongTenant\":\"\",\"id\":\"843438344449200128\",\"link\":\"\",\"location\":\"\",\"personalizationKey\":\"\",\"personalizationSystem\":\"screen\",\"personalizationType\":\"title\",\"title\":\"银河智慧物联平台\"},{\"belongTenant\":\"\",\"id\":\"843510887231164416\",\"link\":\"\",\"location\":\"\",\"personalizationKey\":\"\",\"personalizationSystem\":\"esso\",\"personalizationType\":\"title\",\"title\":\"银河智慧物联平台\"},{\"belongTenant\":\"\",\"id\":\"843517291211952128\",\"link\":\"\",\"location\":\"\",\"personalizationKey\":\"\",\"personalizationSystem\":\"portal\",\"personalizationType\":\"title\",\"title\":\"银河智慧物联\"},{\"belongTenant\":\"system\",\"defaultFile\":false,\"id\":\"1224321612983173120\",\"link\":\"https://b.iots.city/system/mediaInfo/preview/1224321612983173120\",\"location\":\"\",\"personalizationKey\":\"926570757358432256-1.png\",\"personalizationSystem\":\"esso\",\"personalizationType\":\"logo\",\"title\":\"\"}],\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/system/mediaInfo/preview/729656211074203648",
+    "status": 200,
+    "headers": {
+      "transfer-encoding": "chunked",
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "f2900e35b9124123ae0116c41ca39e55",
+      "expires": "0",
+      "date": "Thu, 22 Oct 2026 06:28:30 GMT",
+      "x-xss-protection": "0",
+      "content-type": "image/jpeg;charset=utf-8",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": ""
+  },
+  {
+    "url": "https://b.iots.city/system/mediaInfo/preview/1224321559149281281",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "ed49b81cda9b44b1b51bc164dbf4a2b9",
+      "expires": "0",
+      "content-length": "7143",
+      "date": "Thu, 22 Oct 2026 06:28:30 GMT",
+      "x-xss-protection": "0",
+      "content-type": "image/png;charset=utf-8",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": ""
+  },
+  {
+    "url": "https://b.iots.city/system/mediaInfo/preview/1224321612983173120",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "653270f4609a49838c606d1144c57526",
+      "expires": "0",
+      "content-length": "7143",
+      "date": "Thu, 22 Oct 2026 06:28:30 GMT",
+      "x-xss-protection": "0",
+      "content-type": "image/png;charset=utf-8",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": ""
+  },
+  {
+    "url": "https://b.iots.city/battery/aiRobot.gif",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "etag": "\"6ac6f331-7c0d\"",
+      "connection": "keep-alive",
+      "accept-ranges": "bytes",
+      "content-length": "31757",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "content-type": "image/gif",
+      "last-modified": "Thu, 08 Oct 2026 01:34:41 GMT"
+    },
+    "body": ""
+  },
+  {
+    "url": "https://b.iots.city/mp3/prompt.mp3",
+    "status": 206,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "etag": "\"6ac6f331-de09\"",
+      "connection": "keep-alive",
+      "content-range": "bytes 0-56840/56841",
+      "content-length": "56841",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "content-type": "audio/mpeg",
+      "last-modified": "Thu, 08 Oct 2026 01:34:41 GMT"
+    },
+    "body": ""
+  },
+  {
+    "url": "https://b.iots.city/system/login",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "expires": "0",
+      "content-length": "1317",
+      "date": "Thu, 22 Oct 2026 06:28:33 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json;charset=UTF-8",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "<could not read text>"
+  },
+  {
+    "url": "https://b.iots.city/index.html?user=1561811879876354048",
+    "status": 200,
+    "headers": {
+      "accept-ranges": "bytes",
+      "connection": "keep-alive",
+      "content-length": "1115",
+      "content-type": "text/html",
+      "date": "Thu, 22 Oct 2026 06:28:33 GMT",
+      "etag": "\"6ac6f331-45b\"",
+      "last-modified": "Thu, 08 Oct 2026 01:34:41 GMT",
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "vary": "Accept-Encoding"
+    },
+    "body": "<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content=\"IE=edge\"><meta name=viewport content=\"width=device-width,initial-scale=1\"><link rel=icon href=\"\"><link rel=stylesheet href=fonts/dn2_base/iconfont.css><title>银河智慧照明</title><script src=tac/js/load.min.js></script><link href=css/chunk-vendors.c2d07f8b.css rel=preload as=style><link href=css/index.069bf49d.css rel=preload as=style><link href=js/chunk-vendors.ced8c9b4.js rel=preload as=script><link href=js/index.6ced9e01.js rel=preload as=script><link href=css/chunk-vendors.c2d07f8b.css rel=stylesheet><link href=css/index.069bf49d.css rel=stylesheet></head><body class=main-body><noscript><strong>We're sorry but framework doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script>// console.log('\"智慧灯杆平台\"版本:',)</script><script src=static/config.js></script><script src=js/chunk-vendors.ced8c9b4.js></script><script src=js/index.6ced9e01.js></script></body><style>body {\n      background-color: #333;\n    }</style></html>"
+  },
+  {
+    "url": "https://b.iots.city/system/api/userInfo",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "f51e3bbdb8bc4589aa0779d96199cf35",
+      "expires": "0",
+      "content-length": "229",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"loginName\":\"yewenlai\",\"departmentCode\":\"\",\"name\":\"叶文来\",\"tenantId\":\"1558195823229526016\",\"id\":\"1561811879876354048\",\"isAdmin\":false,\"projectName\":\"PLC演示账户\"},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/oss/api/tenantInfo/info/1558195823229526016",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "cc434f3918094dcdaf6db0a273d243f6",
+      "expires": "0",
+      "content-length": "168",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\n\t\"code\":\"1\",\n\t\"data\":{\n\t\t\"location\":{\n\t\t\t\"coordinateSystemType\":\"GCJ02\",\n\t\t\t\"coordinates\":[0.0,0.0],\n\t\t\t\"type\":\"Point\"\n\t\t}\n\t},\n\t\"detail\":\"\",\n\t\"msg\":\"\",\n\t\"status\":\"\"\n}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/landscape/enabled",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "74",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"status\":\"200\",\"detail\":\"OK\",\"msg\":\"查询成功\",\"data\":true}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/current/mainMenu",
+    "status": 200,
+    "headers": {
+      "transfer-encoding": "chunked",
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "content-encoding": "gzip",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "fe2f44ab0ba5415b9ef1dbba5604c34f",
+      "expires": "0",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "origin,access-control-request-method,access-control-request-headers,accept-encoding"
+    },
+    "body": "{\"code\":\"1\",\"data\":[{\"allCaption\":\"智慧灯杆云\",\"appName\":\"\",\"caption\":\"智慧灯杆云\",\"description\":\"\",\"enable\":true,\"id\":100001,\"imgCss\":\"\",\"openType\":\"tag\",\"parentMenuItemDTO\":null,\"position\":0,\"subFuncItems\":[],\"subMenuItems\":[{\"allCaption\":\"我的工作台\",\"appName\":\"pc\",\"caption\":\"我的工作台\",\"description\":\"\",\"enable\":true,\"id\":100162,\"imgCss\":\"fa fa-home\",\"openType\":\"tag\",\"parentMenuItemDTO\":{\"allCaption\":\"\",\"appName\":\"\",\"caption\":\"\",\"description\":\"\",\"enable\":false,\"id\":100001,\"imgCss\":\"\",\"openType\":\"\",\"parentMenuItemDTO\":null,\"subFuncItems\":[],\"subMenuItems\":[],\"url\":\"\"},\"position\":1,\"subFuncItems\":[{\"allCaption\":\"\",\"caption\":\"编辑\",\"code\":\"100474\",\"description\":\"\",\"enable\":true,\"id\":100474,\"menu\":null,\"method\":\"\",\"position\":1,\"url\":\"\"}],\"subMenuItems\":[],\"url\":\"/workTable\"},{\"allCaption\":\"展示中心\",\"appName\":\"pc\",\"caption\":\"展示中心\",\"description\":\"\",\"enable\":true,\"id\":100003,\"imgCss\":\"fa fa-television\",\"openType\":\"tag\",\"parentMenuItemDTO\":{\"allCaption\":\"\",\"appName\":\"\",\"caption\":\"\",\"description\":\"\",\"enable\":false,\"id\":100001,\"imgCss\":\"\",\"openType\":\"\",\"parentMenuItemDTO\":null,\"subFuncItems\":[],\"subMenuItems\":[],\"url\":\"\"},\"position\":3,\"subFuncItems\":[],\"subMenuItems\":[],\"url\":\"/csmb\"},{\"allCaption\":\"三合一资产管理\",\"appName\":\"pc\",\"caption\":\"资产管理\",\"description\":\"\",\"enable\":true,\"id\":100088,\"imgCss\":\"fa fa-wrench\",\"openType\":\"tag\",\"parentMenuItemDTO\":{\"allCaption\":\"\",\"appName\":\"\",\"caption\":\"\",\"description\":\"\",\"enable\":false,\"id\":100001,\"imgCss\":\"\",\"openType\":\"\",\"parentMenuItemDTO\":null,\"subFuncItems\":[],\"subMenuItems\":[],\"url\":\"\"},\"position\":4,\"subFuncItems\":[],\"subMenuItems\":[{\"allCaption\":\"三合一资产管理-灯杆管理\",\"appName\":\"pc\",\"caption\":\"灯杆管理\",\"description\":\"\",\"enable\":true,\"id\":110096,\"imgCss\":\"island-pole\",\"openType\":\"tag\",\"parentMenuItemDTO\":{\"allCaption\":\"\",\"appName\":\"\",\"caption\":\"\",\"description\":\"\",\"enable\":false,\"id\":100088,\"imgCss\":\"\",\"openType\":\"\",\"parentMenuItemDTO\":null,\"subFuncItems\":[],\"subMenuItems\":[],\"url\":\"\"},\"position\":2,\"subFuncItems\":[{\"allCaption\":\"\",\"caption\":\"替换\",\"code\":\"100830\",\"description\":\"\",\"enable\":true,\"id\":100830,\"menu\":null,\"method\":\"\",\"position\":1,\"url\":\"\"},{\"allCaption\":\"\",\"caption\":\"新增\",\"code\":\"110403\",\"description\":\"\",\"enable\":true,\"id\":110403,\"menu\":null,\"method\":\"\",\"position\":1,\"url\":\"\"},{\"allCaption\":\"\",\"caption\":\"铭牌\",\"code\":\"1100705\",\"description\":\"\",\"enable\":true,\"id\":1100705,\"menu\":null,\"method\":\"\",\"position\":1,\"url\":\"\"},{\"allCaption\":\"\",\"caption\":\"编辑\",\"code\":\"110404\",\"description\":\"\",\"enable\":true,\"id\":110404,\"menu\":null,\"method\":\"\",\"position\":2,\"url\":\"\"},{\"allCaption\":\"\",\"caption\":\"单个删除\",\"code\":\"110405\",\"description\":\"\",\"enable\":true,\"id\":110405,\"menu\":null,\"method\":\"\",\"position\":3,\"url\":\"\"},{\"allCaption\":\"\",\"caption\":\"导入\",\"code\":\"110406\",\"description\":\"\",\"enable\":true,\"id\":110406,\"menu\":null,\"method\":\"\",\"position\":4,\"url\":\"\"},{\"allCaption\":\"\",\"caption\":\"导出\",\"code\":\"110407\",\"description\":\"\",\"enable\":true,\"id\":110407,\"menu\":null,\"method\":\"\",\"position\":5,\"url\":\"\"},{\"allCaption\":\"\",\"caption\":\"批量删除\",\"code\":\"110420\",\"description\":\"\",\"enable\":true,\"id\":110420,\"menu\":null,\"method\":\"\",\"position\":6,\"url\":\"\"},{\"allCaption\":\"\",\"caption\":\"查看\",\"code\":\"110435\",\"description\":\"\",\"enable\":true,\"id\":110435,\"menu\":null,\"method\":\"\",\"position\":7,\"url\":\"\"},{\"allCaption\":\"\",\"caption\":\"修改使用状态\",\"code\":\"110612\",\"description\":\"\",\"enable\":true,\"id\":110612,\"menu\":null,\"method\":\"\",\"position\":7,\"url\":\"\"},{\"allCaption\":\"\",\"caption\":\"批量导出二维码\",\"code\":\"1100703\",\"description\":\"\",\"enable\":true,\"id\":1100703,\"menu\":null,\"method\":\"GET\",\"position\":9,\"url\":\"\"},{\"allCaption\":\"\",\"caption\":\"二维码\",\"code\":\"1100704\",\"description\":\"\",\"enable\":true,\"id\":1100704,\"menu\":null,\"method\":\"GET\",\"position\":10,\"url\":\"\"}],\"subMenuItems\":[],\"url\":\"/assetsManagement/vehicleManagement/pole\"},{\"allCaption\":\"修正坐标\",\"appName\":\"pc\",\"caption\":\"修正坐标\",\"description\":\"\",\"enable\":true,\"id\":100007,\"imgCss\":\"island-location-check\",\"openType\":\"tag\",\"parentMenuItemDTO\":{\"allCaption\":\"\",\"appName\":\"\",\"caption\":\"\",\"description\":\"\",\"enable\":false,\"id\":100088,\"imgCss\":\"\",\"openType\":\"\",\"parentMenuItemDTO\":null,\"subFuncItems\":[],\"subMenuItems\":[],\"url\":\"\"},\"position\":3,\"subFuncItems\":[],\"subMenuItems\":[],\"url\":\"/assetsManagement/deviceFixMap\"},{\"allCaption\":\"三合一资产管理-配电箱管理\",\"appName\":\"pc\",\"caption\":\"配电箱管理\",\"description\":\"\",\"enable\":true,\"id\":110098,\"imgCss\":\"island-box\",\"openType\":\"tag\",\"parentMenuItemDTO\":{\"allCaption\":\"\",\"appName\":\"\",\"caption\":\"\",\"description\":\"\",\"enable\":false,\"id\":100088,\"imgCss\":\"\",\"openType\":\"\",\"parentMenuItemDTO\":null,\"subFuncItems\":[],\"subMenuItems\":[],\"url\":\"\"},\"position\":3,\"subFuncItems\":[{\"allCaption\":\"\",\"caption\":\"替换\",\"code\":\"100831\",\"description\":\"\",\"enable\":true,\"id\":100831,\"menu\":null,\"method\":\"\",\"position\":1,\"url\":\"\"},{\"allCaption\":\"\",\"caption\":\"新增\",\"code\":\"120403\",\"description\":\"\",\"enable\":true,\"id\":120403,\"menu\":null,\"method\":\"\",\"position\":1,\"url\":\"\"},{\"allCaption\":\"\",\"caption\":\"铭牌\",\"code\":\"1200705\",\"description\":\"\",\"enable\":true,\"id\":1200705,\"menu\":null,\"method\":\"\",\"position\":1,\"url\":\"\"},{\"allCaption\":\"\",\"caption\":\"控制箱-上传visio图\",\"code\":\"12000791\",\"description\":"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/form/batch",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "60",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":[],\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/workflow/definition/definitionEnum",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "expires": "0",
+      "content-length": "4262",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"status\":\"200\",\"detail\":\"OK\",\"msg\":\"\",\"data\":{\"approverEmp\":[{\"info\":null,\"key\":\"\",\"label\":\"自动通过\",\"mark\":\"\",\"parent\":\"\",\"value\":\"pass_auto\"},{\"info\":null,\"key\":\"\",\"label\":\"指定人处理\",\"mark\":\"\",\"parent\":\"\",\"value\":\"designated_process\"}],\"faultReason\":[],\"handler\":[{\"info\":null,\"key\":\"\",\"label\":\"指定人员\",\"mark\":\"\",\"parent\":\"\",\"value\":\"designated_person\"},{\"info\":null,\"key\":\"\",\"label\":\"上一节点自选\",\"mark\":\"\",\"parent\":\"\",\"value\":\"optional\"},{\"info\":null,\"key\":\"\",\"label\":\"管理部门主管\",\"mark\":\"\",\"parent\":\"\",\"value\":\"maintenance_department\"},{\"info\":null,\"key\":\"\",\"label\":\"运维部门主管\",\"mark\":\"\",\"parent\":\"\",\"value\":\"operationalUnit\"},{\"info\":null,\"key\":\"\",\"label\":\"自定义设置\",\"mark\":\"\",\"parent\":\"\",\"value\":\"custom_set\"},{\"info\":null,\"key\":\"\",\"label\":\"其他节点处理人\",\"mark\":\"\",\"parent\":\"\",\"value\":\"up_node_handle\"}],\"nodeConTypeRelation\":[{\"info\":null,\"key\":\"\",\"label\":\"等于\",\"mark\":\"\",\"parent\":\"\",\"value\":\"eq\"},{\"info\":null,\"key\":\"\",\"label\":\"不等于\",\"mark\":\"\",\"parent\":\"\",\"value\":\"Neq\"}],\"operate\":[{\"info\":null,\"key\":\"\",\"label\":\"提交\",\"mark\":\"\",\"parent\":\"\",\"value\":\"submit\"},{\"info\":null,\"key\":\"\",\"label\":\"退回（上一个节点）\",\"mark\":\"\",\"parent\":\"\",\"value\":\"back_previous\"},{\"info\":null,\"key\":\"\",\"label\":\"退回（发起环节）\",\"mark\":\"\",\"parent\":\"\",\"value\":\"back_start\"},{\"info\":null,\"key\":\"\",\"label\":\"委派\",\"mark\":\"\",\"parent\":\"\",\"value\":\"forward\"},{\"info\":null,\"key\":\"\",\"label\":\"转交\",\"mark\":\"\",\"parent\":\"\",\"value\":\"assign\"},{\"info\":null,\"key\":\"\",\"label\":\"保存\",\"mark\":\"\",\"parent\":\"\",\"value\":\"save\"},{\"info\":null,\"key\":\"\",\"label\":\"打印\",\"mark\":\"\",\"parent\":\"\",\"value\":\"print\"}],\"nodeConRelation\":[{\"info\":null,\"key\":\"\",\"label\":\"且\",\"mark\":\"\",\"parent\":\"\",\"value\":\"&&\"},{\"info\":null,\"key\":\"\",\"label\":\"或\",\"mark\":\"\",\"parent\":\"\",\"value\":\"||\"}],\"conditionKey\":[{\"info\":null,\"key\":\"\",\"label\":\"设备类型\",\"mark\":\"\",\"parent\":\"\",\"value\":\"deviceType\"},{\"info\":null,\"key\":\"\",\"label\":\"设备型号\",\"mark\":\"\",\"parent\":\"\",\"value\":\"productCode\"},{\"info\":null,\"key\":\"\",\"label\":\"告警类型\",\"mark\":\"\",\"parent\":\"\",\"value\":\"alarmType\"},{\"info\":null,\"key\":\"\",\"label\":\"设备区域\",\"mark\":\"\",\"parent\":\"\",\"value\":\"deviceArea\"},{\"info\":null,\"key\":\"\",\"label\":\"运维部门\",\"mark\":\"\",\"parent\":\"\",\"value\":\"operationalUnit\"},{\"info\":null,\"key\":\"\",\"label\":\"告警级别\",\"mark\":\"\",\"parent\":\"\",\"value\":\"level\"},{\"info\":null,\"key\":\"\",\"label\":\"承办处\",\"mark\":\"\",\"parent\":\"\",\"value\":\"undertaker\"}],\"reminder\":[{\"info\":null,\"key\":\"\",\"label\":\"当前节点处理人\",\"mark\":\"\",\"parent\":\"\",\"value\":\"current_node_handler\"},{\"info\":null,\"key\":\"\",\"label\":\"流程发起人\",\"mark\":\"\",\"parent\":\"\",\"value\":\"process_initiator\"},{\"info\":null,\"key\":\"\",\"label\":\"指定人员\",\"mark\":\"\",\"parent\":\"\",\"value\":\"designated_person\"},{\"info\":null,\"key\":\"\",\"label\":\"部门主管\",\"mark\":\"\",\"parent\":\"\",\"value\":\"maintenance_department\"}],\"noticeSet\":[{\"info\":null,\"key\":\"\",\"label\":\"处理人通知\",\"mark\":\"\",\"parent\":\"\",\"value\":\"handler\"},{\"info\":null,\"key\":\"\",\"label\":\"超时提醒\",\"mark\":\"\",\"parent\":\"\",\"value\":\"timeout\"},{\"info\":null,\"key\":\"\",\"label\":\"短信通知\",\"mark\":\"\",\"parent\":\"\",\"value\":\"sms\"}],\"approvalMethod\":[{\"info\":null,\"key\":\"\",\"label\":\"依次审批\",\"mark\":\"\",\"parent\":\"\",\"value\":\"sequential\"},{\"info\":null,\"key\":\"\",\"label\":\"会签\",\"mark\":\"\",\"parent\":\"\",\"value\":\"and_approval\"},{\"info\":null,\"key\":\"\",\"label\":\"或签\",\"mark\":\"\",\"parent\":\"\",\"value\":\"or_approval\"}],\"flowType\":[{\"info\":null,\"key\":\"\",\"label\":\"工单类\",\"mark\":\"\",\"parent\":\"\",\"value\":\"order\"},{\"info\":null,\"key\":\"\",\"label\":\"网络理政\",\"mark\":\"\",\"parent\":\"\",\"value\":\"netGover\"},{\"info\":null,\"key\":\"\",\"label\":\"物料类\",\"mark\":\"\",\"parent\":\"\",\"value\":\"materials\"},{\"info\":null,\"key\":\"\",\"label\":\"通用类\",\"mark\":\"\",\"parent\":\"\",\"value\":\"common\"},{\"info\":null,\"key\":\"\",\"label\":\"智慧城管\",\"mark\":\"\",\"parent\":\"\",\"value\":\"cityManagement\"},{\"info\":null,\"key\":\"\",\"label\":\"公示栏审批\",\"mark\":\"\",\"parent\":\"\",\"value\":\"noticeBoardAudit\"},{\"info\":null,\"key\":\"\",\"label\":\"数据变更\",\"mark\":\"\",\"parent\":\"\",\"value\":\"dataChange\"},{\"info\":null,\"key\":\"\",\"label\":\"资产生命周期管理\",\"mark\":\"\",\"parent\":\"\",\"value\":\"assetCycleGovern\"},{\"info\":null,\"key\":\"\",\"label\":\"日常流程\",\"mark\":\"\",\"parent\":\"\",\"value\":\"dailyFlow\"}]}}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/department/tree?groupName=Device&leastTree=true",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "f05c2fe5631840d2818a4ed79bb1303b",
+      "expires": "0",
+      "content-length": "207",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"children\":[],\"code\":\"\",\"deleted\":false,\"description\":\"\",\"id\":\"\",\"level\":0,\"name\":\"部门\",\"parent\":null,\"parentId\":\"\",\"shortName\":\"\",\"tenantId\":\"\"},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/area/tree?groupName=Device&leastTree=true",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "72f5ad751974419da667b3cbbb0729b7",
+      "expires": "0",
+      "content-length": "290",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"areaType\":\"\",\"children\":[],\"code\":\"\",\"deleted\":false,\"description\":\"\",\"districtCode\":\"\",\"id\":\"\",\"level\":0,\"location\":null,\"name\":\"区域\",\"pId\":\"\",\"parent\":null,\"parentId\":\"\",\"pinyinCode\":\"\",\"poleImage\":\"\",\"tenantId\":\"\",\"type\":\"\"},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/facilityModel/list/all",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "765",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":[{\"facilityType\":\"829745849204379648\",\"id\":\"6ac8cc747b5351099727d5a6\",\"image\":\"\",\"modelId\":\"控制柜\",\"name\":\"控制柜\"},{\"facilityType\":\"1\",\"id\":\"6ac8cc747b5351099727d5aa\",\"image\":\"\",\"modelId\":\"120W灯具\",\"name\":\"120W\"},{\"facilityType\":\"984813934727389184\",\"id\":\"6ac8cc747b5351099727d5a7\",\"image\":\"\",\"modelId\":\"变压器\",\"name\":\"变压器\"},{\"facilityType\":\"1093499486567145472\",\"id\":\"6ac8cc747b5351099727d5ab\",\"image\":\"\",\"modelId\":\"窨井\",\"name\":\"窨井\"},{\"facilityType\":\"984813996584984576\",\"id\":\"6ac8cc747b5351099727d5a9\",\"image\":\"\",\"modelId\":\"接电点\",\"name\":\"接电点\"},{\"facilityType\":\"984813965542940672\",\"id\":\"6ac8cc747b5351099727d5a8\",\"image\":\"\",\"modelId\":\"取电点\",\"name\":\"取电点\"}],\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/island-assets/device/product/list?isPermissionFilter=true",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "6176b055c922496dbd366445cdaf207d",
+      "expires": "0",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "content-length": "83",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\n\t\"code\":\"1\",\n\t\"data\":[],\n\t\"detail\":\"OK\",\n\t\"msg\":\"查询成功\",\n\t\"status\":\"200\"\n}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/dict/getModelType?dictTypeId=829743104193871872&groupName=Facility",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "861",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":[{\"createTime\":\"2021-04-08 15:53:46\",\"createUser\":\"\",\"dictLabel\":\"灯具\",\"dictSort\":1,\"dictTypeId\":\"829743104193871872\",\"dictValue\":\"\",\"id\":\"1\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-04-08 15:54:05\",\"createUser\":\"\",\"dictLabel\":\"变压器\",\"dictSort\":2,\"dictTypeId\":\"829743104193871872\",\"dictValue\":\"\",\"id\":\"984813934727389184\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2022-07-25 10:25:01\",\"createUser\":\"\",\"dictLabel\":\"接电点\",\"dictSort\":15,\"dictTypeId\":\"829743104193871872\",\"dictValue\":\"\",\"id\":\"984813996584984576\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2022-07-25 10:24:51\",\"createUser\":\"\",\"dictLabel\":\"取电点\",\"dictSort\":16,\"dictTypeId\":\"829743104193871872\",\"dictValue\":\"\",\"id\":\"984813965542940672\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/carrierModel/list/all",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "1411",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":[{\"carrierType\":\"833769245208506368\",\"id\":\"6ac8cc747b5351099727d5a4\",\"image\":\"1383084961238544384\",\"imageNotUse\":\"891979304797282021\",\"imageOff\":\"891979304797282022\",\"imageOn\":\"891979304797282023\",\"modelId\":\"IntelligentDG\",\"name\":\"智慧灯杆\",\"poleImage\":\"\",\"system\":true},{\"carrierType\":\"880040745256173568\",\"id\":\"6ac8cc747b5351099727d5a5\",\"image\":\"1383090548231827456\",\"imageNotUse\":\"891979304797282025\",\"imageOff\":\"891979304797282026\",\"imageOn\":\"891979304797282027\",\"modelId\":\"PDX\",\"name\":\"配电箱\",\"poleImage\":\"\",\"system\":true},{\"carrierType\":\"833769245208506368\",\"id\":\"6ac8cc747b5351099727d5a2\",\"image\":\"1383084860352950272\",\"imageNotUse\":\"891979304797282017\",\"imageOff\":\"891979304797282019\",\"imageOn\":\"891979304797282018\",\"modelId\":\"DoubleArmsDG\",\"name\":\"双臂灯杆\",\"poleImage\":\"\",\"system\":true},{\"carrierType\":\"833769245208506368\",\"id\":\"6ac8cc747b5351099727d5a1\",\"image\":\"1383084762126544896\",\"imageNotUse\":\"891979304797282009\",\"imageOff\":\"891979304797282010\",\"imageOn\":\"891979304797282011\",\"modelId\":\"SingleArmDG\",\"name\":\"单臂灯杆\",\"poleImage\":\"\",\"system\":true},{\"carrierType\":\"833769245208506368\",\"id\":\"6ac8cc747b5351099727d5a3\",\"image\":\"1383084903566864384\",\"imageNotUse\":\"891979304797282013\",\"imageOff\":\"891979304797282014\",\"imageOn\":\"891979304797282015\",\"modelId\":\"MultiArmsDG\",\"name\":\"多臂灯杆\",\"poleImage\":\"\",\"system\":true}],\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/dict/getModelType?dictTypeId=829743063894999040&groupName=Carrier",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "466",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":[{\"createTime\":\"2021-04-19 18:21:19\",\"createUser\":\"\",\"dictLabel\":\"灯杆\",\"dictSort\":1,\"dictTypeId\":\"829743063894999040\",\"dictValue\":\"\",\"id\":\"833769245208506368\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-08-25 10:47:44\",\"createUser\":\"\",\"dictLabel\":\"配电箱\",\"dictSort\":8,\"dictTypeId\":\"829743063894999040\",\"dictValue\":\"\",\"id\":\"880040745256173568\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/department/tree?groupName=Carrier&leastTree=true",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "7af32557a5f04187936895eb3bdd2d39",
+      "expires": "0",
+      "content-length": "207",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"children\":[],\"code\":\"\",\"deleted\":false,\"description\":\"\",\"id\":\"\",\"level\":0,\"name\":\"部门\",\"parent\":null,\"parentId\":\"\",\"shortName\":\"\",\"tenantId\":\"\"},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/alarmtype/alarmTree",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "375",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"status\":\"200\",\"detail\":\"OK\",\"msg\":\"\",\"data\":[{\"children\":[],\"deviceType\":\"root\",\"flowId\":\"\",\"id\":\"businessAlarm\",\"key\":\"businessAlarm\",\"name\":\"业务告警\",\"parentId\":\"root\",\"productCode\":\"businessAlarm\"},{\"children\":[],\"deviceType\":\"root\",\"flowId\":\"\",\"id\":\"deviceAlarm\",\"key\":\"deviceAlarm\",\"name\":\"设备告警\",\"parentId\":\"root\",\"productCode\":\"deviceAlarm\"}]}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/area/tree?groupName=Carrier&leastTree=true",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "443999b7a9044c44aee56c7c65220778",
+      "expires": "0",
+      "content-length": "290",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"areaType\":\"\",\"children\":[],\"code\":\"\",\"deleted\":false,\"description\":\"\",\"districtCode\":\"\",\"id\":\"\",\"level\":0,\"location\":null,\"name\":\"区域\",\"pId\":\"\",\"parent\":null,\"parentId\":\"\",\"pinyinCode\":\"\",\"poleImage\":\"\",\"tenantId\":\"\",\"type\":\"\"},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/facilityModel/list",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "945",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"data\":[{\"facilityType\":\"829745849204379648\",\"id\":\"6ac8cc747b5351099727d5a6\",\"image\":\"859729395019939840\",\"modelId\":\"控制柜\",\"name\":\"控制柜\"},{\"facilityType\":\"1\",\"id\":\"6ac8cc747b5351099727d5aa\",\"image\":\"859729438703616000\",\"modelId\":\"120W灯具\",\"name\":\"120W\"},{\"facilityType\":\"984813934727389184\",\"id\":\"6ac8cc747b5351099727d5a7\",\"image\":\"859729497566478336\",\"modelId\":\"变压器\",\"name\":\"变压器\"},{\"facilityType\":\"1093499486567145472\",\"id\":\"6ac8cc747b5351099727d5ab\",\"image\":\"859729460207812608\",\"modelId\":\"窨井\",\"name\":\"窨井\"},{\"facilityType\":\"984813996584984576\",\"id\":\"6ac8cc747b5351099727d5a9\",\"image\":\"859729395019939849\",\"modelId\":\"接电点\",\"name\":\"接电点\"},{\"facilityType\":\"984813965542940672\",\"id\":\"6ac8cc747b5351099727d5a8\",\"image\":\"859729460207812608\",\"modelId\":\"取电点\",\"name\":\"取电点\"}],\"page\":1,\"pageNum\":1,\"pageSize\":10000,\"total\":6,\"totalPages\":1},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/carrierModel/list",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "1483",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"data\":[{\"carrierType\":\"833769245208506368\",\"id\":\"6ac8cc747b5351099727d5a4\",\"image\":\"1383084961238544384\",\"imageNotUse\":\"891979304797282021\",\"imageOff\":\"891979304797282022\",\"imageOn\":\"891979304797282023\",\"modelId\":\"IntelligentDG\",\"name\":\"智慧灯杆\",\"poleImage\":\"\",\"system\":true},{\"carrierType\":\"880040745256173568\",\"id\":\"6ac8cc747b5351099727d5a5\",\"image\":\"1383090548231827456\",\"imageNotUse\":\"891979304797282025\",\"imageOff\":\"891979304797282026\",\"imageOn\":\"891979304797282027\",\"modelId\":\"PDX\",\"name\":\"配电箱\",\"poleImage\":\"\",\"system\":true},{\"carrierType\":\"833769245208506368\",\"id\":\"6ac8cc747b5351099727d5a2\",\"image\":\"1383084860352950272\",\"imageNotUse\":\"891979304797282017\",\"imageOff\":\"891979304797282019\",\"imageOn\":\"891979304797282018\",\"modelId\":\"DoubleArmsDG\",\"name\":\"双臂灯杆\",\"poleImage\":\"\",\"system\":true},{\"carrierType\":\"833769245208506368\",\"id\":\"6ac8cc747b5351099727d5a1\",\"image\":\"1383084762126544896\",\"imageNotUse\":\"891979304797282009\",\"imageOff\":\"891979304797282010\",\"imageOn\":\"891979304797282011\",\"modelId\":\"SingleArmDG\",\"name\":\"单臂灯杆\",\"poleImage\":\"\",\"system\":true},{\"carrierType\":\"833769245208506368\",\"id\":\"6ac8cc747b5351099727d5a3\",\"image\":\"1383084903566864384\",\"imageNotUse\":\"891979304797282013\",\"imageOff\":\"891979304797282014\",\"imageOn\":\"891979304797282015\",\"modelId\":\"MultiArmsDG\",\"name\":\"多臂灯杆\",\"poleImage\":\"\",\"system\":true}],\"page\":1,\"pageNum\":1,\"pageSize\":10000,\"total\":5,\"totalPages\":1},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/dictionary/pageList",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "170387d40048495eb39839be6c0d7630",
+      "expires": "0",
+      "content-length": "929",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"data\":[{\"createTime\":\"2021-04-08 15:53:46\",\"createUser\":\"\",\"dictLabel\":\"灯具\",\"dictSort\":1,\"dictTypeId\":\"829743104193871872\",\"dictValue\":\"\",\"id\":\"1\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-04-08 15:54:05\",\"createUser\":\"\",\"dictLabel\":\"变压器\",\"dictSort\":2,\"dictTypeId\":\"829743104193871872\",\"dictValue\":\"\",\"id\":\"984813934727389184\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2022-07-25 10:25:01\",\"createUser\":\"\",\"dictLabel\":\"接电点\",\"dictSort\":15,\"dictTypeId\":\"829743104193871872\",\"dictValue\":\"\",\"id\":\"984813996584984576\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2022-07-25 10:24:51\",\"createUser\":\"\",\"dictLabel\":\"取电点\",\"dictSort\":16,\"dictTypeId\":\"829743104193871872\",\"dictValue\":\"\",\"id\":\"984813965542940672\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"page\":1,\"pageNum\":1,\"pageSize\":4,\"total\":4,\"totalPages\":1},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/alarmtype/alarmTree/valid",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "311",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"status\":\"200\",\"detail\":\"OK\",\"msg\":\"\",\"data\":[{\"children\":[],\"deviceType\":\"\",\"flowId\":\"\",\"id\":\"deviceAlarm\",\"key\":\"\",\"name\":\"设备告警\",\"parentId\":\"\",\"productCode\":\"\"},{\"children\":[],\"deviceType\":\"\",\"flowId\":\"\",\"id\":\"businessAlarm\",\"key\":\"\",\"name\":\"业务告警\",\"parentId\":\"\",\"productCode\":\"\"}]}"
+  },
+  {
+    "url": "https://b.iots.city/island-assets/device/product/list?isPermissionFilter=false",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "3d6f1143ab5b43248ecef16231dee9f1",
+      "expires": "0",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "content-length": "180611",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\n\t\"code\":\"1\",\n\t\"data\":[\n\t\t{\n\t\t\t\"code\":\"OP-PLC\",\n\t\t\t\"configurableAttrDefMap\":{},\n\t\t\t\"configurableAttrs\":[],\n\t\t\t\"description\":\"\",\n\t\t\t\"deviceModelId\":\"1146404024101945344\",\n\t\t\t\"deviceType\":\"CentralizedController\",\n\t\t\t\"deviceTypeName\":\"集中控制器\",\n\t\t\t\"downlinkMetadataMap\":{\n\t\t\t\t\"queryWhiltListInfo\":{\n\t\t\t\t\t\"description\":\"\",\n\t\t\t\t\t\"name\":\"读取白名单设备\",\n\t\t\t\t\t\"paramMap\":{\n\t\t\t\t\t\t\"sNumbMin\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[1,9999999]\",\n\t\t\t\t\t\t\t\"dataType\":\"INTEGER\",\n\t\t\t\t\t\t\t\"defaultValue\":\"\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"起始序号\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"sNumbMin\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"sNumbMax\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[1,9999999]\",\n\t\t\t\t\t\t\t\"dataType\":\"INTEGER\",\n\t\t\t\t\t\t\t\"defaultValue\":\"\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"结束序号\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"sNumbMax\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"grpMap\":{\n\t\t\t\t\t\t\t\"checkRule\":\"length<=9999999999\",\n\t\t\t\t\t\t\t\"dataType\":\"STRING\",\n\t\t\t\t\t\t\t\"defaultValue\":\"\",\n\t\t\t\t\t\t\t\"isRequired\":false,\n\t\t\t\t\t\t\t\"name\":\"组号\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"grpMap\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t\"uKey\":\"queryWhiltListInfo\"\n\t\t\t\t},\n\t\t\t\t\"setOverVoltage\":{\n\t\t\t\t\t\"description\":\"\",\n\t\t\t\t\t\"name\":\"设置过压告警阀值\",\n\t\t\t\t\t\"paramMap\":{\n\t\t\t\t\t\t\"val\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[110,300]\",\n\t\t\t\t\t\t\t\"dataType\":\"INTEGER\",\n\t\t\t\t\t\t\t\"defaultValue\":\"264\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"阈值\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"val\",\n\t\t\t\t\t\t\t\"unit\":\"V\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"offset\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[-50,50]\",\n\t\t\t\t\t\t\t\"dataType\":\"INTEGER\",\n\t\t\t\t\t\t\t\"defaultValue\":\"-10\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"过压回差\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"offset\",\n\t\t\t\t\t\t\t\"unit\":\"%\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"recAct\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[{\\\"key\\\":\\\"0\\\",\\\"value\\\":\\\"无动作\\\"},{\\\"key\\\":\\\"1\\\",\\\"value\\\":\\\"闭合\\\"},{\\\"key\\\":\\\"2\\\",\\\"value\\\":\\\"断开\\\"}]\",\n\t\t\t\t\t\t\t\"dataType\":\"ENUM\",\n\t\t\t\t\t\t\t\"defaultValue\":\"0\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"恢复动作\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"recAct\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"occAct\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[{\\\"key\\\":\\\"0\\\",\\\"value\\\":\\\"无动作\\\"},{\\\"key\\\":\\\"1\\\",\\\"value\\\":\\\"闭合\\\"},{\\\"key\\\":\\\"2\\\",\\\"value\\\":\\\"断开\\\"}]\",\n\t\t\t\t\t\t\t\"dataType\":\"ENUM\",\n\t\t\t\t\t\t\t\"defaultValue\":\"0\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"告警动作\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"occAct\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"en\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[{\\\"key\\\":\\\"0\\\",\\\"value\\\":\\\"关闭\\\"},{\\\"key\\\":\\\"1\\\",\\\"value\\\":\\\"开启\\\"}]\",\n\t\t\t\t\t\t\t\"dataType\":\"ENUM\",\n\t\t\t\t\t\t\t\"defaultValue\":\"0\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"使能\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"en\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t\"uKey\":\"setOverVoltage\"\n\t\t\t\t},\n\t\t\t\t\"setUnderCurrent\":{\n\t\t\t\t\t\"description\":\"\",\n\t\t\t\t\t\"name\":\"设置欠流告警阀值\",\n\t\t\t\t\t\"paramMap\":{\n\t\t\t\t\t\t\"val\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[0,200000]\",\n\t\t\t\t\t\t\t\"dataType\":\"INTEGER\",\n\t\t\t\t\t\t\t\"defaultValue\":\"10000\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"A相欠流阈值\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"val\",\n\t\t\t\t\t\t\t\"unit\":\"mA\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"cVal\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[0,200000]\",\n\t\t\t\t\t\t\t\"dataType\":\"INTEGER\",\n\t\t\t\t\t\t\t\"defaultValue\":\"10000\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"C相欠流阈值\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"cVal\",\n\t\t\t\t\t\t\t\"unit\":\"mA\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"bVal\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[0,200000]\",\n\t\t\t\t\t\t\t\"dataType\":\"INTEGER\",\n\t\t\t\t\t\t\t\"defaultValue\":\"10000\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"B相欠流阈值\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"bVal\",\n\t\t\t\t\t\t\t\"unit\":\"mA\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"offset\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[-50,50]\",\n\t\t\t\t\t\t\t\"dataType\":\"INTEGER\",\n\t\t\t\t\t\t\t\"defaultValue\":\"5\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"欠流回差\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"offset\",\n\t\t\t\t\t\t\t\"unit\":\"%\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"recAct\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[{\\\"key\\\":\\\"0\\\",\\\"value\\\":\\\"无动作\\\"},{\\\"key\\\":\\\"1\\\",\\\"value\\\":\\\"闭合\\\"},{\\\"key\\\":\\\"2\\\",\\\"value\\\":\\\"断开\\\"}]\",\n\t\t\t\t\t\t\t\"dataType\":\"ENUM\",\n\t\t\t\t\t\t\t\"defaultValue\":\"0\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"恢复动作\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"recAct\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"occAct\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[{\\\"key\\\":\\\"0\\\",\\\"value\\\":\\\"无动作\\\"},{\\\"key\\\":\\\"1\\\",\\\"value\\\":\\\"闭合\\\"},{\\\"key\\\":\\\"2\\\",\\\"value\\\":\\\"断开\\\"}]\",\n\t\t\t\t\t\t\t\"dataType\":\"ENUM\",\n\t\t\t\t\t\t\t\"defaultValue\":\"0\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"告警动作\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"occAct\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"cns\":{\n\t\t\t\t\t\t\t\"checkRule\":\"length<=99999\",\n\t\t\t\t\t\t\t\"dataType\":\"STRING\",\n\t\t\t\t\t\t\t\"defaultValue\":\"\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"回路编号\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"cns\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"en\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[{\\\"key\\\":\\\"0\\\",\\\"value\\\":\\\"关闭\\\"},{\\\"key\\\":\\\"1\\\",\\\"value\\\":\\\"开启\\\"}]\",\n\t\t\t\t\t\t\t\"dataType\":\"ENUM\",\n\t\t\t\t\t\t\t\"defaultValue\":\"0\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"A相告警使能\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"en\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"bEn\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[{\\\"key\\\":\\\"0\\\",\\\"value\\\":\\\"关闭\\\"},{\\\"key\\\":\\\"1\\\",\\\"value\\\":\\\"开启\\\"}]\",\n\t\t\t\t\t\t\t\"dataType\":\"ENUM\",\n\t\t\t\t\t\t\t\"defaultValue\":\"0\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"B相告警使能\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"bEn\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"cEn\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[{\\\"key\\\":\\\"0\\\",\\\"value\\\":\\\"关闭\\\"},{\\\"key\\\":\\\"1\\\",\\\"value\\\":\\"
+  },
+  {
+    "url": "https://b.iots.city/system/api/dictionary/pageList",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "c45f31c6d296400089db05d63f435f9f",
+      "expires": "0",
+      "content-length": "534",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"data\":[{\"createTime\":\"2021-04-19 18:21:19\",\"createUser\":\"\",\"dictLabel\":\"灯杆\",\"dictSort\":1,\"dictTypeId\":\"829743063894999040\",\"dictValue\":\"\",\"id\":\"833769245208506368\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-08-25 10:47:44\",\"createUser\":\"\",\"dictLabel\":\"配电箱\",\"dictSort\":8,\"dictTypeId\":\"829743063894999040\",\"dictValue\":\"\",\"id\":\"880040745256173568\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"page\":1,\"pageNum\":1,\"pageSize\":2,\"total\":2,\"totalPages\":1},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/department/tree",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "4bf57a2d85f64c3d911509ddb8c30272",
+      "expires": "0",
+      "content-length": "207",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"children\":[],\"code\":\"\",\"deleted\":false,\"description\":\"\",\"id\":\"\",\"level\":0,\"name\":\"部门\",\"parent\":null,\"parentId\":\"\",\"shortName\":\"\",\"tenantId\":\"\"},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/area/tree",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "d43e2a1398b94674be7905aaf5a3a2fa",
+      "expires": "0",
+      "content-length": "290",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"areaType\":\"\",\"children\":[],\"code\":\"\",\"deleted\":false,\"description\":\"\",\"districtCode\":\"\",\"id\":\"\",\"level\":0,\"location\":null,\"name\":\"区域\",\"pId\":\"\",\"parent\":null,\"parentId\":\"\",\"pinyinCode\":\"\",\"poleImage\":\"\",\"tenantId\":\"\",\"type\":\"\"},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/dictionaryType/all",
+    "status": 200,
+    "headers": {
+      "transfer-encoding": "chunked",
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "content-encoding": "gzip",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "e53054102ae34be584b631dde14b08b2",
+      "expires": "0",
+      "date": "Thu, 22 Oct 2026 06:28:34 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "origin,access-control-request-method,access-control-request-headers,accept-encoding"
+    },
+    "body": "{\"code\":\"1\",\"data\":[{\"dictName\":\"资产类型\",\"dictionaryDTOs\":[{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"备件\",\"dictSort\":1,\"dictTypeId\":\"1000\",\"dictValue\":\"\",\"id\":\"10002\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"资产\",\"dictSort\":1,\"dictTypeId\":\"1000\",\"dictValue\":\"\",\"id\":\"10003\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"工具\",\"dictSort\":1,\"dictTypeId\":\"1000\",\"dictValue\":\"\",\"id\":\"10004\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"id\":\"1000\"},{\"dictName\":\"物料分类\",\"dictionaryDTOs\":[{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"摄像头\",\"dictSort\":1,\"dictTypeId\":\"1001\",\"dictValue\":\"\",\"id\":\"10011\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"LED灯杆屏\",\"dictSort\":1,\"dictTypeId\":\"1001\",\"dictValue\":\"\",\"id\":\"10012\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"集中控制器\",\"dictSort\":1,\"dictTypeId\":\"1001\",\"dictValue\":\"\",\"id\":\"10013\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"节点控制器\",\"dictSort\":1,\"dictTypeId\":\"1001\",\"dictValue\":\"\",\"id\":\"10014\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"id\":\"1001\"},{\"dictName\":\"物料单位\",\"dictionaryDTOs\":[{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"个\",\"dictSort\":1,\"dictTypeId\":\"1002\",\"dictValue\":\"\",\"id\":\"10021\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"台\",\"dictSort\":1,\"dictTypeId\":\"1002\",\"dictValue\":\"\",\"id\":\"10022\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"套\",\"dictSort\":1,\"dictTypeId\":\"1002\",\"dictValue\":\"\",\"id\":\"10023\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"id\":\"1002\"},{\"dictName\":\"道路性质\",\"dictionaryDTOs\":[{\"createTime\":\"2023-03-30 13:34:52\",\"createUser\":\"欧普照明\",\"dictLabel\":\"区管城市道路\",\"dictSort\":1,\"dictTypeId\":\"1090678969641349120\",\"dictValue\":\"\",\"id\":\"1090992543530102784\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-04-08 14:39:24\",\"createUser\":\"\",\"dictLabel\":\"市管快速路\",\"dictSort\":1,\"dictTypeId\":\"1090678969641349120\",\"dictValue\":\"\",\"id\":\"1094270273004691456\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-04-08 14:39:46\",\"createUser\":\"\",\"dictLabel\":\"市管城市道路\",\"dictSort\":2,\"dictTypeId\":\"1090678969641349120\",\"dictValue\":\"\",\"id\":\"1094270367997288448\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-04-08 14:40:06\",\"createUser\":\"\",\"dictLabel\":\"市管公路\",\"dictSort\":3,\"dictTypeId\":\"1090678969641349120\",\"dictValue\":\"\",\"id\":\"1094270449668775936\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-04-08 14:40:25\",\"createUser\":\"\",\"dictLabel\":\"区管公路\",\"dictSort\":5,\"dictTypeId\":\"1090678969641349120\",\"dictValue\":\"\",\"id\":\"1094270529830313984\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"id\":\"1090678969641349120\"},{\"dictName\":\"运营单位\",\"dictionaryDTOs\":[{\"createTime\":\"2023-03-30 13:31:58\",\"createUser\":\"欧普照明\",\"dictLabel\":\"工业园区\",\"dictSort\":1,\"dictTypeId\":\"1090679035697442816\",\"dictValue\":\"\",\"id\":\"1090991813813481472\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-04-08 19:35:17\",\"createUser\":\"\",\"dictLabel\":\"双高\",\"dictSort\":2,\"dictTypeId\":\"1090679035697442816\",\"dictValue\":\"\",\"id\":\"1094344734999502848\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"id\":\"1090679035697442816\"},{\"dictName\":\"控制范围\",\"dictionaryDTOs\":[{\"createTime\":\"2023-03-30 13:33:32\",\"createUser\":\"欧普照明\",\"dictLabel\":\"地面\",\"dictSort\":1,\"dictTypeId\":\"1090992140239384576\",\"dictValue\":\"\",\"id\":\"1090992208841420800\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-03-30 13:33:38\",\"createUser\":\"欧普照明\",\"dictLabel\":\"高架\",\"dictSort\":2,\"dictTypeId\":\"1090992140239384576\",\"dictValue\":\"\",\"id\":\"1090992231574548480\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-03-30 13:33:56\",\"createUser\":\"欧普照明\",\"dictLabel\":\"地面+高架\",\"dictSort\":3,\"dictTypeId\":\"1090992140239384576\",\"dictValue\":\"\",\"id\":\"1090992306598064128\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-03-30 13:34:07\",\"createUser\":\"欧普照明\",\"dictLabel\":\"地道\",\"dictSort\":4,\"dictTypeId\":\"1090992140239384576\",\"dictValue\":\"\",\"id\":\"1090992353150644224\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-03-30 13:34:14\",\"createUser\":\"欧普照明\",\"dictLabel\":\"地面+地道\",\"dictSort\":5,\"dictTypeId\":\"1090992140239384576\",\"dictValue\":\"\",\"id\":\"1090992382317834240\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"id\":\"1090992140239384576\"},{\"dictName\":\"相位\",\"dictionaryDTOs\":[{\"createTime\":\"2023-03-30 13:37:03\",\"createUser\":\"欧普照明\",\"dictLabel\":\"单相\",\"dictSort\":1,\"dictTypeId\":\"1090993041335267328\",\"dictValue\":\"\",\"id\":\"1090993093290110976\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-03-30 13:37:08\",\"createUser\":\"欧普照明\",\"dictLabel\":\"二相\",\"dictSort\":2,\"dictTypeId\":\"1090993041335267328\",\"dictValue\":\"\",\"id\":\"1090993115209543680\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"20"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/form/batch",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "60",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":[],\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/workflow/definition/definitionEnum",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "expires": "0",
+      "content-length": "4262",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"status\":\"200\",\"detail\":\"OK\",\"msg\":\"\",\"data\":{\"approverEmp\":[{\"info\":null,\"key\":\"\",\"label\":\"自动通过\",\"mark\":\"\",\"parent\":\"\",\"value\":\"pass_auto\"},{\"info\":null,\"key\":\"\",\"label\":\"指定人处理\",\"mark\":\"\",\"parent\":\"\",\"value\":\"designated_process\"}],\"faultReason\":[],\"handler\":[{\"info\":null,\"key\":\"\",\"label\":\"指定人员\",\"mark\":\"\",\"parent\":\"\",\"value\":\"designated_person\"},{\"info\":null,\"key\":\"\",\"label\":\"上一节点自选\",\"mark\":\"\",\"parent\":\"\",\"value\":\"optional\"},{\"info\":null,\"key\":\"\",\"label\":\"管理部门主管\",\"mark\":\"\",\"parent\":\"\",\"value\":\"maintenance_department\"},{\"info\":null,\"key\":\"\",\"label\":\"运维部门主管\",\"mark\":\"\",\"parent\":\"\",\"value\":\"operationalUnit\"},{\"info\":null,\"key\":\"\",\"label\":\"自定义设置\",\"mark\":\"\",\"parent\":\"\",\"value\":\"custom_set\"},{\"info\":null,\"key\":\"\",\"label\":\"其他节点处理人\",\"mark\":\"\",\"parent\":\"\",\"value\":\"up_node_handle\"}],\"nodeConTypeRelation\":[{\"info\":null,\"key\":\"\",\"label\":\"等于\",\"mark\":\"\",\"parent\":\"\",\"value\":\"eq\"},{\"info\":null,\"key\":\"\",\"label\":\"不等于\",\"mark\":\"\",\"parent\":\"\",\"value\":\"Neq\"}],\"operate\":[{\"info\":null,\"key\":\"\",\"label\":\"提交\",\"mark\":\"\",\"parent\":\"\",\"value\":\"submit\"},{\"info\":null,\"key\":\"\",\"label\":\"退回（上一个节点）\",\"mark\":\"\",\"parent\":\"\",\"value\":\"back_previous\"},{\"info\":null,\"key\":\"\",\"label\":\"退回（发起环节）\",\"mark\":\"\",\"parent\":\"\",\"value\":\"back_start\"},{\"info\":null,\"key\":\"\",\"label\":\"委派\",\"mark\":\"\",\"parent\":\"\",\"value\":\"forward\"},{\"info\":null,\"key\":\"\",\"label\":\"转交\",\"mark\":\"\",\"parent\":\"\",\"value\":\"assign\"},{\"info\":null,\"key\":\"\",\"label\":\"保存\",\"mark\":\"\",\"parent\":\"\",\"value\":\"save\"},{\"info\":null,\"key\":\"\",\"label\":\"打印\",\"mark\":\"\",\"parent\":\"\",\"value\":\"print\"}],\"nodeConRelation\":[{\"info\":null,\"key\":\"\",\"label\":\"且\",\"mark\":\"\",\"parent\":\"\",\"value\":\"&&\"},{\"info\":null,\"key\":\"\",\"label\":\"或\",\"mark\":\"\",\"parent\":\"\",\"value\":\"||\"}],\"conditionKey\":[{\"info\":null,\"key\":\"\",\"label\":\"设备类型\",\"mark\":\"\",\"parent\":\"\",\"value\":\"deviceType\"},{\"info\":null,\"key\":\"\",\"label\":\"设备型号\",\"mark\":\"\",\"parent\":\"\",\"value\":\"productCode\"},{\"info\":null,\"key\":\"\",\"label\":\"告警类型\",\"mark\":\"\",\"parent\":\"\",\"value\":\"alarmType\"},{\"info\":null,\"key\":\"\",\"label\":\"设备区域\",\"mark\":\"\",\"parent\":\"\",\"value\":\"deviceArea\"},{\"info\":null,\"key\":\"\",\"label\":\"运维部门\",\"mark\":\"\",\"parent\":\"\",\"value\":\"operationalUnit\"},{\"info\":null,\"key\":\"\",\"label\":\"告警级别\",\"mark\":\"\",\"parent\":\"\",\"value\":\"level\"},{\"info\":null,\"key\":\"\",\"label\":\"承办处\",\"mark\":\"\",\"parent\":\"\",\"value\":\"undertaker\"}],\"reminder\":[{\"info\":null,\"key\":\"\",\"label\":\"当前节点处理人\",\"mark\":\"\",\"parent\":\"\",\"value\":\"current_node_handler\"},{\"info\":null,\"key\":\"\",\"label\":\"流程发起人\",\"mark\":\"\",\"parent\":\"\",\"value\":\"process_initiator\"},{\"info\":null,\"key\":\"\",\"label\":\"指定人员\",\"mark\":\"\",\"parent\":\"\",\"value\":\"designated_person\"},{\"info\":null,\"key\":\"\",\"label\":\"部门主管\",\"mark\":\"\",\"parent\":\"\",\"value\":\"maintenance_department\"}],\"noticeSet\":[{\"info\":null,\"key\":\"\",\"label\":\"处理人通知\",\"mark\":\"\",\"parent\":\"\",\"value\":\"handler\"},{\"info\":null,\"key\":\"\",\"label\":\"超时提醒\",\"mark\":\"\",\"parent\":\"\",\"value\":\"timeout\"},{\"info\":null,\"key\":\"\",\"label\":\"短信通知\",\"mark\":\"\",\"parent\":\"\",\"value\":\"sms\"}],\"approvalMethod\":[{\"info\":null,\"key\":\"\",\"label\":\"依次审批\",\"mark\":\"\",\"parent\":\"\",\"value\":\"sequential\"},{\"info\":null,\"key\":\"\",\"label\":\"会签\",\"mark\":\"\",\"parent\":\"\",\"value\":\"and_approval\"},{\"info\":null,\"key\":\"\",\"label\":\"或签\",\"mark\":\"\",\"parent\":\"\",\"value\":\"or_approval\"}],\"flowType\":[{\"info\":null,\"key\":\"\",\"label\":\"工单类\",\"mark\":\"\",\"parent\":\"\",\"value\":\"order\"},{\"info\":null,\"key\":\"\",\"label\":\"网络理政\",\"mark\":\"\",\"parent\":\"\",\"value\":\"netGover\"},{\"info\":null,\"key\":\"\",\"label\":\"物料类\",\"mark\":\"\",\"parent\":\"\",\"value\":\"materials\"},{\"info\":null,\"key\":\"\",\"label\":\"通用类\",\"mark\":\"\",\"parent\":\"\",\"value\":\"common\"},{\"info\":null,\"key\":\"\",\"label\":\"智慧城管\",\"mark\":\"\",\"parent\":\"\",\"value\":\"cityManagement\"},{\"info\":null,\"key\":\"\",\"label\":\"公示栏审批\",\"mark\":\"\",\"parent\":\"\",\"value\":\"noticeBoardAudit\"},{\"info\":null,\"key\":\"\",\"label\":\"数据变更\",\"mark\":\"\",\"parent\":\"\",\"value\":\"dataChange\"},{\"info\":null,\"key\":\"\",\"label\":\"资产生命周期管理\",\"mark\":\"\",\"parent\":\"\",\"value\":\"assetCycleGovern\"},{\"info\":null,\"key\":\"\",\"label\":\"日常流程\",\"mark\":\"\",\"parent\":\"\",\"value\":\"dailyFlow\"}]}}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/cache/updateInit",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "7f8972c33ca54a57a945be40aa6577fe",
+      "expires": "0",
+      "content-length": "97",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"content\":\"3.1.0\",\"type\":\"updateInit\"},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/island-alarm/alarm/count",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "21095de9e4f547978a611b0c91586601",
+      "expires": "0",
+      "content-length": "127",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"status\":\"200\",\"detail\":\"OK\",\"msg\":\"\",\"data\":[{\"uKey\":\"deviceAlarm\",\"value\":0},{\"uKey\":\"businessAlarm\",\"value\":0}]}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/workbench/list",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "2670",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"status\":\"200\",\"detail\":\"OK\",\"msg\":\"\",\"data\":[{\"analysisType\":\"\",\"height\":1,\"id\":\"6ac8cc737b5351099727d59c\",\"name\":\"通知\",\"ownerId\":\"1561811879876354048\",\"panelItemDTO\":null,\"panelItemId\":\"\",\"type\":\"notification\",\"value\":null,\"width\":1,\"xAxisPosition\":2,\"yAxisPosition\":1},{\"analysisType\":\"\",\"height\":1,\"id\":\"6ac8cc737b5351099727d59b\",\"name\":\"待办事项\",\"ownerId\":\"1561811879876354048\",\"panelItemDTO\":null,\"panelItemId\":\"\",\"type\":\"todo\",\"value\":null,\"width\":1,\"xAxisPosition\":2,\"yAxisPosition\":0},{\"analysisType\":\"\",\"height\":1,\"id\":\"6ac8cc737b5351099727d599\",\"name\":\"最近访问\",\"ownerId\":\"1561811879876354048\",\"panelItemDTO\":null,\"panelItemId\":\"\",\"type\":\"recentmenu\",\"value\":null,\"width\":2,\"xAxisPosition\":0,\"yAxisPosition\":1},{\"analysisType\":\"pattern\",\"height\":1,\"id\":\"6ac8cc737b5351099727d5a0\",\"name\":\"物联网设备类型在线统计\",\"ownerId\":\"1561811879876354048\",\"panelItemDTO\":{\"editable\":true,\"id\":\"1558195828153638912\",\"name\":\"物联网设备类型在线统计\",\"ownerId\":\"\",\"panelStyle\":\"\",\"source\":\"\",\"statisticType\":\"\",\"tag\":\"\",\"tenantId\":\"\",\"tip\":\"\",\"type\":\"pattern\",\"updateTime\":\"2026-10-22 14:28:35\"},\"panelItemId\":\"1558195828153638912\",\"type\":\"analysis\",\"value\":null,\"width\":1,\"xAxisPosition\":2,\"yAxisPosition\":3},{\"analysisType\":\"\",\"height\":1,\"id\":\"6ac8cc737b5351099727d59d\",\"name\":\"公告\",\"ownerId\":\"1561811879876354048\",\"panelItemDTO\":null,\"panelItemId\":\"\",\"type\":\"announcement\",\"value\":null,\"width\":2,\"xAxisPosition\":0,\"yAxisPosition\":2},{\"analysisType\":\"counter\",\"height\":1,\"id\":\"6ac8cc737b5351099727d59e\",\"name\":\"资产数量统计\",\"ownerId\":\"1561811879876354048\",\"panelItemDTO\":{\"editable\":true,\"id\":\"1558195828187193344\",\"name\":\"资产数量统计\",\"ownerId\":\"\",\"panelStyle\":\"\",\"source\":\"\",\"statisticType\":\"\",\"tag\":\"\",\"tenantId\":\"\",\"tip\":\"\",\"type\":\"counter\",\"updateTime\":\"2026-10-22 14:28:35\"},\"panelItemId\":\"1558195828187193344\",\"type\":\"analysis\",\"value\":null,\"width\":1,\"xAxisPosition\":0,\"yAxisPosition\":3},{\"analysisType\":\"bar\",\"height\":1,\"id\":\"6ac8cc737b5351099727d59f\",\"name\":\"近7天告警数量统计\",\"ownerId\":\"1561811879876354048\",\"panelItemDTO\":{\"editable\":true,\"id\":\"1558195828132667392\",\"name\":\"近7天告警数量统计\",\"ownerId\":\"\",\"panelStyle\":\"\",\"source\":\"\",\"statisticType\":\"\",\"tag\":\"\",\"tenantId\":\"\",\"tip\":\"\",\"type\":\"bar\",\"updateTime\":\"2026-10-22 14:28:35\"},\"panelItemId\":\"1558195828132667392\",\"type\":\"analysis\",\"value\":null,\"width\":1,\"xAxisPosition\":1,\"yAxisPosition\":3},{\"analysisType\":\"\",\"height\":1,\"id\":\"6ac8cc737b5351099727d59a\",\"name\":\"快捷菜单\",\"ownerId\":\"1561811879876354048\",\"panelItemDTO\":null,\"panelItemId\":\"\",\"type\":\"quickmenu\",\"value\":null,\"width\":2,\"xAxisPosition\":0,\"yAxisPosition\":0}]}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/theme/personalizedSettings",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "9cf365d88fd54518ab6484f24a2af1af",
+      "expires": "0",
+      "content-length": "992",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":[{\"belongTenant\":\"1558195823229526016\",\"defaultFile\":false,\"id\":\"1558483904006979584\",\"link\":\"https://b.iots.city/system/mediaInfo/preview/1558483904006979584\",\"location\":\"\",\"personalizationKey\":\"ScreenShot_2026-10-10_141312_253(1).png\",\"personalizationSystem\":\"esso\",\"personalizationType\":\"logo\",\"title\":\"\"},{\"belongTenant\":\"1558195823229526016\",\"id\":\"1558483958465822720\",\"link\":\"\",\"location\":\"\",\"personalizationKey\":\"\",\"personalizationSystem\":\"esso\",\"personalizationType\":\"title\",\"title\":\"通士达智慧照明\"},{\"belongTenant\":\"1558195823229526016\",\"id\":\"1558484003374235648\",\"link\":\"\",\"location\":\"\",\"personalizationKey\":\"\",\"personalizationSystem\":\"portal\",\"personalizationType\":\"title\",\"title\":\"通士达智慧照明\"},{\"belongTenant\":\"1558195823229526016\",\"id\":\"1558484047418621952\",\"link\":\"\",\"location\":\"\",\"personalizationKey\":\"\",\"personalizationSystem\":\"screen\",\"personalizationType\":\"title\",\"title\":\"通士达智慧照明\"}],\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/area/tree?groupName=Device&leastTree=true",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "d3135de0f058479fa603cbf898fbf5b2",
+      "expires": "0",
+      "content-length": "290",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"areaType\":\"\",\"children\":[],\"code\":\"\",\"deleted\":false,\"description\":\"\",\"districtCode\":\"\",\"id\":\"\",\"level\":0,\"location\":null,\"name\":\"区域\",\"pId\":\"\",\"parent\":null,\"parentId\":\"\",\"pinyinCode\":\"\",\"poleImage\":\"\",\"tenantId\":\"\",\"type\":\"\"},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/department/tree?groupName=Device&leastTree=true",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "e8f975e8931f4cf083ebb3564f857291",
+      "expires": "0",
+      "content-length": "207",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"children\":[],\"code\":\"\",\"deleted\":false,\"description\":\"\",\"id\":\"\",\"level\":0,\"name\":\"部门\",\"parent\":null,\"parentId\":\"\",\"shortName\":\"\",\"tenantId\":\"\"},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/island-assets/device/product/list?isPermissionFilter=true",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "d3d0863f724546cdbf5dc53285fb763c",
+      "expires": "0",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "content-length": "83",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\n\t\"code\":\"1\",\n\t\"data\":[],\n\t\"detail\":\"OK\",\n\t\"msg\":\"查询成功\",\n\t\"status\":\"200\"\n}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/dict/getModelType?dictTypeId=829743104193871872&groupName=Facility",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "861",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":[{\"createTime\":\"2021-04-08 15:53:46\",\"createUser\":\"\",\"dictLabel\":\"灯具\",\"dictSort\":1,\"dictTypeId\":\"829743104193871872\",\"dictValue\":\"\",\"id\":\"1\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-04-08 15:54:05\",\"createUser\":\"\",\"dictLabel\":\"变压器\",\"dictSort\":2,\"dictTypeId\":\"829743104193871872\",\"dictValue\":\"\",\"id\":\"984813934727389184\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2022-07-25 10:25:01\",\"createUser\":\"\",\"dictLabel\":\"接电点\",\"dictSort\":15,\"dictTypeId\":\"829743104193871872\",\"dictValue\":\"\",\"id\":\"984813996584984576\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2022-07-25 10:24:51\",\"createUser\":\"\",\"dictLabel\":\"取电点\",\"dictSort\":16,\"dictTypeId\":\"829743104193871872\",\"dictValue\":\"\",\"id\":\"984813965542940672\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/facilityModel/list/all",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "765",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":[{\"facilityType\":\"829745849204379648\",\"id\":\"6ac8cc747b5351099727d5a6\",\"image\":\"\",\"modelId\":\"控制柜\",\"name\":\"控制柜\"},{\"facilityType\":\"1\",\"id\":\"6ac8cc747b5351099727d5aa\",\"image\":\"\",\"modelId\":\"120W灯具\",\"name\":\"120W\"},{\"facilityType\":\"984813934727389184\",\"id\":\"6ac8cc747b5351099727d5a7\",\"image\":\"\",\"modelId\":\"变压器\",\"name\":\"变压器\"},{\"facilityType\":\"1093499486567145472\",\"id\":\"6ac8cc747b5351099727d5ab\",\"image\":\"\",\"modelId\":\"窨井\",\"name\":\"窨井\"},{\"facilityType\":\"984813996584984576\",\"id\":\"6ac8cc747b5351099727d5a9\",\"image\":\"\",\"modelId\":\"接电点\",\"name\":\"接电点\"},{\"facilityType\":\"984813965542940672\",\"id\":\"6ac8cc747b5351099727d5a8\",\"image\":\"\",\"modelId\":\"取电点\",\"name\":\"取电点\"}],\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/carrierModel/list/all",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "1411",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":[{\"carrierType\":\"833769245208506368\",\"id\":\"6ac8cc747b5351099727d5a4\",\"image\":\"1383084961238544384\",\"imageNotUse\":\"891979304797282021\",\"imageOff\":\"891979304797282022\",\"imageOn\":\"891979304797282023\",\"modelId\":\"IntelligentDG\",\"name\":\"智慧灯杆\",\"poleImage\":\"\",\"system\":true},{\"carrierType\":\"880040745256173568\",\"id\":\"6ac8cc747b5351099727d5a5\",\"image\":\"1383090548231827456\",\"imageNotUse\":\"891979304797282025\",\"imageOff\":\"891979304797282026\",\"imageOn\":\"891979304797282027\",\"modelId\":\"PDX\",\"name\":\"配电箱\",\"poleImage\":\"\",\"system\":true},{\"carrierType\":\"833769245208506368\",\"id\":\"6ac8cc747b5351099727d5a2\",\"image\":\"1383084860352950272\",\"imageNotUse\":\"891979304797282017\",\"imageOff\":\"891979304797282019\",\"imageOn\":\"891979304797282018\",\"modelId\":\"DoubleArmsDG\",\"name\":\"双臂灯杆\",\"poleImage\":\"\",\"system\":true},{\"carrierType\":\"833769245208506368\",\"id\":\"6ac8cc747b5351099727d5a1\",\"image\":\"1383084762126544896\",\"imageNotUse\":\"891979304797282009\",\"imageOff\":\"891979304797282010\",\"imageOn\":\"891979304797282011\",\"modelId\":\"SingleArmDG\",\"name\":\"单臂灯杆\",\"poleImage\":\"\",\"system\":true},{\"carrierType\":\"833769245208506368\",\"id\":\"6ac8cc747b5351099727d5a3\",\"image\":\"1383084903566864384\",\"imageNotUse\":\"891979304797282013\",\"imageOff\":\"891979304797282014\",\"imageOn\":\"891979304797282015\",\"modelId\":\"MultiArmsDG\",\"name\":\"多臂灯杆\",\"poleImage\":\"\",\"system\":true}],\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/dict/getModelType?dictTypeId=829743063894999040&groupName=Carrier",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "466",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":[{\"createTime\":\"2021-04-19 18:21:19\",\"createUser\":\"\",\"dictLabel\":\"灯杆\",\"dictSort\":1,\"dictTypeId\":\"829743063894999040\",\"dictValue\":\"\",\"id\":\"833769245208506368\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-08-25 10:47:44\",\"createUser\":\"\",\"dictLabel\":\"配电箱\",\"dictSort\":8,\"dictTypeId\":\"829743063894999040\",\"dictValue\":\"\",\"id\":\"880040745256173568\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/alarmtype/alarmTree",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "375",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"status\":\"200\",\"detail\":\"OK\",\"msg\":\"\",\"data\":[{\"children\":[],\"deviceType\":\"root\",\"flowId\":\"\",\"id\":\"businessAlarm\",\"key\":\"businessAlarm\",\"name\":\"业务告警\",\"parentId\":\"root\",\"productCode\":\"businessAlarm\"},{\"children\":[],\"deviceType\":\"root\",\"flowId\":\"\",\"id\":\"deviceAlarm\",\"key\":\"deviceAlarm\",\"name\":\"设备告警\",\"parentId\":\"root\",\"productCode\":\"deviceAlarm\"}]}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/workbench/weather",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "228",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"status\":\"200\",\"detail\":\"OK\",\"msg\":\"\",\"data\":{\"area\":\"\",\"day_air_temperature\":\"\",\"night_air_temperature\":\"\",\"pm2_5\":\"\",\"quality\":\"\",\"temperature\":\"\",\"weather\":\"\",\"weather_pic\":\"\",\"wind_direction\":\"\",\"wind_power\":\"\"}}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/workbench/menus/recent",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "2031",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"status\":\"200\",\"detail\":\"OK\",\"msg\":\"\",\"data\":[{\"appName\":\"pc\",\"caption\":\"配电箱管理\",\"cascade\":\"\",\"menuId\":\"110098\",\"openType\":\"tag\",\"ownerId\":\"1561811879876354048\",\"url\":\"/assetsManagement/vehicleManagement/box\"},{\"appName\":\"pc\",\"caption\":\"修正坐标\",\"cascade\":\"\",\"menuId\":\"100007\",\"openType\":\"tag\",\"ownerId\":\"1561811879876354048\",\"url\":\"/assetsManagement/deviceFixMap\"},{\"appName\":\"pc\",\"caption\":\"配套设施管理\",\"cascade\":\"\",\"menuId\":\"100096\",\"openType\":\"tag\",\"ownerId\":\"1561811879876354048\",\"url\":\"/assetsManagement/facilityManagement\"},{\"appName\":\"pc\",\"caption\":\"统计报表\",\"cascade\":\"\",\"menuId\":\"100099\",\"openType\":\"tag\",\"ownerId\":\"1561811879876354048\",\"url\":\"/analysis/statisticalReport\"},{\"appName\":\"pc\",\"caption\":\"自定义报表\",\"cascade\":\"\",\"menuId\":\"100100\",\"openType\":\"tag\",\"ownerId\":\"1561811879876354048\",\"url\":\"/analysis/customReport\"},{\"appName\":\"pc\",\"caption\":\"物联网设备管理\",\"cascade\":\"\",\"menuId\":\"100089\",\"openType\":\"tag\",\"ownerId\":\"1561811879876354048\",\"url\":\"/assetsManagement/iotDevicesManagement\"},{\"appName\":\"pc\",\"caption\":\"灯杆管理\",\"cascade\":\"\",\"menuId\":\"110096\",\"openType\":\"tag\",\"ownerId\":\"1561811879876354048\",\"url\":\"/assetsManagement/vehicleManagement/pole\"},{\"appName\":\"pc\",\"caption\":\"角色管理\",\"cascade\":\"系统运维\",\"menuId\":\"100023\",\"openType\":\"tag\",\"ownerId\":\"1561811879876354048\",\"url\":\"/admin/roles\"},{\"appName\":\"pc\",\"caption\":\"用户管理\",\"cascade\":\"系统运维\",\"menuId\":\"100022\",\"openType\":\"tag\",\"ownerId\":\"1561811879876354048\",\"url\":\"/admin/users\"},{\"appName\":\"pc\",\"caption\":\"区域管理\",\"cascade\":\"系统运维\",\"menuId\":\"100021\",\"openType\":\"tag\",\"ownerId\":\"1561811879876354048\",\"url\":\"/admin/region\"},{\"appName\":\"pc\",\"caption\":\"部门管理\",\"cascade\":\"系统运维\",\"menuId\":\"100020\",\"openType\":\"tag\",\"ownerId\":\"1561811879876354048\",\"url\":\"/admin/organization\"},{\"appName\":\"pc\",\"caption\":\"批量下发管理\",\"cascade\":\"系统运维\",\"menuId\":\"100087\",\"openType\":\"tag\",\"ownerId\":\"1561811879876354048\",\"url\":\"/operation/downlinkManage\"}]}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/workbench/menus/quick",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "1300",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"status\":\"200\",\"detail\":\"OK\",\"msg\":\"\",\"data\":[{\"appName\":\"pc\",\"caption\":\"物联网设备管理\",\"cascade\":\"\",\"menuId\":\"100089\",\"openType\":\"tag\",\"ownerId\":\"1561811879876354048\",\"position\":\"6\",\"url\":\"/assetsManagement/iotDevicesManagement\"},{\"appName\":\"pc\",\"caption\":\"配套设施管理\",\"cascade\":\"\",\"menuId\":\"100096\",\"openType\":\"tag\",\"ownerId\":\"1561811879876354048\",\"position\":\"7\",\"url\":\"/assetsManagement/facilityManagement\"},{\"appName\":\"pc\",\"caption\":\"我的工作台\",\"cascade\":\"\",\"menuId\":\"100162\",\"openType\":\"tag\",\"ownerId\":\"1561811879876354048\",\"position\":\"1\",\"url\":\"/workTable\"},{\"appName\":\"pc\",\"caption\":\"展示中心\",\"cascade\":\"\",\"menuId\":\"100003\",\"openType\":\"tag\",\"ownerId\":\"1561811879876354048\",\"position\":\"2\",\"url\":\"/csmb\"},{\"appName\":\"pc\",\"caption\":\"灯杆管理\",\"cascade\":\"\",\"menuId\":\"110096\",\"openType\":\"tag\",\"ownerId\":\"1561811879876354048\",\"position\":\"3\",\"url\":\"/assetsManagement/vehicleManagement/pole\"},{\"appName\":\"pc\",\"caption\":\"修正坐标\",\"cascade\":\"\",\"menuId\":\"100007\",\"openType\":\"tag\",\"ownerId\":\"1561811879876354048\",\"position\":\"4\",\"url\":\"/assetsManagement/deviceFixMap\"},{\"appName\":\"pc\",\"caption\":\"配电箱管理\",\"cascade\":\"\",\"menuId\":\"110098\",\"openType\":\"tag\",\"ownerId\":\"1561811879876354048\",\"position\":\"5\",\"url\":\"/assetsManagement/vehicleManagement/box\"}]}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/noticeCenter/pages",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "130",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"content\":[],\"pageNum\":1,\"pageSize\":5,\"totalElements\":0,\"totalPages\":0},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/workflow/task/taskEnum",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "expires": "0",
+      "content-length": "6896",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"status\":\"200\",\"detail\":\"OK\",\"msg\":\"\",\"data\":{\"subType\":[{\"children\":[{\"info\":null,\"key\":\"\",\"label\":\"工单发起\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1768877222969_87u489zd\"},{\"info\":null,\"key\":\"\",\"label\":\"工单处理\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1768877469655_a3pn7kmr\"},{\"info\":null,\"key\":\"\",\"label\":\"工单核实\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1768877543762_s10bw55w\"},{\"info\":null,\"key\":\"\",\"label\":\"结束流程\",\"mark\":\"\",\"parent\":\"\",\"value\":\"endEvent_1768877222969_3dpzhaid\"}],\"info\":null,\"key\":\"\",\"label\":\"巡检故障上报\",\"mark\":\"1\",\"parent\":\"order\",\"value\":\"1558195831962066944\"},{\"children\":[{\"info\":null,\"key\":\"\",\"label\":\"申领发起\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1639634942519_lbokcy6l\"},{\"info\":null,\"key\":\"\",\"label\":\"领导审批\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1639634991511_27uw9cvj\"},{\"info\":null,\"key\":\"\",\"label\":\"结束流程\",\"mark\":\"\",\"parent\":\"\",\"value\":\"endEvent_1639634942519_ziwn3ptw\"}],\"info\":null,\"key\":\"workorder\",\"label\":\"工单领用申请\",\"mark\":\"1\",\"parent\":\"materials\",\"value\":\"1558195831366475776\"},{\"children\":[{\"info\":null,\"key\":\"\",\"label\":\"发起人\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636013593681_i4x5jvku\"},{\"info\":null,\"key\":\"\",\"label\":\"承办处工单处理\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636023364781_ij0xy4zn\"},{\"info\":null,\"key\":\"\",\"label\":\"经办人签字\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636023366744_rd2alinf\"},{\"info\":null,\"key\":\"\",\"label\":\"道路部签字\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636023367693_5s18kg9u\"},{\"info\":null,\"key\":\"\",\"label\":\"领导签字\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636023369627_6t7u1wkl\"},{\"info\":null,\"key\":\"\",\"label\":\"结束流程\",\"mark\":\"\",\"parent\":\"\",\"value\":\"endEvent_1636013593681_qsh5wd6n\"}],\"info\":null,\"key\":\"CitizensCall\",\"label\":\"市民来电办理\",\"mark\":\"1\",\"parent\":\"netGover\",\"value\":\"1558195831043514368\"},{\"children\":[{\"info\":null,\"key\":\"\",\"label\":\"工单发起\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1630980272606_a8mglqim\"},{\"info\":null,\"key\":\"\",\"label\":\"工单处理\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1630980390541_mas3xmie\"},{\"info\":null,\"key\":\"\",\"label\":\"工单审批\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1630980393300_bxoayofg\"},{\"info\":null,\"key\":\"\",\"label\":\"结束流程\",\"mark\":\"\",\"parent\":\"\",\"value\":\"endEvent_1630980272606_27stre5i\"}],\"info\":null,\"key\":\"qweasdyifanglai\",\"label\":\"维修\",\"mark\":\"1\",\"parent\":\"order\",\"value\":\"1558195830724747264\"},{\"children\":[{\"info\":null,\"key\":\"\",\"label\":\"发起人\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636014266738_irkcmv9r\"},{\"info\":null,\"key\":\"\",\"label\":\"承办处工单处理\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636014281120_ausy0v5g\"},{\"info\":null,\"key\":\"\",\"label\":\"经办人签字\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636023640452_uvwb2rws\"},{\"info\":null,\"key\":\"\",\"label\":\"道路部签字\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636023641421_6dp08arw\"},{\"info\":null,\"key\":\"\",\"label\":\"领导签字\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636023647031_ohjia8i4\"},{\"info\":null,\"key\":\"\",\"label\":\"结束流程\",\"mark\":\"\",\"parent\":\"\",\"value\":\"endEvent_1636014266738_n22m789q\"}],\"info\":null,\"key\":\"DigitalManagement\",\"label\":\"数字城管办理\",\"mark\":\"1\",\"parent\":\"netGover\",\"value\":\"1558195830380814336\"},{\"children\":[{\"info\":null,\"key\":\"\",\"label\":\"申领发起\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1639634754538_ri2qvur3\"},{\"info\":null,\"key\":\"\",\"label\":\"领导审批\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1639634845879_8m1gwkk9\"},{\"info\":null,\"key\":\"\",\"label\":\"结束流程\",\"mark\":\"\",\"parent\":\"\",\"value\":\"endEvent_1639634754538_dnx3di8j\"}],\"info\":null,\"key\":\"transfer\",\"label\":\"调拨申请\",\"mark\":\"1\",\"parent\":\"materials\",\"value\":\"1558195830053658624\"},{\"children\":[{\"info\":null,\"key\":\"\",\"label\":\"发起人\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636013021107_atlr0d2r\"},{\"info\":null,\"key\":\"\",\"label\":\"承办处工单处理\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636017226588_pp6oluys\"},{\"info\":null,\"key\":\"\",\"label\":\"经办人签字\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636017227412_12sffvo7\"},{\"info\":null,\"key\":\"\",\"label\":\"道路部签字\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636017228176_nbjam8ug\"},{\"info\":null,\"key\":\"\",\"label\":\"领导签字\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636017229251_evlm94cg\"},{\"info\":null,\"key\":\"\",\"label\":\"结束流程\",\"mark\":\"\",\"parent\":\"\",\"value\":\"endEvent_1636013021107_4h7ujop5\"}],\"info\":null,\"key\":\"MayorOpenCall\",\"label\":\"市长公开电话办理转办\",\"mark\":\"1\",\"parent\":\"netGover\",\"value\":\"1558195829600673792\"},{\"children\":[{\"info\":null,\"key\":\"\",\"label\":\"发起人\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636013861216_9lxs1kkh\"},{\"info\":null,\"key\":\"\",\"label\":\"承办处工单处理\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636023529627_p3ss0xyl\"},{\"info\":null,\"key\":\"\",\"label\":\"经办人签字\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636023530501_i7t3y0vu\"},{\"info\":null,\"key\":\"\",\"label\":\"道路部签字\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636023533061_ayj40524\"},{\"info\":null,\"key\":\"\",\"label\":\"领导签字\",\"mark\":\"\",\"parent\":\"\",\"value\":\"userTask_1636023533835_9k4mjbxv\"},{\"info\":null,\"key\":\"\",\"label\":\"结束流程\",\"mark\":\"\",\"parent\":\"\",\"value\":\"endEvent_1636013861216_f6xzjbjg\"}],\"info\":null,\"key\":\"CityManagement\",\"label\":\"景观管理办理\",\"mark\":\"1\",\"parent\":\"netGover\",\"value\":\"1558195829055414272\"},{\"children\":[{\"info\":null,\"key\":\"\",\"label\":\"申"
+  },
+  {
+    "url": "https://b.iots.city/island-business/workbench/type/list",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "184",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"status\":\"200\",\"detail\":\"OK\",\"msg\":\"\",\"data\":{\"todo\":\"待办事项\",\"notification\":\"通知\",\"recentmenu\":\"最近访问\",\"quickmenu\":\"快捷菜单\",\"announcement\":\"公告\"}}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/department/tree?groupName=Carrier&leastTree=true",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "eff6a5a470634bd8b3173058661a8b6a",
+      "expires": "0",
+      "content-length": "207",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"children\":[],\"code\":\"\",\"deleted\":false,\"description\":\"\",\"id\":\"\",\"level\":0,\"name\":\"部门\",\"parent\":null,\"parentId\":\"\",\"shortName\":\"\",\"tenantId\":\"\"},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/area/tree?groupName=Carrier&leastTree=true",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "31ce90bc6e5645ebb3a8c3b82ba7ea49",
+      "expires": "0",
+      "content-length": "290",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"areaType\":\"\",\"children\":[],\"code\":\"\",\"deleted\":false,\"description\":\"\",\"districtCode\":\"\",\"id\":\"\",\"level\":0,\"location\":null,\"name\":\"区域\",\"pId\":\"\",\"parent\":null,\"parentId\":\"\",\"pinyinCode\":\"\",\"poleImage\":\"\",\"tenantId\":\"\",\"type\":\"\"},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/island-assets/device/product/list?isPermissionFilter=false",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "4e012ee9d8b442c2a1f653b912984744",
+      "expires": "0",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "content-length": "180611",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\n\t\"code\":\"1\",\n\t\"data\":[\n\t\t{\n\t\t\t\"code\":\"OP-PLC\",\n\t\t\t\"configurableAttrDefMap\":{},\n\t\t\t\"configurableAttrs\":[],\n\t\t\t\"description\":\"\",\n\t\t\t\"deviceModelId\":\"1146404024101945344\",\n\t\t\t\"deviceType\":\"CentralizedController\",\n\t\t\t\"deviceTypeName\":\"集中控制器\",\n\t\t\t\"downlinkMetadataMap\":{\n\t\t\t\t\"queryWhiltListInfo\":{\n\t\t\t\t\t\"description\":\"\",\n\t\t\t\t\t\"name\":\"读取白名单设备\",\n\t\t\t\t\t\"paramMap\":{\n\t\t\t\t\t\t\"sNumbMin\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[1,9999999]\",\n\t\t\t\t\t\t\t\"dataType\":\"INTEGER\",\n\t\t\t\t\t\t\t\"defaultValue\":\"\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"起始序号\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"sNumbMin\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"sNumbMax\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[1,9999999]\",\n\t\t\t\t\t\t\t\"dataType\":\"INTEGER\",\n\t\t\t\t\t\t\t\"defaultValue\":\"\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"结束序号\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"sNumbMax\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"grpMap\":{\n\t\t\t\t\t\t\t\"checkRule\":\"length<=9999999999\",\n\t\t\t\t\t\t\t\"dataType\":\"STRING\",\n\t\t\t\t\t\t\t\"defaultValue\":\"\",\n\t\t\t\t\t\t\t\"isRequired\":false,\n\t\t\t\t\t\t\t\"name\":\"组号\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"grpMap\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t\"uKey\":\"queryWhiltListInfo\"\n\t\t\t\t},\n\t\t\t\t\"setOverVoltage\":{\n\t\t\t\t\t\"description\":\"\",\n\t\t\t\t\t\"name\":\"设置过压告警阀值\",\n\t\t\t\t\t\"paramMap\":{\n\t\t\t\t\t\t\"val\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[110,300]\",\n\t\t\t\t\t\t\t\"dataType\":\"INTEGER\",\n\t\t\t\t\t\t\t\"defaultValue\":\"264\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"阈值\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"val\",\n\t\t\t\t\t\t\t\"unit\":\"V\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"offset\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[-50,50]\",\n\t\t\t\t\t\t\t\"dataType\":\"INTEGER\",\n\t\t\t\t\t\t\t\"defaultValue\":\"-10\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"过压回差\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"offset\",\n\t\t\t\t\t\t\t\"unit\":\"%\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"recAct\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[{\\\"key\\\":\\\"0\\\",\\\"value\\\":\\\"无动作\\\"},{\\\"key\\\":\\\"1\\\",\\\"value\\\":\\\"闭合\\\"},{\\\"key\\\":\\\"2\\\",\\\"value\\\":\\\"断开\\\"}]\",\n\t\t\t\t\t\t\t\"dataType\":\"ENUM\",\n\t\t\t\t\t\t\t\"defaultValue\":\"0\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"恢复动作\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"recAct\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"occAct\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[{\\\"key\\\":\\\"0\\\",\\\"value\\\":\\\"无动作\\\"},{\\\"key\\\":\\\"1\\\",\\\"value\\\":\\\"闭合\\\"},{\\\"key\\\":\\\"2\\\",\\\"value\\\":\\\"断开\\\"}]\",\n\t\t\t\t\t\t\t\"dataType\":\"ENUM\",\n\t\t\t\t\t\t\t\"defaultValue\":\"0\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"告警动作\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"occAct\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"en\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[{\\\"key\\\":\\\"0\\\",\\\"value\\\":\\\"关闭\\\"},{\\\"key\\\":\\\"1\\\",\\\"value\\\":\\\"开启\\\"}]\",\n\t\t\t\t\t\t\t\"dataType\":\"ENUM\",\n\t\t\t\t\t\t\t\"defaultValue\":\"0\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"使能\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"en\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t}\n\t\t\t\t\t},\n\t\t\t\t\t\"uKey\":\"setOverVoltage\"\n\t\t\t\t},\n\t\t\t\t\"setUnderCurrent\":{\n\t\t\t\t\t\"description\":\"\",\n\t\t\t\t\t\"name\":\"设置欠流告警阀值\",\n\t\t\t\t\t\"paramMap\":{\n\t\t\t\t\t\t\"val\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[0,200000]\",\n\t\t\t\t\t\t\t\"dataType\":\"INTEGER\",\n\t\t\t\t\t\t\t\"defaultValue\":\"10000\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"A相欠流阈值\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"val\",\n\t\t\t\t\t\t\t\"unit\":\"mA\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"cVal\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[0,200000]\",\n\t\t\t\t\t\t\t\"dataType\":\"INTEGER\",\n\t\t\t\t\t\t\t\"defaultValue\":\"10000\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"C相欠流阈值\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"cVal\",\n\t\t\t\t\t\t\t\"unit\":\"mA\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"bVal\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[0,200000]\",\n\t\t\t\t\t\t\t\"dataType\":\"INTEGER\",\n\t\t\t\t\t\t\t\"defaultValue\":\"10000\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"B相欠流阈值\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"bVal\",\n\t\t\t\t\t\t\t\"unit\":\"mA\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"offset\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[-50,50]\",\n\t\t\t\t\t\t\t\"dataType\":\"INTEGER\",\n\t\t\t\t\t\t\t\"defaultValue\":\"5\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"欠流回差\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"offset\",\n\t\t\t\t\t\t\t\"unit\":\"%\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"recAct\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[{\\\"key\\\":\\\"0\\\",\\\"value\\\":\\\"无动作\\\"},{\\\"key\\\":\\\"1\\\",\\\"value\\\":\\\"闭合\\\"},{\\\"key\\\":\\\"2\\\",\\\"value\\\":\\\"断开\\\"}]\",\n\t\t\t\t\t\t\t\"dataType\":\"ENUM\",\n\t\t\t\t\t\t\t\"defaultValue\":\"0\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"恢复动作\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"recAct\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"occAct\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[{\\\"key\\\":\\\"0\\\",\\\"value\\\":\\\"无动作\\\"},{\\\"key\\\":\\\"1\\\",\\\"value\\\":\\\"闭合\\\"},{\\\"key\\\":\\\"2\\\",\\\"value\\\":\\\"断开\\\"}]\",\n\t\t\t\t\t\t\t\"dataType\":\"ENUM\",\n\t\t\t\t\t\t\t\"defaultValue\":\"0\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"告警动作\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"occAct\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"cns\":{\n\t\t\t\t\t\t\t\"checkRule\":\"length<=99999\",\n\t\t\t\t\t\t\t\"dataType\":\"STRING\",\n\t\t\t\t\t\t\t\"defaultValue\":\"\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"回路编号\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"cns\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"en\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[{\\\"key\\\":\\\"0\\\",\\\"value\\\":\\\"关闭\\\"},{\\\"key\\\":\\\"1\\\",\\\"value\\\":\\\"开启\\\"}]\",\n\t\t\t\t\t\t\t\"dataType\":\"ENUM\",\n\t\t\t\t\t\t\t\"defaultValue\":\"0\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"A相告警使能\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"en\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"bEn\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[{\\\"key\\\":\\\"0\\\",\\\"value\\\":\\\"关闭\\\"},{\\\"key\\\":\\\"1\\\",\\\"value\\\":\\\"开启\\\"}]\",\n\t\t\t\t\t\t\t\"dataType\":\"ENUM\",\n\t\t\t\t\t\t\t\"defaultValue\":\"0\",\n\t\t\t\t\t\t\t\"isRequired\":true,\n\t\t\t\t\t\t\t\"name\":\"B相告警使能\",\n\t\t\t\t\t\t\t\"order\":0,\n\t\t\t\t\t\t\t\"uKey\":\"bEn\",\n\t\t\t\t\t\t\t\"unit\":\"\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"cEn\":{\n\t\t\t\t\t\t\t\"checkRule\":\"[{\\\"key\\\":\\\"0\\\",\\\"value\\\":\\\"关闭\\\"},{\\\"key\\\":\\\"1\\\",\\\"value\\\":\\"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/alarmtype/alarmTree/valid",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "311",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"status\":\"200\",\"detail\":\"OK\",\"msg\":\"\",\"data\":[{\"children\":[],\"deviceType\":\"\",\"flowId\":\"\",\"id\":\"deviceAlarm\",\"key\":\"\",\"name\":\"设备告警\",\"parentId\":\"\",\"productCode\":\"\"},{\"children\":[],\"deviceType\":\"\",\"flowId\":\"\",\"id\":\"businessAlarm\",\"key\":\"\",\"name\":\"业务告警\",\"parentId\":\"\",\"productCode\":\"\"}]}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/facilityModel/list",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "945",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"data\":[{\"facilityType\":\"829745849204379648\",\"id\":\"6ac8cc747b5351099727d5a6\",\"image\":\"859729395019939840\",\"modelId\":\"控制柜\",\"name\":\"控制柜\"},{\"facilityType\":\"1\",\"id\":\"6ac8cc747b5351099727d5aa\",\"image\":\"859729438703616000\",\"modelId\":\"120W灯具\",\"name\":\"120W\"},{\"facilityType\":\"984813934727389184\",\"id\":\"6ac8cc747b5351099727d5a7\",\"image\":\"859729497566478336\",\"modelId\":\"变压器\",\"name\":\"变压器\"},{\"facilityType\":\"1093499486567145472\",\"id\":\"6ac8cc747b5351099727d5ab\",\"image\":\"859729460207812608\",\"modelId\":\"窨井\",\"name\":\"窨井\"},{\"facilityType\":\"984813996584984576\",\"id\":\"6ac8cc747b5351099727d5a9\",\"image\":\"859729395019939849\",\"modelId\":\"接电点\",\"name\":\"接电点\"},{\"facilityType\":\"984813965542940672\",\"id\":\"6ac8cc747b5351099727d5a8\",\"image\":\"859729460207812608\",\"modelId\":\"取电点\",\"name\":\"取电点\"}],\"page\":1,\"pageNum\":1,\"pageSize\":10000,\"total\":6,\"totalPages\":1},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/dictionary/pageList",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "1603d4e8dda64b2e9546093296fde0fb",
+      "expires": "0",
+      "content-length": "929",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"data\":[{\"createTime\":\"2021-04-08 15:53:46\",\"createUser\":\"\",\"dictLabel\":\"灯具\",\"dictSort\":1,\"dictTypeId\":\"829743104193871872\",\"dictValue\":\"\",\"id\":\"1\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-04-08 15:54:05\",\"createUser\":\"\",\"dictLabel\":\"变压器\",\"dictSort\":2,\"dictTypeId\":\"829743104193871872\",\"dictValue\":\"\",\"id\":\"984813934727389184\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2022-07-25 10:25:01\",\"createUser\":\"\",\"dictLabel\":\"接电点\",\"dictSort\":15,\"dictTypeId\":\"829743104193871872\",\"dictValue\":\"\",\"id\":\"984813996584984576\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2022-07-25 10:24:51\",\"createUser\":\"\",\"dictLabel\":\"取电点\",\"dictSort\":16,\"dictTypeId\":\"829743104193871872\",\"dictValue\":\"\",\"id\":\"984813965542940672\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"page\":1,\"pageNum\":1,\"pageSize\":4,\"total\":4,\"totalPages\":1},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/api/carrierModel/list",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "1483",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"data\":[{\"carrierType\":\"833769245208506368\",\"id\":\"6ac8cc747b5351099727d5a4\",\"image\":\"1383084961238544384\",\"imageNotUse\":\"891979304797282021\",\"imageOff\":\"891979304797282022\",\"imageOn\":\"891979304797282023\",\"modelId\":\"IntelligentDG\",\"name\":\"智慧灯杆\",\"poleImage\":\"\",\"system\":true},{\"carrierType\":\"880040745256173568\",\"id\":\"6ac8cc747b5351099727d5a5\",\"image\":\"1383090548231827456\",\"imageNotUse\":\"891979304797282025\",\"imageOff\":\"891979304797282026\",\"imageOn\":\"891979304797282027\",\"modelId\":\"PDX\",\"name\":\"配电箱\",\"poleImage\":\"\",\"system\":true},{\"carrierType\":\"833769245208506368\",\"id\":\"6ac8cc747b5351099727d5a2\",\"image\":\"1383084860352950272\",\"imageNotUse\":\"891979304797282017\",\"imageOff\":\"891979304797282019\",\"imageOn\":\"891979304797282018\",\"modelId\":\"DoubleArmsDG\",\"name\":\"双臂灯杆\",\"poleImage\":\"\",\"system\":true},{\"carrierType\":\"833769245208506368\",\"id\":\"6ac8cc747b5351099727d5a1\",\"image\":\"1383084762126544896\",\"imageNotUse\":\"891979304797282009\",\"imageOff\":\"891979304797282010\",\"imageOn\":\"891979304797282011\",\"modelId\":\"SingleArmDG\",\"name\":\"单臂灯杆\",\"poleImage\":\"\",\"system\":true},{\"carrierType\":\"833769245208506368\",\"id\":\"6ac8cc747b5351099727d5a3\",\"image\":\"1383084903566864384\",\"imageNotUse\":\"891979304797282013\",\"imageOff\":\"891979304797282014\",\"imageOn\":\"891979304797282015\",\"modelId\":\"MultiArmsDG\",\"name\":\"多臂灯杆\",\"poleImage\":\"\",\"system\":true}],\"page\":1,\"pageNum\":1,\"pageSize\":10000,\"total\":5,\"totalPages\":1},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/dictionary/pageList",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "a10e18e350514bd29bccec0879d65f62",
+      "expires": "0",
+      "content-length": "534",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"data\":[{\"createTime\":\"2021-04-19 18:21:19\",\"createUser\":\"\",\"dictLabel\":\"灯杆\",\"dictSort\":1,\"dictTypeId\":\"829743063894999040\",\"dictValue\":\"\",\"id\":\"833769245208506368\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-08-25 10:47:44\",\"createUser\":\"\",\"dictLabel\":\"配电箱\",\"dictSort\":8,\"dictTypeId\":\"829743063894999040\",\"dictValue\":\"\",\"id\":\"880040745256173568\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"page\":1,\"pageNum\":1,\"pageSize\":2,\"total\":2,\"totalPages\":1},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/area/tree",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "a0ff7f51c0474f48ba01bd8f37e960e1",
+      "expires": "0",
+      "content-length": "290",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"areaType\":\"\",\"children\":[],\"code\":\"\",\"deleted\":false,\"description\":\"\",\"districtCode\":\"\",\"id\":\"\",\"level\":0,\"location\":null,\"name\":\"区域\",\"pId\":\"\",\"parent\":null,\"parentId\":\"\",\"pinyinCode\":\"\",\"poleImage\":\"\",\"tenantId\":\"\",\"type\":\"\"},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/department/tree",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "04186a1f206841b98f13573078f97667",
+      "expires": "0",
+      "content-length": "207",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"data\":{\"children\":[],\"code\":\"\",\"deleted\":false,\"description\":\"\",\"id\":\"\",\"level\":0,\"name\":\"部门\",\"parent\":null,\"parentId\":\"\",\"shortName\":\"\",\"tenantId\":\"\"},\"detail\":\"OK\",\"msg\":\"\",\"status\":\"200\"}"
+  },
+  {
+    "url": "https://b.iots.city/workflow/task/myTaskPageCount",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "expires": "0",
+      "content-length": "105",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"status\":\"200\",\"detail\":\"OK\",\"msg\":\"\",\"data\":{\"initiatege\":0,\"handle\":0,\"finish\":0,\"join\":0}}"
+  },
+  {
+    "url": "https://b.iots.city/system/api/dictionaryType/all",
+    "status": 200,
+    "headers": {
+      "transfer-encoding": "chunked",
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "content-encoding": "gzip",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "x-trace-id": "5e34ce63af2045f8bc6bbbee61031da3",
+      "expires": "0",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "origin,access-control-request-method,access-control-request-headers,accept-encoding"
+    },
+    "body": "{\"code\":\"1\",\"data\":[{\"dictName\":\"资产类型\",\"dictionaryDTOs\":[{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"备件\",\"dictSort\":1,\"dictTypeId\":\"1000\",\"dictValue\":\"\",\"id\":\"10002\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"资产\",\"dictSort\":1,\"dictTypeId\":\"1000\",\"dictValue\":\"\",\"id\":\"10003\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"工具\",\"dictSort\":1,\"dictTypeId\":\"1000\",\"dictValue\":\"\",\"id\":\"10004\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"id\":\"1000\"},{\"dictName\":\"物料分类\",\"dictionaryDTOs\":[{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"摄像头\",\"dictSort\":1,\"dictTypeId\":\"1001\",\"dictValue\":\"\",\"id\":\"10011\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"LED灯杆屏\",\"dictSort\":1,\"dictTypeId\":\"1001\",\"dictValue\":\"\",\"id\":\"10012\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"集中控制器\",\"dictSort\":1,\"dictTypeId\":\"1001\",\"dictValue\":\"\",\"id\":\"10013\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"节点控制器\",\"dictSort\":1,\"dictTypeId\":\"1001\",\"dictValue\":\"\",\"id\":\"10014\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"id\":\"1001\"},{\"dictName\":\"物料单位\",\"dictionaryDTOs\":[{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"个\",\"dictSort\":1,\"dictTypeId\":\"1002\",\"dictValue\":\"\",\"id\":\"10021\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"台\",\"dictSort\":1,\"dictTypeId\":\"1002\",\"dictValue\":\"\",\"id\":\"10022\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2021-11-04 11:27:56\",\"createUser\":\"\",\"dictLabel\":\"套\",\"dictSort\":1,\"dictTypeId\":\"1002\",\"dictValue\":\"\",\"id\":\"10023\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"id\":\"1002\"},{\"dictName\":\"道路性质\",\"dictionaryDTOs\":[{\"createTime\":\"2023-03-30 13:34:52\",\"createUser\":\"欧普照明\",\"dictLabel\":\"区管城市道路\",\"dictSort\":1,\"dictTypeId\":\"1090678969641349120\",\"dictValue\":\"\",\"id\":\"1090992543530102784\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-04-08 14:39:24\",\"createUser\":\"\",\"dictLabel\":\"市管快速路\",\"dictSort\":1,\"dictTypeId\":\"1090678969641349120\",\"dictValue\":\"\",\"id\":\"1094270273004691456\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-04-08 14:39:46\",\"createUser\":\"\",\"dictLabel\":\"市管城市道路\",\"dictSort\":2,\"dictTypeId\":\"1090678969641349120\",\"dictValue\":\"\",\"id\":\"1094270367997288448\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-04-08 14:40:06\",\"createUser\":\"\",\"dictLabel\":\"市管公路\",\"dictSort\":3,\"dictTypeId\":\"1090678969641349120\",\"dictValue\":\"\",\"id\":\"1094270449668775936\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-04-08 14:40:25\",\"createUser\":\"\",\"dictLabel\":\"区管公路\",\"dictSort\":5,\"dictTypeId\":\"1090678969641349120\",\"dictValue\":\"\",\"id\":\"1094270529830313984\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"id\":\"1090678969641349120\"},{\"dictName\":\"运营单位\",\"dictionaryDTOs\":[{\"createTime\":\"2023-03-30 13:31:58\",\"createUser\":\"欧普照明\",\"dictLabel\":\"工业园区\",\"dictSort\":1,\"dictTypeId\":\"1090679035697442816\",\"dictValue\":\"\",\"id\":\"1090991813813481472\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-04-08 19:35:17\",\"createUser\":\"\",\"dictLabel\":\"双高\",\"dictSort\":2,\"dictTypeId\":\"1090679035697442816\",\"dictValue\":\"\",\"id\":\"1094344734999502848\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"id\":\"1090679035697442816\"},{\"dictName\":\"控制范围\",\"dictionaryDTOs\":[{\"createTime\":\"2023-03-30 13:33:32\",\"createUser\":\"欧普照明\",\"dictLabel\":\"地面\",\"dictSort\":1,\"dictTypeId\":\"1090992140239384576\",\"dictValue\":\"\",\"id\":\"1090992208841420800\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-03-30 13:33:38\",\"createUser\":\"欧普照明\",\"dictLabel\":\"高架\",\"dictSort\":2,\"dictTypeId\":\"1090992140239384576\",\"dictValue\":\"\",\"id\":\"1090992231574548480\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-03-30 13:33:56\",\"createUser\":\"欧普照明\",\"dictLabel\":\"地面+高架\",\"dictSort\":3,\"dictTypeId\":\"1090992140239384576\",\"dictValue\":\"\",\"id\":\"1090992306598064128\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-03-30 13:34:07\",\"createUser\":\"欧普照明\",\"dictLabel\":\"地道\",\"dictSort\":4,\"dictTypeId\":\"1090992140239384576\",\"dictValue\":\"\",\"id\":\"1090992353150644224\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-03-30 13:34:14\",\"createUser\":\"欧普照明\",\"dictLabel\":\"地面+地道\",\"dictSort\":5,\"dictTypeId\":\"1090992140239384576\",\"dictValue\":\"\",\"id\":\"1090992382317834240\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"}],\"id\":\"1090992140239384576\"},{\"dictName\":\"相位\",\"dictionaryDTOs\":[{\"createTime\":\"2023-03-30 13:37:03\",\"createUser\":\"欧普照明\",\"dictLabel\":\"单相\",\"dictSort\":1,\"dictTypeId\":\"1090993041335267328\",\"dictValue\":\"\",\"id\":\"1090993093290110976\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"2023-03-30 13:37:08\",\"createUser\":\"欧普照明\",\"dictLabel\":\"二相\",\"dictSort\":2,\"dictTypeId\":\"1090993041335267328\",\"dictValue\":\"\",\"id\":\"1090993115209543680\",\"remark\":\"\",\"system\":true,\"tenantId\":\"\"},{\"createTime\":\"20"
+  },
+  {
+    "url": "https://b.iots.city/chart/panelItemData?id=1558195828132667392",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "expires": "0",
+      "content-length": "1331",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"status\":\"200\",\"detail\":\"OK\",\"msg\":\"\",\"data\":{\"chartTable\":{\"tableData\":[{\"all\":\"0\",\"time\":\"2026-10-15\"},{\"all\":\"0\",\"time\":\"2026-10-16\"},{\"all\":\"0\",\"time\":\"2026-10-17\"},{\"all\":\"0\",\"time\":\"2026-10-18\"},{\"all\":\"0\",\"time\":\"2026-10-19\"},{\"all\":\"0\",\"time\":\"2026-10-20\"},{\"all\":\"0\",\"time\":\"2026-10-21\"}],\"tableHeader\":[{\"label\":\"时间\",\"parent\":\"\",\"value\":\"time\"},{\"label\":\"告警数量统计\",\"parent\":\"\",\"value\":\"all\"}]},\"editable\":true,\"id\":\"1558195828132667392\",\"metricsDes\":[{\"mKey\":\"ALARM_COUNT\",\"mType\":\"device\",\"unit\":\"\",\"x\":\"time\",\"xValue\":\"day,past7days\",\"y\":\"\",\"yValue\":\"\"}],\"name\":\"近7天告警数量统计\",\"option\":{\"attributes\":\"\",\"calculableColor\":\"\",\"calculableHolderColo\":\"\",\"dataSource\":\"\",\"legend\":{\"backgroundColor\":\"\",\"borderColor\":\"\",\"data\":[\"告警数量统计\"],\"formatter\":\"\",\"shadowColor\":\"\"},\"nameConnector\":\"\",\"series\":[{\"barCategoryGap\":\"\",\"barGap\":\"\",\"data\":[\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\"],\"name\":\"告警数量统计\",\"stack\":\"\",\"type\":\"bar\"}],\"updateTime\":\"\",\"valueConnector\":\"\",\"xAxis\":[{\"data\":[\"15日\",\"16日\",\"17日\",\"18日\",\"19日\",\"20日\",\"21日\"],\"name\":\"\",\"type\":\"category\"}],\"yAxis\":[{\"name\":\"\",\"type\":\"value\"}]},\"ownerId\":\"\",\"panelStyle\":\"\",\"source\":\"\",\"statisticType\":\"maintenance\",\"tag\":\"\",\"tenantId\":\"1558195823229526016\",\"tip\":\"\",\"type\":\"bar\",\"updateTime\":\"2026-10-09 19:13:55\"}}"
+  },
+  {
+    "url": "https://b.iots.city/chart/panelItemData?id=1558195828153638912",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "expires": "0",
+      "content-length": "1328",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"status\":\"200\",\"detail\":\"OK\",\"msg\":\"\",\"data\":{\"chartTable\":{\"tableData\":[],\"tableHeader\":[{\"label\":\"资产类型\",\"parent\":\"\",\"value\":\"deviceType\"},{\"label\":\"物联网设备在线数/总数\",\"parent\":\"\",\"value\":\"all\"}]},\"editable\":true,\"id\":\"1558195828153638912\",\"metricsDes\":[{\"mKey\":\"ONLINE_RATE\",\"mType\":\"device\",\"unit\":\"%\",\"x\":\"deviceType\",\"xValue\":\"\",\"y\":\"\",\"yValue\":\"\"}],\"name\":\"物联网设备类型在线统计\",\"option\":{\"attributes\":\"\",\"calculableColor\":\"\",\"calculableHolderColo\":\"\",\"dataSource\":\"\",\"legend\":{\"backgroundColor\":\"\",\"borderColor\":\"\",\"data\":[\"物联网设备在线率\"],\"formatter\":\"\",\"shadowColor\":\"\"},\"nameConnector\":\"\",\"series\":[{\"animationEasing\":null,\"animationEasingUpdate\":null,\"bottom\":null,\"coordinateSystem\":null,\"height\":null,\"itemStyle\":null,\"label\":null,\"left\":null,\"markLine\":null,\"markPoint\":null,\"name\":\"物联网设备在线率\",\"right\":null,\"stack\":\"\",\"symbol\":null,\"symbolOffset\":null,\"symbolRoate\":null,\"symbolSize\":null,\"tooltip\":null,\"top\":null,\"type\":\"pattern\",\"width\":null}],\"updateTime\":\"\",\"valueConnector\":\"\",\"xAxis\":[{\"name\":\"\",\"type\":\"category\"}],\"yAxis\":[{\"min\":90,\"name\":\"%\",\"type\":\"value\"}]},\"ownerId\":\"\",\"panelStyle\":\"\",\"source\":\"\",\"statisticType\":\"assets\",\"tag\":\"\",\"tenantId\":\"1558195823229526016\",\"tip\":\"\",\"type\":\"pattern\",\"updateTime\":\"2026-10-09 19:13:55\"}}"
+  },
+  {
+    "url": "https://b.iots.city/chart/panelItemData?id=1558195828187193344",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "expires": "0",
+      "content-length": "1911",
+      "date": "Thu, 22 Oct 2026 06:28:35 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"status\":\"200\",\"detail\":\"OK\",\"msg\":\"\",\"data\":{\"chartTable\":{\"tableData\":[{\"deviceType\":\"灯具\",\"all\":\"4971\"},{\"deviceType\":\"变压器\",\"all\":\"3\"},{\"deviceType\":\"接电点\",\"all\":\"3\"},{\"deviceType\":\"取电点\",\"all\":\"3\"},{\"deviceType\":\"灯杆\",\"all\":\"63\"},{\"deviceType\":\"配电箱\",\"all\":\"3\"}],\"tableHeader\":[{\"label\":\"资产类型\",\"parent\":\"\",\"value\":\"deviceType\"},{\"label\":\"资产数量统计\",\"parent\":\"\",\"value\":\"all\"}]},\"editable\":true,\"id\":\"1558195828187193344\",\"metricsDes\":[{\"mKey\":\"REAL_TIME_FCDEVICE_COUNT\",\"mType\":\"fcdevice\",\"unit\":\"\",\"x\":\"deviceType\",\"xValue\":\"\",\"y\":\"\",\"yValue\":\"\"}],\"name\":\"资产数量统计\",\"option\":{\"attributes\":\"\",\"calculableColor\":\"\",\"calculableHolderColo\":\"\",\"dataSource\":\"\",\"legend\":{\"backgroundColor\":\"\",\"borderColor\":\"\",\"data\":[\"资产数量统计\"],\"formatter\":\"\",\"shadowColor\":\"\"},\"nameConnector\":\"\",\"series\":[{\"animationEasing\":null,\"animationEasingUpdate\":null,\"bottom\":null,\"coordinateSystem\":null,\"data\":[{\"icon\":\"\",\"name\":\"灯具\",\"text\":\"\",\"value\":\"4971\"},{\"icon\":\"\",\"name\":\"变压器\",\"text\":\"\",\"value\":\"3\"},{\"icon\":\"\",\"name\":\"接电点\",\"text\":\"\",\"value\":\"3\"},{\"icon\":\"\",\"name\":\"取电点\",\"text\":\"\",\"value\":\"3\"},{\"icon\":\"\",\"name\":\"灯杆\",\"text\":\"\",\"value\":\"63\"},{\"icon\":\"\",\"name\":\"配电箱\",\"text\":\"\",\"value\":\"3\"}],\"height\":null,\"itemStyle\":null,\"label\":null,\"left\":null,\"markLine\":null,\"markPoint\":null,\"name\":\"资产数量统计\",\"right\":null,\"stack\":\"\",\"symbol\":null,\"symbolOffset\":null,\"symbolRoate\":null,\"symbolSize\":null,\"tooltip\":null,\"top\":null,\"type\":\"counter\",\"width\":null}],\"updateTime\":\"\",\"valueConnector\":\"\",\"xAxis\":[{\"data\":[\"灯具\",\"变压器\",\"接电点\",\"取电点\",\"灯杆\",\"配电箱\"],\"name\":\"\",\"type\":\"category\"}],\"yAxis\":[{\"name\":\"\",\"type\":\"value\"}]},\"ownerId\":\"\",\"panelStyle\":\"\",\"source\":\"\",\"statisticType\":\"assets\",\"tag\":\"\",\"tenantId\":\"1558195823229526016\",\"tip\":\"\",\"type\":\"counter\",\"updateTime\":\"2026-10-09 19:13:55\"}}"
+  },
+  {
+    "url": "https://b.iots.city/island-business/newsCenter/findByPage",
+    "status": 200,
+    "headers": {
+      "strict-transport-security": "max-age=15724800; includeSubDomains",
+      "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+      "pragma": "no-cache",
+      "connection": "keep-alive",
+      "x-content-type-options": "nosniff",
+      "access-control-allow-methods": "POST,GET,OPTIONS,DELETE,PUT",
+      "expires": "0",
+      "content-length": "130",
+      "date": "Thu, 22 Oct 2026 06:28:37 GMT",
+      "x-xss-protection": "0",
+      "content-type": "application/json",
+      "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"
+    },
+    "body": "{\"code\":\"1\",\"status\":\"200\",\"detail\":\"OK\",\"msg\":\"\",\"data\":{\"content\":[],\"pageNum\":1,\"pageSize\":5,\"totalElements\":0,\"totalPages\":0}}"
+  }
+]
