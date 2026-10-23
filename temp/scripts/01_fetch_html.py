@@ -23,7 +23,7 @@ try:
         print("HTML snippet (first 1000 chars):")
         print(html[:1000])
         
-        with open("D:/aaaStuffsaaa/from_git/gitee/city-light-platform/temp/mock/initial_index.html", "w", encoding="utf-8") as f:
+        with open("D:/aaaStuffsaaa/from_git/gitee/topstar-smart-lighting-saas/temp/mock/initial_index.html", "w", encoding="utf-8") as f:
             f.write(html)
         print("Saved to initial_index.html")
 except Exception as e:
