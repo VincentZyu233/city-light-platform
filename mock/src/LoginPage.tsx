@@ -15,6 +15,7 @@ import {
   Sun,
   UserRound,
 } from 'lucide-react';
+import loginBackground from './assets/login-bg.webp';
 
 type ThemeMode = 'system' | 'dark' | 'light';
 
@@ -78,11 +79,19 @@ export default function LoginPage({ themeMode, onThemeChange, onLogin }: LoginPa
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-zinc-50 text-zinc-900 selection:bg-brand-500/20 selection:text-brand-600 transition-colors duration-200 dark:bg-zinc-950 dark:text-zinc-100">
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_15%,rgba(59,130,246,0.22),transparent_32%),radial-gradient(circle_at_85%_20%,rgba(14,165,233,0.16),transparent_28%),radial-gradient(circle_at_50%_105%,rgba(37,99,235,0.18),transparent_38%)] dark:bg-[radial-gradient(circle_at_15%_15%,rgba(37,99,235,0.28),transparent_34%),radial-gradient(circle_at_85%_20%,rgba(14,165,233,0.16),transparent_30%),radial-gradient(circle_at_50%_110%,rgba(29,78,216,0.22),transparent_42%)]"
-      />
-      <div aria-hidden="true" className="bg-grid-pattern pointer-events-none absolute inset-0 opacity-80" />
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+        <img
+          src={loginBackground}
+          alt=""
+          draggable={false}
+          decoding="async"
+          className="h-full w-full object-cover object-center opacity-55 brightness-110 contrast-105 saturate-115 transition-[opacity,filter] duration-200 dark:opacity-100 dark:brightness-130 dark:saturate-125"
+        />
+        <div className="absolute inset-0 bg-white/50 dark:bg-[#020817]/5" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/35 via-white/15 to-white/70 dark:from-zinc-950/5 dark:via-zinc-950/0 dark:to-zinc-950/55" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_15%,rgba(59,130,246,0.22),transparent_32%),radial-gradient(circle_at_85%_20%,rgba(14,165,233,0.16),transparent_28%),radial-gradient(circle_at_50%_105%,rgba(37,99,235,0.18),transparent_38%)] opacity-45 dark:opacity-15" />
+      </div>
+      <div aria-hidden="true" className="bg-grid-pattern pointer-events-none absolute inset-0 opacity-25 dark:opacity-15" />
       <div aria-hidden="true" className="pointer-events-none absolute -left-24 top-1/4 h-72 w-72 rounded-full border border-brand-500/15 bg-brand-500/5 blur-[1px]" />
       <div aria-hidden="true" className="pointer-events-none absolute -right-20 top-10 h-80 w-80 rounded-full border border-cyan-500/15 bg-cyan-500/5" />
       <div aria-hidden="true" className="pointer-events-none absolute bottom-0 left-1/2 h-px w-[80%] -translate-x-1/2 bg-gradient-to-r from-transparent via-brand-500/40 to-transparent" />
@@ -123,8 +132,8 @@ export default function LoginPage({ themeMode, onThemeChange, onLogin }: LoginPa
         </div>
       </header>
 
-      <main className="relative z-10 flex min-h-screen items-center justify-center px-4 py-24 sm:px-6">
-        <section className="relative w-full max-w-[430px] overflow-hidden rounded-2xl border border-zinc-200/80 bg-white/90 p-6 shadow-2xl shadow-brand-950/10 backdrop-blur-xl sm:p-8 dark:border-brand-500/15 dark:bg-zinc-900/85 dark:shadow-black/40">
+      <main className="relative flex min-h-screen items-center justify-center px-4 py-24 sm:px-6">
+        <section className="relative w-full max-w-[430px] overflow-hidden rounded-2xl border border-zinc-200/80 bg-white/90 p-6 shadow-2xl shadow-brand-950/10 backdrop-blur-md sm:p-8 dark:border-brand-500/15 dark:bg-zinc-900/88 dark:shadow-black/40">
           <div className="absolute inset-x-12 top-0 h-px bg-gradient-to-r from-transparent via-brand-500 to-transparent" />
           <div aria-hidden="true" className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-brand-500/10 blur-2xl" />
 
