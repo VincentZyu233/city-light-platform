@@ -9,6 +9,12 @@ out/
 dist/
 build/
 
+# Archives & Releases (发布包通过 GitHub Releases 分发，不入代码仓库)
+*.zip
+*.tar.gz
+*.7z
+*.rar
+
 # Package managers
 .yarn/
 *.log
