@@ -2,6 +2,34 @@
 @import "@fontsource-variable/geist";
 @import "@fontsource-variable/geist-mono";
 
+@theme {
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-300: #93c5fd;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-brand-800: #1e40af;
+  --color-brand-900: #1e3a8a;
+  --color-brand-950: #172554;
+
+  /* Cool, blue-tinted neutrals replace Tailwind's warm zinc defaults. */
+  --color-zinc-50: #f5f8ff;
+  --color-zinc-100: #eaf2ff;
+  --color-zinc-200: #d7e5f5;
+  --color-zinc-300: #b9cbe3;
+  --color-zinc-400: #8498b4;
+  --color-zinc-500: #586b86;
+  --color-zinc-600: #40536d;
+  --color-zinc-700: #2f4159;
+  --color-zinc-800: #1c2b42;
+  --color-zinc-850: #142238;
+  --color-zinc-900: #0c182b;
+  --color-zinc-950: #050c18;
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
@@ -11,16 +39,16 @@
 
 body {
   font-family: var(--font-sans);
-  background-color: #fafafa;
-  color: #09090b;
+  background-color: #f5f8ff;
+  color: #0c182b;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .dark body {
-  background-color: #050505;
-  color: #f4f4f5;
+  background-color: #050c18;
+  color: #eaf2ff;
 }
 
 .font-mono, .telemetry-val {
@@ -38,28 +66,28 @@ body {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #e4e4e7;
+  background: #d7e5f5;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #d4d4d8;
+  background: #b9cbe3;
 }
 .dark ::-webkit-scrollbar-thumb {
-  background: #27272a;
+  background: #1c2b42;
 }
 .dark ::-webkit-scrollbar-thumb:hover {
-  background: #3f3f46;
+  background: #2f4159;
 }
 
 /* Subtle grid line pattern */
 .bg-grid-pattern {
   background-size: 24px 24px;
-  background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-image:
+    linear-gradient(to right, rgba(37, 99, 235, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(37, 99, 235, 0.07) 1px, transparent 1px);
 }
 .dark .bg-grid-pattern {
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-image:
+    linear-gradient(to right, rgba(96, 165, 250, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(96, 165, 250, 0.06) 1px, transparent 1px);
 }
