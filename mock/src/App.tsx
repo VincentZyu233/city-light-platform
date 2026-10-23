@@ -14,7 +14,6 @@ import {
   Eye,
   Filter,
   Flame,
-  Laptop,
   Layers,
   Lightbulb,
   LogOut,
@@ -44,15 +43,16 @@ import LoginPage from './LoginPage';
 
 // Types
 type TabType = 'overview' | 'monitor' | 'assets' | 'lighting' | 'incidents';
-type ThemeMode = 'system' | 'dark' | 'light';
+type ThemeMode = 'dark' | 'light';
 
 interface AuthSession {
   username: string;
   authenticatedAt: number;
 }
 
-const AUTH_STORAGE_KEY = 'citylight_auth';
-const AUTH_SESSION_KEY = 'citylight_auth_session';
+const AUTH_STORAGE_KEY = 'topstar_auth';
+const AUTH_SESSION_KEY = 'topstar_auth_session';
+const THEME_STORAGE_KEY = 'topstar_theme';
 
 function readAuthSession(): AuthSession | null {
   const rawSession = localStorage.getItem(AUTH_STORAGE_KEY) || sessionStorage.getItem(AUTH_SESSION_KEY);
@@ -165,9 +165,10 @@ export default function App() {
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const [authSession, setAuthSession] = useState<AuthSession | null>(readAuthSession);
 
-  // 🌓 Three-State Theme Switcher (System / Dark / Light, default: System)
+  // Dashboard theme switcher (Dark / Light, default: Dark)
   const [themeMode, setThemeMode] = useState<ThemeMode>(() => {
-    return (localStorage.getItem('citylight_theme') as ThemeMode) || 'system';
+    const storedMode = localStorage.getItem(THEME_STORAGE_KEY);
+    return storedMode === 'light' || storedMode === 'dark' ? storedMode : 'dark';
   });
 
   // Lighting schedules
@@ -202,38 +203,8 @@ export default function App() {
   // Theme Sync Handler
   useEffect(() => {
     const root = document.documentElement;
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-
-    const applyTheme = (mode: ThemeMode) => {
-      localStorage.setItem('citylight_theme', mode);
-      if (mode === 'dark') {
-        root.classList.add('dark');
-      } else if (mode === 'light') {
-        root.classList.remove('dark');
-      } else {
-        // system
-        if (mediaQuery.matches) {
-          root.classList.add('dark');
-        } else {
-          root.classList.remove('dark');
-        }
-      }
-    };
-
-    applyTheme(themeMode);
-
-    const handleSystemChange = (e: MediaQueryListEvent) => {
-      if (themeMode === 'system') {
-        if (e.matches) {
-          root.classList.add('dark');
-        } else {
-          root.classList.remove('dark');
-        }
-      }
-    };
-
-    mediaQuery.addEventListener('change', handleSystemChange);
-    return () => mediaQuery.removeEventListener('change', handleSystemChange);
+    localStorage.setItem(THEME_STORAGE_KEY, themeMode);
+    root.classList.toggle('dark', themeMode === 'dark');
   }, [themeMode]);
 
   const showToast = (msg: string) => {
@@ -385,7 +356,7 @@ export default function App() {
               </div>
               {!isSidebarCollapsed && (
                 <div className="flex items-center gap-2 overflow-hidden whitespace-nowrap">
-                  <span className="text-sm font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">CityLight</span>
+                  <span className="text-sm font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">通士达</span>
                   <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-zinc-100 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-800">
                     v2.4
                   </span>
@@ -567,44 +538,14 @@ export default function App() {
 
           {/* Right: Theme Switcher & Clock & Quick Mode */}
           <div className="flex items-center gap-2.5">
-            {/* 🌓 THREE-STATE THEME SWITCHER */}
+            {/* Dark / Light Theme Switcher */}
             <div className="flex items-center p-0.5 rounded-lg bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs">
               <button
                 onClick={() => {
-                  setThemeMode('system');
-                  showToast('已切换至「跟随系统」模式');
-                }}
-                title="跟随系统 (默认)"
-                className={`flex items-center gap-1 px-2 py-1 rounded-md transition-all text-xs ${
-                  themeMode === 'system'
-                    ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-xs font-medium'
-                    : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-300'
-                }`}
-              >
-                <Laptop className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">系统</span>
-              </button>
-              <button
-                onClick={() => {
-                  setThemeMode('light');
-                  showToast('已切换至「白天」模式');
-                }}
-                title="白天模式"
-                className={`flex items-center gap-1 px-2 py-1 rounded-md transition-all text-xs ${
-                  themeMode === 'light'
-                    ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-xs font-medium'
-                    : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-300'
-                }`}
-              >
-                <Sun className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">白天</span>
-              </button>
-              <button
-                onClick={() => {
                   setThemeMode('dark');
-                  showToast('已切换至「黑夜」模式');
+                  showToast('已切换至「深色」模式');
                 }}
-                title="黑夜模式"
+                title="深色模式"
                 className={`flex items-center gap-1 px-2 py-1 rounded-md transition-all text-xs ${
                   themeMode === 'dark'
                     ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-xs font-medium'
@@ -612,7 +553,22 @@ export default function App() {
                 }`}
               >
                 <Moon className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">黑夜</span>
+                <span className="hidden sm:inline">深色</span>
+              </button>
+              <button
+                onClick={() => {
+                  setThemeMode('light');
+                  showToast('已切换至「浅色」模式');
+                }}
+                title="浅色模式"
+                className={`flex items-center gap-1 px-2 py-1 rounded-md transition-all text-xs ${
+                  themeMode === 'light'
+                    ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-xs font-medium'
+                    : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-300'
+                }`}
+              >
+                <Sun className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">浅色</span>
               </button>
             </div>
 
@@ -1261,7 +1217,7 @@ export default function App() {
 
         {/* Minimal Footer */}
         <footer className="w-full border-t border-zinc-200 dark:border-zinc-900/80 py-4 px-6 text-xs text-zinc-500 dark:text-zinc-600 font-mono flex items-center justify-between mt-auto">
-          <span>CityLight OS · Next-Gen Smart City IoT Platform</span>
+          <span>通士达智慧照明 SaaS 平台 · Smart Lighting IoT Platform</span>
           <span>Vercel & Cloudflare Aesthetic · 2026</span>
         </footer>
       </div>

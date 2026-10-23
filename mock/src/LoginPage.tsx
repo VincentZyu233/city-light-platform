@@ -3,11 +3,8 @@ import {
   Activity,
   AlertCircle,
   ArrowRight,
-  CheckCircle2,
   Eye,
   EyeOff,
-  KeyRound,
-  Laptop,
   LoaderCircle,
   LockKeyhole,
   Moon,
@@ -16,8 +13,10 @@ import {
   UserRound,
 } from 'lucide-react';
 import loginBackground from './assets/login-bg.webp';
+import topstarLogoDark from './assets/topstar-logo-dark.svg';
+import topstarLogoLight from './assets/topstar-logo.svg';
 
-type ThemeMode = 'system' | 'dark' | 'light';
+type ThemeMode = 'dark' | 'light';
 
 interface LoginPageProps {
   themeMode: ThemeMode;
@@ -28,25 +27,18 @@ interface LoginPageProps {
 const DEMO_USERNAME = 'admin';
 const DEMO_PASSWORD = '123456';
 
-const THEME_OPTIONS: Array<{ id: ThemeMode; label: string; icon: typeof Laptop }> = [
-  { id: 'system', label: '跟随系统', icon: Laptop },
-  { id: 'light', label: '白天模式', icon: Sun },
-  { id: 'dark', label: '黑夜模式', icon: Moon },
+const THEME_OPTIONS: Array<{ id: ThemeMode; label: string; icon: typeof Moon }> = [
+  { id: 'dark', label: '深色', icon: Moon },
+  { id: 'light', label: '浅色', icon: Sun },
 ];
 
 export default function LoginPage({ themeMode, onThemeChange, onLogin }: LoginPageProps) {
-  const [username, setUsername] = useState(() => localStorage.getItem('citylight_remembered_user') || DEMO_USERNAME);
+  const [username, setUsername] = useState(() => localStorage.getItem('topstar_remembered_user') || DEMO_USERNAME);
   const [password, setPassword] = useState('');
   const [remember, setRemember] = useState(true);
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-
-  const fillDemoCredentials = () => {
-    setUsername(DEMO_USERNAME);
-    setPassword(DEMO_PASSWORD);
-    setError(null);
-  };
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -63,16 +55,16 @@ export default function LoginPage({ themeMode, onThemeChange, onLogin }: LoginPa
     window.setTimeout(() => {
       if (normalizedUsername === DEMO_USERNAME && password === DEMO_PASSWORD) {
         if (remember) {
-          localStorage.setItem('citylight_remembered_user', normalizedUsername);
+          localStorage.setItem('topstar_remembered_user', normalizedUsername);
         } else {
-          localStorage.removeItem('citylight_remembered_user');
+          localStorage.removeItem('topstar_remembered_user');
         }
         setIsLoading(false);
         onLogin(normalizedUsername, remember);
         return;
       }
 
-      setError('账号或密码不正确，请使用页面下方展示的演示账号。');
+      setError('账号或密码不正确，请检查后重试。');
       setIsLoading(false);
     }, 600);
   };
@@ -85,15 +77,15 @@ export default function LoginPage({ themeMode, onThemeChange, onLogin }: LoginPa
           alt=""
           draggable={false}
           decoding="async"
-          className="h-full w-full object-cover object-center opacity-55 brightness-110 contrast-105 saturate-115 transition-[opacity,filter] duration-200 dark:opacity-100 dark:brightness-130 dark:saturate-125"
+          className="h-full w-full object-cover object-center opacity-70 brightness-105 contrast-110 saturate-130 transition-[opacity,filter] duration-200 dark:opacity-100 dark:brightness-130 dark:saturate-125"
         />
-        <div className="absolute inset-0 bg-white/50 dark:bg-[#020817]/5" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/35 via-white/15 to-white/70 dark:from-zinc-950/5 dark:via-zinc-950/0 dark:to-zinc-950/55" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_15%,rgba(59,130,246,0.22),transparent_32%),radial-gradient(circle_at_85%_20%,rgba(14,165,233,0.16),transparent_28%),radial-gradient(circle_at_50%_105%,rgba(37,99,235,0.18),transparent_38%)] opacity-45 dark:opacity-15" />
+        <div className="absolute inset-0 bg-sky-100/35 dark:bg-[#020817]/5" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sky-50/45 via-blue-50/20 to-blue-200/65 dark:from-zinc-950/5 dark:via-zinc-950/0 dark:to-zinc-950/55" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_15%,rgba(59,130,246,0.32),transparent_34%),radial-gradient(circle_at_85%_20%,rgba(14,165,233,0.26),transparent_30%),radial-gradient(circle_at_50%_105%,rgba(37,99,235,0.24),transparent_40%)] opacity-65 dark:opacity-15" />
       </div>
-      <div aria-hidden="true" className="bg-grid-pattern pointer-events-none absolute inset-0 opacity-25 dark:opacity-15" />
-      <div aria-hidden="true" className="pointer-events-none absolute -left-24 top-1/4 h-72 w-72 rounded-full border border-brand-500/15 bg-brand-500/5 blur-[1px]" />
-      <div aria-hidden="true" className="pointer-events-none absolute -right-20 top-10 h-80 w-80 rounded-full border border-cyan-500/15 bg-cyan-500/5" />
+      <div aria-hidden="true" className="bg-grid-pattern pointer-events-none absolute inset-0 opacity-35 dark:opacity-15" />
+      <div aria-hidden="true" className="pointer-events-none absolute -left-24 top-1/4 h-72 w-72 rounded-full border border-brand-500/20 bg-brand-500/10 blur-[1px]" />
+      <div aria-hidden="true" className="pointer-events-none absolute -right-20 top-10 h-80 w-80 rounded-full border border-cyan-500/20 bg-cyan-500/10" />
       <div aria-hidden="true" className="pointer-events-none absolute bottom-0 left-1/2 h-px w-[80%] -translate-x-1/2 bg-gradient-to-r from-transparent via-brand-500/40 to-transparent" />
 
       <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-between px-5 py-5 sm:px-8">
@@ -102,12 +94,12 @@ export default function LoginPage({ themeMode, onThemeChange, onLogin }: LoginPa
             <Activity className="h-[18px] w-[18px]" />
           </div>
           <div className="leading-none">
-            <p className="text-sm font-semibold tracking-tight">CityLight OS</p>
-            <p className="mt-1 font-mono text-[9px] uppercase tracking-[0.18em] text-zinc-500">Smart City Control</p>
+            <p className="text-sm font-semibold tracking-tight">通士达智慧照明</p>
+            <p className="mt-1 font-mono text-[9px] uppercase tracking-[0.18em] text-zinc-500">SMART LIGHTING SAAS</p>
           </div>
         </div>
 
-        <div className="flex items-center rounded-lg border border-zinc-200/80 bg-white/70 p-0.5 shadow-sm backdrop-blur-md dark:border-zinc-800/80 dark:bg-zinc-900/70">
+        <div className="flex items-center rounded-lg border border-brand-200/80 bg-white/65 p-0.5 shadow-sm shadow-brand-500/10 backdrop-blur-md dark:border-zinc-800/80 dark:bg-zinc-900/70">
           {THEME_OPTIONS.map((option) => {
             const Icon = option.icon;
             const isActive = themeMode === option.id;
@@ -119,13 +111,14 @@ export default function LoginPage({ themeMode, onThemeChange, onLogin }: LoginPa
                 aria-label={option.label}
                 aria-pressed={isActive}
                 onClick={() => onThemeChange(option.id)}
-                className={`rounded-md p-2 transition-all ${
+                className={`flex items-center gap-1.5 rounded-md px-2.5 py-2 text-[11px] font-medium transition-all ${
                   isActive
                     ? 'bg-brand-600 text-white shadow-sm shadow-brand-500/25'
                     : 'text-zinc-500 hover:bg-zinc-100 hover:text-zinc-900 dark:hover:bg-zinc-800 dark:hover:text-zinc-100'
                 }`}
               >
                 <Icon className="h-3.5 w-3.5" />
+                <span>{option.label}</span>
               </button>
             );
           })}
@@ -133,22 +126,24 @@ export default function LoginPage({ themeMode, onThemeChange, onLogin }: LoginPa
       </header>
 
       <main className="relative flex min-h-screen items-center justify-center px-4 py-24 sm:px-6">
-        <section className="relative w-full max-w-[430px] overflow-hidden rounded-2xl border border-zinc-200/80 bg-white/90 p-6 shadow-2xl shadow-brand-950/10 backdrop-blur-md sm:p-8 dark:border-brand-500/15 dark:bg-zinc-900/88 dark:shadow-black/40">
+        <section className="relative w-full max-w-[430px] overflow-hidden rounded-2xl border border-brand-300/70 bg-white/86 p-6 shadow-2xl shadow-brand-500/20 ring-1 ring-white/70 backdrop-blur-md sm:p-8 dark:border-brand-500/15 dark:bg-zinc-900/88 dark:shadow-black/40 dark:ring-brand-500/10">
           <div className="absolute inset-x-12 top-0 h-px bg-gradient-to-r from-transparent via-brand-500 to-transparent" />
-          <div aria-hidden="true" className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-brand-500/10 blur-2xl" />
+          <div aria-hidden="true" className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-brand-500/20 blur-2xl" />
+          <div aria-hidden="true" className="absolute -bottom-20 -left-20 h-44 w-44 rounded-full bg-cyan-400/15 blur-2xl" />
 
           <div className="relative text-center">
-            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-brand-500/25 bg-gradient-to-br from-brand-500/20 to-cyan-500/10 text-brand-600 shadow-lg shadow-brand-500/10 dark:text-brand-400">
-              <Activity className="h-6 w-6" />
+            <div className="flex items-center justify-center gap-3">
+              <img src={topstarLogoLight} alt="TOPSTAR 通士达" className="h-10 w-auto shrink-0 dark:hidden" />
+              <img src={topstarLogoDark} alt="TOPSTAR 通士达" className="hidden h-10 w-auto shrink-0 dark:block" />
+              <div aria-hidden="true" className="h-8 w-px shrink-0 bg-brand-200 dark:bg-brand-500/25" />
+              <h1 className="max-w-[220px] text-left text-lg font-semibold leading-tight tracking-tight">通士达智慧照明SaaS平台</h1>
             </div>
-            <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.24em] text-brand-600 dark:text-brand-400">Secure Access Gateway</p>
-            <h1 className="mt-2 text-2xl font-semibold tracking-tight">登录 CityLight 控制中枢</h1>
-            <p className="mt-2 text-xs leading-relaxed text-zinc-500 dark:text-zinc-400">智慧照明与空间感知物联网平台 Mock 演示环境</p>
+            <p className="mt-3 text-xs leading-relaxed text-zinc-500 dark:text-zinc-400">智慧照明与空间感知 SaaS 平台</p>
           </div>
 
           <form className="relative mt-7 space-y-4" onSubmit={handleSubmit}>
             <div>
-              <label htmlFor="username" className="mb-1.5 block text-xs font-medium text-zinc-700 dark:text-zinc-300">账号</label>
+              <label htmlFor="username" className="mb-1.5 block text-xs font-medium text-brand-800 dark:text-zinc-300">账号</label>
               <div className="relative">
                 <UserRound className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-400" />
                 <input
@@ -160,13 +155,13 @@ export default function LoginPage({ themeMode, onThemeChange, onLogin }: LoginPa
                   value={username}
                   onChange={(event) => setUsername(event.target.value)}
                   placeholder="请输入账号"
-                  className="h-11 w-full rounded-xl border border-zinc-200 bg-white/80 pl-10 pr-3 text-sm text-zinc-900 outline-none transition-all placeholder:text-zinc-400 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 dark:border-zinc-700 dark:bg-zinc-950/60 dark:text-zinc-100 dark:placeholder:text-zinc-500"
+                  className="h-11 w-full rounded-xl border border-brand-200/90 bg-blue-50/65 pl-10 pr-3 text-sm text-zinc-900 outline-none transition-all placeholder:text-brand-400/80 focus:border-brand-500 focus:bg-white/90 focus:ring-4 focus:ring-brand-500/15 dark:border-zinc-700 dark:bg-zinc-950/60 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:focus:bg-zinc-950/80"
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="password" className="mb-1.5 block text-xs font-medium text-zinc-700 dark:text-zinc-300">密码</label>
+              <label htmlFor="password" className="mb-1.5 block text-xs font-medium text-brand-800 dark:text-zinc-300">密码</label>
               <div className="relative">
                 <LockKeyhole className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-400" />
                 <input
@@ -177,7 +172,7 @@ export default function LoginPage({ themeMode, onThemeChange, onLogin }: LoginPa
                   value={password}
                   onChange={(event) => setPassword(event.target.value)}
                   placeholder="请输入密码"
-                  className="h-11 w-full rounded-xl border border-zinc-200 bg-white/80 pl-10 pr-11 text-sm text-zinc-900 outline-none transition-all placeholder:text-zinc-400 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 dark:border-zinc-700 dark:bg-zinc-950/60 dark:text-zinc-100 dark:placeholder:text-zinc-500"
+                  className="h-11 w-full rounded-xl border border-brand-200/90 bg-blue-50/65 pl-10 pr-11 text-sm text-zinc-900 outline-none transition-all placeholder:text-brand-400/80 focus:border-brand-500 focus:bg-white/90 focus:ring-4 focus:ring-brand-500/15 dark:border-zinc-700 dark:bg-zinc-950/60 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:focus:bg-zinc-950/80"
                 />
                 <button
                   type="button"
@@ -192,7 +187,7 @@ export default function LoginPage({ themeMode, onThemeChange, onLogin }: LoginPa
             </div>
 
             <div className="flex items-center justify-between gap-3 text-xs">
-              <label className="flex cursor-pointer items-center gap-2 text-zinc-600 dark:text-zinc-400">
+              <label className="flex cursor-pointer items-center gap-2 text-brand-700 dark:text-zinc-400">
                 <input
                   type="checkbox"
                   checked={remember}
@@ -201,7 +196,7 @@ export default function LoginPage({ themeMode, onThemeChange, onLogin }: LoginPa
                 />
                 记住登录状态
               </label>
-              <span className="flex items-center gap-1 font-mono text-[10px] text-zinc-400"><ShieldCheck className="h-3 w-3" />Mock Secure</span>
+              <span className="flex items-center gap-1 font-mono text-[10px] text-brand-500 dark:text-zinc-400"><ShieldCheck className="h-3 w-3" />Mock Secure</span>
             </div>
 
             {error && (
@@ -230,34 +225,11 @@ export default function LoginPage({ themeMode, onThemeChange, onLogin }: LoginPa
             </button>
           </form>
 
-          <div className="relative mt-5 rounded-xl border border-brand-500/20 bg-brand-500/5 p-3.5 dark:bg-brand-500/10">
-            <div className="flex items-start gap-2.5">
-              <KeyRound className="mt-0.5 h-4 w-4 shrink-0 text-brand-600 dark:text-brand-400" />
-              <div className="min-w-0 flex-1">
-                <p className="text-xs font-medium text-zinc-800 dark:text-zinc-200">演示账号</p>
-                <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-[11px] text-zinc-600 dark:text-zinc-400">
-                  <span>账号 <strong className="text-brand-700 dark:text-brand-300">admin</strong></span>
-                  <span>密码 <strong className="text-brand-700 dark:text-brand-300">123456</strong></span>
-                </div>
-              </div>
-              <button
-                type="button"
-                onClick={fillDemoCredentials}
-                className="shrink-0 rounded-lg border border-brand-500/25 bg-white/70 px-2.5 py-1.5 text-[10px] font-medium text-brand-700 transition-colors hover:bg-brand-50 dark:bg-zinc-900/70 dark:text-brand-300 dark:hover:bg-brand-950/60"
-              >
-                一键填入
-              </button>
-            </div>
-            <p className="mt-2.5 flex items-center gap-1.5 text-[10px] text-zinc-500 dark:text-zinc-400">
-              <CheckCircle2 className="h-3 w-3 text-emerald-500" />
-              登录校验为前端 Mock，不会连接真实鉴权服务
-            </p>
-          </div>
         </section>
       </main>
 
       <footer className="absolute inset-x-0 bottom-4 z-10 hidden items-center justify-between px-8 font-mono text-[10px] text-zinc-400 sm:flex dark:text-zinc-600">
-        <span>CityLight OS · Next-Gen Smart City IoT Platform</span>
+        <span>通士达智慧照明 SaaS 平台 · Smart Lighting IoT Platform</span>
         <span>Mock Environment · 2026</span>
       </footer>
     </div>
