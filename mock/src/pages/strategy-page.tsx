@@ -44,7 +44,7 @@ export function StrategyPage() {
 
       <div className="grid gap-5 xl:grid-cols-[minmax(0,1.05fr)_minmax(0,1.35fr)]">
         <SectionCard title="全网调光控制" description="拖动滑块可模拟调整所有在线灯具的目标亮度">
-          <div className="rounded-2xl bg-gradient-to-br from-brand-500/14 via-cyan-500/8 to-transparent p-5">
+          <div className="rounded-2xl bg-muted/40 border border-border p-5">
             <div className="flex items-end justify-between"><div><p className="text-xs text-muted-foreground">目标亮度</p><p className="mt-2 font-mono text-5xl font-semibold text-gradient">{dimming}%</p></div><span className="rounded-full border border-brand-500/20 bg-brand-500/10 px-3 py-1 text-[10px] text-brand-700 dark:text-brand-200">约 184.6 kW</span></div>
             <input type="range" min="0" max="100" value={dimming} onChange={(event) => setDimming(Number(event.target.value))} className="mt-7 w-full accent-brand-600" />
             <div className="mt-2 flex justify-between font-mono text-[9px] text-muted-foreground"><span>0% 熄灯</span><span>50% 节能</span><span>100% 全亮</span></div>
@@ -61,7 +61,7 @@ export function StrategyPage() {
             {circuits.map((circuit) => (
               <div key={circuit.name} className="rounded-xl border border-border/60 bg-background/45 p-3">
                 <div className="flex items-center justify-between gap-3"><div><p className="text-xs font-medium">{circuit.name}</p><p className="mt-1 text-[10px] text-muted-foreground">{circuit.devices} 台设备</p></div><StatusBadge status={circuit.status} /></div>
-                <div className="mt-3 flex items-center gap-3"><div className="h-1.5 flex-1 overflow-hidden rounded-full bg-muted"><div className="h-full rounded-full bg-gradient-to-r from-brand-500 to-cyan-400" style={{ width: `${circuit.rate}%` }} /></div><span className="w-12 text-right font-mono text-[10px] text-muted-foreground">{circuit.rate}%</span></div>
+                <div className="mt-3 flex items-center gap-3"><div className="h-1.5 flex-1 overflow-hidden rounded-full bg-muted"><div className="h-full rounded-full bg-brand-600 dark:bg-brand-500" style={{ width: `${circuit.rate}%` }} /></div><span className="w-12 text-right font-mono text-[10px] text-muted-foreground">{circuit.rate}%</span></div>
               </div>
             ))}
           </div>

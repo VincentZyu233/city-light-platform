@@ -39,11 +39,22 @@ export function AppSidebar({ session, onLogout }: { session: AuthSession; onLogo
   const activeParent = navigationGroups
     .flatMap((group) => group.items)
     .find((item) => item.children?.some((child) => child.path === pathname))?.id;
-  const [openGroup, setOpenGroup] = useState<string | null>(activeParent ?? null);
+  const [openGroups, setOpenGroups] = useState<Record<string, boolean>>(() => {
+    return activeParent ? { [activeParent]: true } : {};
+  });
 
   useEffect(() => {
-    setOpenGroup(activeParent ?? null);
+    if (activeParent) {
+      setOpenGroups((prev) => ({ ...prev, [activeParent]: true }));
+    }
   }, [activeParent]);
+
+  const toggleGroup = (id: string) => {
+    setOpenGroups((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
+  };
 
   const handleNavigate = () => {
     if (isMobile) setOpenMobile(false);
@@ -95,7 +106,7 @@ export function AppSidebar({ session, onLogout }: { session: AuthSession; onLogo
                           tooltip={item.label}
                           className={cn(
                             'h-9 rounded-lg px-2.5 text-xs font-medium text-sidebar-foreground/72 hover:bg-sidebar-accent/75 hover:text-sidebar-accent-foreground',
-                            active && 'brand-gradient text-white shadow-md shadow-brand-950/20 hover:bg-transparent hover:text-white',
+                            active && 'bg-brand-600 text-white font-medium shadow-sm hover:bg-brand-600 hover:text-white dark:bg-brand-500',
                           )}
                         >
                           <Link to={item.path!} onClick={handleNavigate}>
@@ -108,49 +119,56 @@ export function AppSidebar({ session, onLogout }: { session: AuthSession; onLogo
                     );
                   }
 
-                  const expanded = openGroup === item.id;
+                  const expanded = !!openGroups[item.id];
                   return (
                     <SidebarMenuItem key={item.id}>
                       <SidebarMenuButton
                         tooltip={item.label}
                         isActive={active}
-                        onClick={() => setOpenGroup(expanded ? null : item.id)}
+                        onClick={() => toggleGroup(item.id)}
                         className={cn(
                           'h-9 rounded-lg px-2.5 text-xs font-medium text-sidebar-foreground/72 hover:bg-sidebar-accent/75 hover:text-sidebar-accent-foreground',
-                          active && 'bg-sidebar-accent text-sidebar-accent-foreground',
+                          active && 'bg-sidebar-accent text-sidebar-accent-foreground font-medium',
                         )}
                       >
                         <Icon className="size-4" />
                         <span>{item.label}</span>
-                        <ChevronDown className={cn('ml-auto size-3.5 transition-transform group-data-[collapsible=icon]:hidden', expanded && 'rotate-180')} />
+                        <ChevronDown className={cn('ml-auto size-3.5 transition-transform duration-200 group-data-[collapsible=icon]:hidden', expanded && 'rotate-180')} />
                       </SidebarMenuButton>
                       {item.badge && <SidebarMenuBadge>{item.badge}</SidebarMenuBadge>}
-                      {expanded && (
-                        <SidebarMenuSub className="ml-5 gap-0.5 border-sidebar-border/70">
-                          {item.children.map((child) => {
-                            const ChildIcon = child.icon;
-                            const childActive = pathname === child.path;
-                            return (
-                              <SidebarMenuSubItem key={child.id}>
-                                <SidebarMenuSubButton
-                                  asChild
-                                  isActive={childActive}
-                                  className={cn(
-                                    'h-8 rounded-md text-[11px] text-sidebar-foreground/65',
-                                    childActive && 'bg-brand-500/12 font-medium text-brand-700 dark:bg-brand-400/12 dark:text-brand-200',
-                                  )}
-                                >
-                                  <Link to={child.path!} onClick={handleNavigate}>
-                                    <ChildIcon className="size-3.5" />
-                                    <span>{child.label}</span>
-                                  </Link>
-                                </SidebarMenuSubButton>
-                                {child.badge && <Badge className="absolute right-1 top-1 h-4 min-w-4 rounded-full bg-rose-500 px-1 text-[9px] text-white">{child.badge}</Badge>}
-                              </SidebarMenuSubItem>
-                            );
-                          })}
-                        </SidebarMenuSub>
-                      )}
+                      <div
+                        className={cn(
+                          'grid transition-all duration-200 ease-in-out group-data-[collapsible=icon]:hidden',
+                          expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0 pointer-events-none',
+                        )}
+                      >
+                        <div className="overflow-hidden">
+                          <SidebarMenuSub className="ml-5 gap-0.5 border-sidebar-border/70 py-0.5">
+                            {item.children.map((child) => {
+                              const ChildIcon = child.icon;
+                              const childActive = pathname === child.path;
+                              return (
+                                <SidebarMenuSubItem key={child.id}>
+                                  <SidebarMenuSubButton
+                                    asChild
+                                    isActive={childActive}
+                                    className={cn(
+                                      'h-8 rounded-md text-[11px] text-sidebar-foreground/65',
+                                      childActive && 'bg-brand-500/12 font-medium text-brand-700 dark:bg-brand-400/12 dark:text-brand-200',
+                                    )}
+                                  >
+                                    <Link to={child.path!} onClick={handleNavigate}>
+                                      <ChildIcon className="size-3.5" />
+                                      <span>{child.label}</span>
+                                    </Link>
+                                  </SidebarMenuSubButton>
+                                  {child.badge && <Badge className="absolute right-1 top-1 h-4 min-w-4 rounded-full bg-rose-500 px-1 text-[9px] text-white">{child.badge}</Badge>}
+                                </SidebarMenuSubItem>
+                              );
+                            })}
+                          </SidebarMenuSub>
+                        </div>
+                      </div>
                     </SidebarMenuItem>
                   );
                 })}

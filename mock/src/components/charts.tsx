@@ -33,19 +33,19 @@ export function LineTrendChart({ points, className, height = 240 }: { points: Ch
       <svg viewBox={`0 0 ${width} ${chartHeight}`} className="h-full w-full" preserveAspectRatio="none" role="img" aria-label="趋势折线图">
         <defs>
           <linearGradient id={gradientId} x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.34" />
-            <stop offset="100%" stopColor="#06b6d4" stopOpacity="0.02" />
+            <stop offset="0%" stopColor="#2563eb" stopOpacity="0.16" />
+            <stop offset="100%" stopColor="#2563eb" stopOpacity="0.0" />
           </linearGradient>
         </defs>
         {[0.2, 0.4, 0.6, 0.8].map((ratio) => (
           <line key={ratio} x1={paddingX} y1={paddingY + ratio * (chartHeight - paddingY * 2)} x2={width - paddingX} y2={paddingY + ratio * (chartHeight - paddingY * 2)} stroke="currentColor" className="text-border/55" strokeDasharray="5 6" strokeWidth="1" />
         ))}
         <path d={area} fill={`url(#${gradientId})`} />
-        <path d={primaryLine} fill="none" stroke="#3b82f6" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-        {secondaryLine && <path d={secondaryLine} fill="none" stroke="#06b6d4" strokeWidth="2" strokeDasharray="7 6" strokeLinecap="round" />}
+        <path d={primaryLine} fill="none" stroke="#2563eb" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+        {secondaryLine && <path d={secondaryLine} fill="none" stroke="#94a3b8" strokeWidth="2" strokeDasharray="6 6" strokeLinecap="round" />}
         {points.map((point, index) => {
           const [x, y] = pointToXY(point, index, 'value');
-          return <circle key={point.label} cx={x} cy={y} r="3.8" fill="#3b82f6" stroke="white" strokeWidth="2" />;
+          return <circle key={point.label} cx={x} cy={y} r="3.5" fill="#2563eb" stroke="white" strokeWidth="2" />;
         })}
       </svg>
       <div className="mt-1 flex items-center justify-between px-1 font-mono text-[9px] text-muted-foreground">
@@ -61,8 +61,8 @@ export function BarSeriesChart({ points, className }: { points: ChartPoint[]; cl
     <div className={cn('flex h-[260px] items-end gap-2 md:gap-3', className)}>
       {points.map((point) => (
         <div key={point.label} className="group flex h-full min-w-0 flex-1 flex-col justify-end gap-2">
-          <div className="relative flex flex-1 items-end overflow-hidden rounded-t-lg bg-brand-500/5">
-            <div className="brand-gradient w-full rounded-t-lg transition-all duration-500 group-hover:brightness-110" style={{ height: `${Math.max(8, (point.value / max) * 100)}%` }} />
+          <div className="relative flex flex-1 items-end overflow-hidden rounded-t-md bg-muted/60">
+            <div className="w-full rounded-t-md bg-brand-600 transition-all duration-300 group-hover:bg-brand-500 dark:bg-brand-500 dark:group-hover:bg-brand-400" style={{ height: `${Math.max(8, (point.value / max) * 100)}%` }} />
             <span className="absolute inset-x-0 top-2 text-center font-mono text-[9px] text-brand-700 opacity-0 transition-opacity group-hover:opacity-100 dark:text-brand-200">{point.value}</span>
           </div>
           <span className="truncate text-center font-mono text-[9px] text-muted-foreground">{point.label}</span>
@@ -77,6 +77,6 @@ export function MiniSparkline({ values, tone = 'blue' }: { values: number[]; ton
   const min = Math.min(...values);
   const range = Math.max(max - min, 1);
   const points = values.map((value, index) => `${(index / Math.max(values.length - 1, 1)) * 100},${28 - ((value - min) / range) * 24}`).join(' ');
-  const color = { blue: '#3b82f6', cyan: '#06b6d4', green: '#10b981', amber: '#f59e0b' }[tone];
+  const color = { blue: '#2563eb', cyan: '#0284c7', green: '#10b981', amber: '#f59e0b' }[tone];
   return <svg viewBox="0 0 100 30" className="h-8 w-20" preserveAspectRatio="none"><polyline points={points} fill="none" stroke={color} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" /></svg>;
 }

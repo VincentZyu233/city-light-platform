@@ -23,7 +23,7 @@ export function BigScreenPage() {
         <div className="flex items-center gap-2 text-[10px] text-muted-foreground"><span className="flex items-center gap-1.5 rounded-full border border-emerald-500/25 bg-emerald-500/10 px-3 py-1.5 text-emerald-700 dark:text-emerald-300"><span className="size-1.5 animate-pulse rounded-full bg-emerald-500" />LIVE SSE 已连接</span><span className="font-mono">2026-10-24 10:08:32</span></div>
       </div>
 
-      <div className="relative overflow-hidden rounded-3xl border border-brand-300/50 bg-gradient-to-br from-[#edf7ff] via-[#dceeff] to-[#cce6ff] p-4 text-foreground shadow-xl shadow-brand-500/12 dark:border-cyan-400/15 dark:bg-none dark:bg-[#07182d] dark:text-slate-100 dark:shadow-2xl dark:shadow-brand-950/25 md:p-6">
+      <div className="relative overflow-hidden rounded-3xl border border-brand-300/50 bg-slate-50 border border-border p-4 text-foreground shadow-xl shadow-brand-500/12 dark:border-cyan-400/15 dark:bg-none dark:bg-[#07182d] dark:text-slate-100 dark:shadow-2xl dark:shadow-brand-950/25 md:p-6">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(37,99,235,0.16),transparent_34%),radial-gradient(circle_at_85%_20%,rgba(34,211,238,0.12),transparent_30%),radial-gradient(circle_at_50%_110%,rgba(29,78,216,0.1),transparent_38%)] dark:bg-[radial-gradient(circle_at_20%_10%,rgba(37,99,235,0.28),transparent_34%),radial-gradient(circle_at_85%_20%,rgba(34,211,238,0.16),transparent_30%),radial-gradient(circle_at_50%_110%,rgba(29,78,216,0.2),transparent_38%)]" />
         <div className="pointer-events-none absolute inset-0 bg-grid-pattern opacity-45 dark:opacity-35" />
 
@@ -111,7 +111,7 @@ export function BigScreenPage() {
                 ].map(([name, rate, status]) => (
                   <div key={String(name)}>
                     <div className="mb-1.5 flex items-center justify-between text-[10px]"><span className="text-foreground/80 dark:text-slate-300">{name}</span><span className="font-mono text-brand-700 dark:text-cyan-300">{rate}%</span></div>
-                    <div className="h-1.5 overflow-hidden rounded-full bg-muted dark:bg-slate-700/70"><div className="h-full rounded-full bg-gradient-to-r from-brand-500 to-cyan-400" style={{ width: `${rate}%` }} /></div>
+                    <div className="h-1.5 overflow-hidden rounded-full bg-muted dark:bg-slate-700/70"><div className="h-full rounded-full bg-brand-500" style={{ width: `${rate}%` }} /></div>
                     <p className="mt-1 text-right text-[9px] text-muted-foreground dark:text-slate-500">{status}</p>
                   </div>
                 ))}

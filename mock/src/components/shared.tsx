@@ -74,15 +74,14 @@ export function StatCard({
   tone?: 'blue' | 'cyan' | 'green' | 'amber';
 }) {
   const toneStyles = {
-    blue: 'from-brand-500/16 to-brand-500/4 text-brand-600 dark:text-brand-300',
-    cyan: 'from-cyan-500/16 to-cyan-500/4 text-cyan-600 dark:text-cyan-300',
-    green: 'from-emerald-500/16 to-emerald-500/4 text-emerald-600 dark:text-emerald-300',
-    amber: 'from-amber-500/16 to-amber-500/4 text-amber-600 dark:text-amber-300',
+    blue: 'bg-brand-50 text-brand-600 ring-brand-500/20 dark:bg-brand-950/50 dark:text-brand-300',
+    cyan: 'bg-sky-50 text-sky-600 ring-sky-500/20 dark:bg-sky-950/50 dark:text-sky-300',
+    green: 'bg-emerald-50 text-emerald-600 ring-emerald-500/20 dark:bg-emerald-950/50 dark:text-emerald-300',
+    amber: 'bg-amber-50 text-amber-600 ring-amber-500/20 dark:bg-amber-950/50 dark:text-amber-300',
   }[tone];
 
   return (
     <div className="app-surface relative overflow-hidden rounded-2xl p-5">
-      <div className={cn('absolute inset-x-0 top-0 h-1 bg-gradient-to-r', tone === 'blue' ? 'from-brand-500 to-cyan-400' : tone === 'cyan' ? 'from-cyan-400 to-sky-500' : tone === 'green' ? 'from-emerald-400 to-teal-500' : 'from-amber-400 to-orange-500')} />
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="text-xs font-medium text-muted-foreground">{label}</p>
@@ -91,7 +90,7 @@ export function StatCard({
             {unit && <span className="text-xs text-muted-foreground">{unit}</span>}
           </div>
         </div>
-        <div className={cn('flex size-11 items-center justify-center rounded-xl bg-gradient-to-br ring-1 ring-current/10', toneStyles)}>
+        <div className={cn('flex size-11 items-center justify-center rounded-xl ring-1', toneStyles)}>
           <Icon className="size-5" />
         </div>
       </div>
@@ -130,14 +129,14 @@ export function StatusBadge({ status }: { status: string }) {
 
 export function MetricBar({ value, tone = 'blue' }: { value: number; tone?: 'blue' | 'green' | 'amber' | 'rose' }) {
   const color = {
-    blue: 'bg-gradient-to-r from-brand-500 to-cyan-400',
-    green: 'bg-gradient-to-r from-emerald-500 to-teal-400',
-    amber: 'bg-gradient-to-r from-amber-500 to-orange-400',
-    rose: 'bg-gradient-to-r from-rose-500 to-pink-400',
+    blue: 'bg-brand-600 dark:bg-brand-500',
+    green: 'bg-emerald-600 dark:bg-emerald-500',
+    amber: 'bg-amber-500 dark:bg-amber-400',
+    rose: 'bg-rose-600 dark:bg-rose-500',
   }[tone];
   return (
     <div className="h-1.5 overflow-hidden rounded-full bg-muted">
-      <div className={cn('h-full rounded-full transition-all', color)} style={{ width: `${Math.max(0, Math.min(100, value))}%` }} />
+      <div className={cn('h-full rounded-full transition-all duration-300', color)} style={{ width: `${Math.max(0, Math.min(100, value))}%` }} />
     </div>
   );
 }

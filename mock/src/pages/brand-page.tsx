@@ -12,7 +12,7 @@ export function BrandPage() {
     <div className="space-y-5">
       <PageHeader eyebrow="品牌信息" title="通士达智慧照明 SaaS 平台" description="以智慧照明为核心，连接设备、空间、数据与运营服务的城市级物联网 SaaS 平台。" />
 
-      <section className="relative overflow-hidden rounded-3xl border border-brand-400/25 bg-gradient-to-br from-brand-600 via-blue-700 to-cyan-600 p-6 text-white shadow-2xl shadow-brand-900/20 md:p-8">
+      <section className="relative overflow-hidden rounded-3xl border border-brand-400/25 bg-brand-700 p-6 text-white shadow-lg md:p-8">
         <div className="pointer-events-none absolute inset-0 bg-grid-pattern opacity-20" />
         <div className="pointer-events-none absolute -right-20 -top-28 size-80 rounded-full border border-cyan-200/20 bg-cyan-300/10" />
         <div className="relative grid gap-8 lg:grid-cols-[1.4fr_0.6fr] lg:items-center">
@@ -33,7 +33,7 @@ export function BrandPage() {
           const Icon = iconMap[capability.icon as keyof typeof iconMap];
           return (
             <div key={capability.title} className="app-surface rounded-2xl p-5">
-              <span className="flex size-11 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500/18 to-cyan-500/10 text-brand-600 ring-1 ring-brand-500/15 dark:text-brand-300"><Icon className="size-5" /></span>
+              <span className="flex size-11 items-center justify-center rounded-xl bg-brand-50 text-brand-600 ring-1 ring-brand-500/20 dark:bg-brand-950/50 dark:text-brand-300"><Icon className="size-5" /></span>
               <h2 className="mt-4 text-sm font-semibold text-foreground">{capability.title}</h2>
               <p className="mt-2 text-xs leading-6 text-muted-foreground">{capability.description}</p>
             </div>

@@ -40,7 +40,7 @@ export function HomePage() {
 
         <SectionCard title="设备状态分布" description="全网 5,420 台照明及网关设备实时统计">
           <div className="flex flex-col items-center">
-            <div className="relative flex size-44 items-center justify-center rounded-full" style={{ background: 'conic-gradient(#2563eb 0 81%, #06b6d4 81% 92%, #f59e0b 92% 97%, #f43f5e 97% 100%)' }}>
+            <div className="relative flex size-44 items-center justify-center rounded-full" style={{ background: 'conic-gradient(#2563eb 0 81%, #60a5fa 81% 92%, #f59e0b 92% 97%, #f43f5e 97% 100%)' }}>
               <div className="flex size-32 flex-col items-center justify-center rounded-full bg-card shadow-inner">
                 <span className="font-mono text-3xl font-semibold text-foreground">5,420</span>
                 <span className="mt-1 text-[10px] text-muted-foreground">设备总数</span>

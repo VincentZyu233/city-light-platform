@@ -86,7 +86,7 @@ export default function LoginPage({ themeMode, onThemeChange, onLogin }: LoginPa
       <div aria-hidden="true" className="bg-grid-pattern pointer-events-none absolute inset-0 opacity-35 dark:opacity-15" />
       <div aria-hidden="true" className="pointer-events-none absolute -left-24 top-1/4 h-72 w-72 rounded-full border border-brand-500/20 bg-brand-500/10 blur-[1px]" />
       <div aria-hidden="true" className="pointer-events-none absolute -right-20 top-10 h-80 w-80 rounded-full border border-cyan-500/20 bg-cyan-500/10" />
-      <div aria-hidden="true" className="pointer-events-none absolute bottom-0 left-1/2 h-px w-[80%] -translate-x-1/2 bg-gradient-to-r from-transparent via-brand-500/40 to-transparent" />
+      
 
       <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-between px-5 py-5 sm:px-8">
         <div className="flex items-center gap-2.5">
@@ -127,9 +127,9 @@ export default function LoginPage({ themeMode, onThemeChange, onLogin }: LoginPa
 
       <main className="relative flex min-h-screen items-center justify-center px-4 py-24 sm:px-6">
         <section className="relative w-full max-w-[430px] overflow-hidden rounded-2xl border border-brand-300/70 bg-white/86 p-6 shadow-2xl shadow-brand-500/20 ring-1 ring-white/70 backdrop-blur-md sm:p-8 dark:border-brand-500/15 dark:bg-zinc-900/88 dark:shadow-black/40 dark:ring-brand-500/10">
-          <div className="absolute inset-x-12 top-0 h-px bg-gradient-to-r from-transparent via-brand-500 to-transparent" />
-          <div aria-hidden="true" className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-brand-500/20 blur-2xl" />
-          <div aria-hidden="true" className="absolute -bottom-20 -left-20 h-44 w-44 rounded-full bg-cyan-400/15 blur-2xl" />
+          
+          
+          
 
           <div className="relative text-center">
             <div className="flex items-center justify-center gap-3">
@@ -209,7 +209,7 @@ export default function LoginPage({ themeMode, onThemeChange, onLogin }: LoginPa
             <button
               type="submit"
               disabled={isLoading}
-              className="group flex h-11 w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand-600 to-cyan-500 text-sm font-semibold text-white shadow-lg shadow-brand-500/25 transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-500/30 disabled:cursor-wait disabled:opacity-80 disabled:hover:translate-y-0"
+              className="group flex h-11 w-full items-center justify-center gap-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-sm font-semibold text-white shadow-sm transition-all disabled:cursor-wait disabled:opacity-80"
             >
               {isLoading ? (
                 <>
