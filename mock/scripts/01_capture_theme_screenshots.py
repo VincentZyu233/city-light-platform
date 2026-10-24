@@ -1,9 +1,9 @@
-import os
-import sys
-import time
-import threading
 import http.server
+import os
 import socketserver
+import threading
+import time
+
 from playwright.sync_api import sync_playwright
 
 MOCK_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -12,153 +12,113 @@ SCREENSHOTS_DIR = os.path.join(MOCK_DIR, "screenshots")
 os.makedirs(SCREENSHOTS_DIR, exist_ok=True)
 
 PORT = 9527
+AUTH_SESSION_JS = "JSON.stringify({ username: 'admin', authenticatedAt: Date.now() })"
+
 
 class SilentHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=DIST_DIR, **kwargs)
+
     def log_message(self, format, *args):
-        pass # suppress server logs
+        pass
+
 
 def start_server():
     socketserver.TCPServer.allow_reuse_address = True
     with socketserver.TCPServer(("", PORT), SilentHTTPRequestHandler) as httpd:
         httpd.serve_forever()
 
+
+PAGES_CONFIG = [
+    ("01_home", "运营总览", "/"),
+    ("02_big_screen", "可视化大屏", "/big-screen"),
+    ("03_projects", "项目列表", "/projects/list"),
+    ("04_stations", "场站管理", "/projects/stations"),
+    ("05_device_types", "设备类型", "/devices/types"),
+    ("06_device_models", "设备型号", "/devices/models"),
+    ("07_device_list", "设备列表", "/devices/list"),
+    ("08_device_deployments", "设备部署", "/devices/deployments"),
+    ("09_realtime", "实时监控", "/monitoring/realtime"),
+    ("10_strategy", "策略管理", "/monitoring/strategies"),
+    ("11_alerts", "告警管理", "/monitoring/alerts"),
+    ("12_reports", "数据统计", "/reports"),
+    ("13_departments", "部门管理", "/organization/departments"),
+    ("14_roles", "角色管理", "/organization/roles"),
+    ("15_users", "用户管理", "/organization/users"),
+    ("16_brand", "品牌信息", "/brand"),
+]
+
+
 server_thread = threading.Thread(target=start_server, daemon=True)
 server_thread.start()
 time.sleep(1)
 
 TARGET_URL = f"http://localhost:{PORT}/index.html"
-AUTH_SESSION_JS = "JSON.stringify({ username: 'admin', authenticatedAt: Date.now() })"
 print(f"Local static server running at: {TARGET_URL}")
 print(f"Output screenshots directory: {SCREENSHOTS_DIR}")
 
-PAGES_CONFIG = [
-    {
-        "prefix": "01_overview",
-        "title": "态势感知看板",
-        "action": lambda page: page.locator("button:has-text('态势感知')").first.click(),
-    },
-    {
-        "prefix": "02_monitor",
-        "title": "极夜数字孪生大屏",
-        "action": lambda page: page.locator("button:has-text('极夜数字孪生')").first.click(),
-    },
-    {
-        "prefix": "03_assets",
-        "title": "资产矩阵高密数据表",
-        "action": lambda page: page.locator("button:has-text('资产矩阵')").first.click(),
-    },
-    {
-        "prefix": "04_lighting",
-        "title": "光网时序调控",
-        "action": lambda page: page.locator("button:has-text('光网时序调控')").first.click(),
-    },
-    {
-        "prefix": "05_incidents",
-        "title": "告警与运维工单",
-        "action": lambda page: page.locator("button:has-text('告警与运维')").first.click(),
-    },
-]
+for filename in os.listdir(SCREENSHOTS_DIR):
+    if filename.lower().endswith(".png"):
+        os.remove(os.path.join(SCREENSHOTS_DIR, filename))
 
 with sync_playwright() as p:
     browser = p.chromium.launch(channel="msedge", headless=True)
     context = browser.new_context(viewport={"width": 1920, "height": 1080})
     page = context.new_page()
 
-    print(f"Loading page: {TARGET_URL}...")
-    page.goto(TARGET_URL, wait_until="networkidle")
-    page.evaluate("localStorage.removeItem('topstar_auth'); localStorage.removeItem('topstar_auth_session'); localStorage.removeItem('topstar_theme'); location.reload()")
-    page.wait_for_load_state("networkidle")
-    time.sleep(1)
-
-    # Function to set theme
     def set_theme(theme: str):
-        if theme == "white":
-            page.locator("button[title='浅色模式'], button[title='浅色']").first.click()
-        elif theme == "dark":
-            page.locator("button[title='深色模式'], button[title='深色']").first.click()
-        time.sleep(0.5)
+        selector = "button[title='浅色模式'], button[title='浅色']" if theme == "white" else "button[title='深色模式'], button[title='深色']"
+        page.locator(selector).first.click()
+        time.sleep(0.45)
 
-    # 0. Capture the login page in both themes
-    print("\n[Page] 登录页 (00_login)")
-    login_dark = os.path.join(SCREENSHOTS_DIR, "00_login_dark.png")
-    page.screenshot(path=login_dark)
-    print(f"  ✓ Saved: {os.path.basename(login_dark)}")
-
-    set_theme("white")
-    login_white = os.path.join(SCREENSHOTS_DIR, "00_login_white.png")
-    page.screenshot(path=login_white)
-    print(f"  ✓ Saved: {os.path.basename(login_white)}")
-
-    # Inject the mock session so the dashboard can be captured.
-    page.evaluate(f"localStorage.setItem('topstar_auth', {AUTH_SESSION_JS}); localStorage.setItem('topstar_theme', 'dark'); location.reload()")
-    page.wait_for_load_state("networkidle")
-    page.locator("button:has-text('态势感知')").first.wait_for()
-    time.sleep(0.8)
-
-    # 1. Capture the 5 main pages in both White and Dark
-    for cfg in PAGES_CONFIG:
-        prefix = cfg["prefix"]
-        title = cfg["title"]
+    def save_pair(prefix: str, title: str):
         print(f"\n[Page] {title} ({prefix})")
-        
-        # Navigate to the page
-        cfg["action"](page)
-        time.sleep(0.8)
-
-        # White mode
         set_theme("white")
         white_path = os.path.join(SCREENSHOTS_DIR, f"{prefix}_white.png")
         page.screenshot(path=white_path)
         print(f"  ✓ Saved: {os.path.basename(white_path)}")
 
-        # Dark mode
         set_theme("dark")
         dark_path = os.path.join(SCREENSHOTS_DIR, f"{prefix}_dark.png")
         page.screenshot(path=dark_path)
         print(f"  ✓ Saved: {os.path.basename(dark_path)}")
 
-    # 2. Capture 06_command_k (⌘K Global Command Palette) in White and Dark
-    print(f"\n[State] ⌘K 全局搜索 (06_command_k)")
+    print(f"Loading page: {TARGET_URL}...")
+    page.goto(TARGET_URL, wait_until="networkidle")
+    page.evaluate("localStorage.removeItem('topstar_auth'); localStorage.removeItem('topstar_auth_session'); localStorage.removeItem('topstar_theme'); location.hash='#/login'; location.reload()")
+    page.wait_for_load_state("networkidle")
+    time.sleep(1)
+    save_pair("00_login", "登录页")
+
+    page.evaluate(f"localStorage.setItem('topstar_auth', {AUTH_SESSION_JS}); localStorage.setItem('topstar_theme', 'dark'); location.hash='#/'; location.reload()")
+    page.wait_for_load_state("networkidle")
+    page.locator("main h1").first.wait_for()
+    time.sleep(0.8)
+
+    for prefix, title, route in PAGES_CONFIG:
+        page.evaluate(f"location.hash = '#{route}'")
+        page.wait_for_timeout(750)
+        save_pair(prefix, title)
+
+    page.evaluate("location.hash = '#/'")
+    page.wait_for_timeout(650)
+    print("\n[State] 全局搜索 (90_command_palette)")
     set_theme("white")
     page.keyboard.press("Control+k")
-    time.sleep(0.5)
-    cmd_white = os.path.join(SCREENSHOTS_DIR, "06_command_k_white.png")
-    page.screenshot(path=cmd_white)
-    print(f"  ✓ Saved: {os.path.basename(cmd_white)}")
+    page.wait_for_timeout(450)
+    page.screenshot(path=os.path.join(SCREENSHOTS_DIR, "90_command_palette_white.png"))
     page.keyboard.press("Escape")
-    time.sleep(0.3)
-
     set_theme("dark")
     page.keyboard.press("Control+k")
-    time.sleep(0.5)
-    cmd_dark = os.path.join(SCREENSHOTS_DIR, "06_command_k_dark.png")
-    page.screenshot(path=cmd_dark)
-    print(f"  ✓ Saved: {os.path.basename(cmd_dark)}")
+    page.wait_for_timeout(450)
+    page.screenshot(path=os.path.join(SCREENSHOTS_DIR, "90_command_palette_dark.png"))
     page.keyboard.press("Escape")
-    time.sleep(0.3)
 
-    # 3. Capture 07_sidebar_collapsed in White and Dark
-    print(f"\n[State] 侧边栏折叠态 (07_sidebar_collapsed)")
-    # Collapse sidebar
-    page.locator("button[title='收起侧边栏']").first.click()
-    time.sleep(0.5)
-
-    # Switch back to overview
-    page.locator("button[title='态势感知']").first.click()
-    time.sleep(0.5)
-
-    set_theme("white")
-    sc_white = os.path.join(SCREENSHOTS_DIR, "07_sidebar_collapsed_white.png")
-    page.screenshot(path=sc_white)
-    print(f"  ✓ Saved: {os.path.basename(sc_white)}")
-
-    set_theme("dark")
-    sc_dark = os.path.join(SCREENSHOTS_DIR, "07_sidebar_collapsed_dark.png")
-    page.screenshot(path=sc_dark)
-    print(f"  ✓ Saved: {os.path.basename(sc_dark)}")
+    print("\n[State] 侧边栏折叠 (91_sidebar_collapsed)")
+    page.locator('[data-sidebar="trigger"]').first.click()
+    page.wait_for_timeout(500)
+    save_pair("91_sidebar_collapsed", "侧边栏折叠")
 
     browser.close()
 
-print("\n🎉 All 8 pairs of screenshots (16 images total) have been captured successfully!")
+print("\n🎉 All 19 pairs of screenshots (38 images total) have been captured successfully!")
