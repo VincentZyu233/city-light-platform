@@ -46,7 +46,7 @@ export function AlertsPage() {
         </div>
         <div className="space-y-3 p-4">
           {filtered.length === 0 ? <div className="py-16 text-center text-sm text-muted-foreground">没有匹配的告警记录</div> : filtered.map((alert) => (
-            <article key={alert.id} className="rounded-xl border border-border/60 bg-background/45 p-4 transition-colors hover:border-brand-400/40">
+            <article key={alert.id} className="rounded-xl border border-border/80 bg-card p-4 transition-all hover:border-brand-500/40 hover:shadow-xs">
               <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
                 <div className="flex min-w-0 items-start gap-3">
                   <span className={cn('mt-1 size-2.5 shrink-0 rounded-full', alert.level === '紧急' ? 'bg-rose-500 shadow-[0_0_10px_rgba(244,63,94,.5)]' : alert.level === '主要' ? 'bg-amber-500' : 'bg-cyan-400')} />
@@ -57,7 +57,19 @@ export function AlertsPage() {
                     <p className="mt-1 font-mono text-[10px] text-brand-600 dark:text-brand-300">{alert.device}</p>
                   </div>
                 </div>
-                <div className="flex shrink-0 items-center gap-2"><StatusBadge status={alert.status} />{alert.status !== '已恢复' && <><Button variant="outline" size="sm" onClick={() => updateAlert(alert.id, '处理中')} className="h-8 text-[11px]"><Send className="size-3.5" />派发工单</Button><Button size="sm" onClick={() => updateAlert(alert.id, '已恢复')} className="h-8 bg-emerald-600 text-[11px] text-white hover:bg-emerald-500"><CheckCircle2 className="size-3.5" />确认恢复</Button></>}</div>
+                <div className="flex shrink-0 items-center gap-2">
+                  <StatusBadge status={alert.status} />
+                  {alert.status !== '已恢复' && (
+                    <>
+                      <Button size="sm" onClick={() => updateAlert(alert.id, '处理中')} className="h-8 bg-brand-600 text-[11px] text-white hover:bg-brand-500 shadow-xs">
+                        <Send className="size-3.5" />派发工单
+                      </Button>
+                      <Button size="sm" onClick={() => updateAlert(alert.id, '已恢复')} className="h-8 bg-emerald-600 text-[11px] text-white hover:bg-emerald-500">
+                        <CheckCircle2 className="size-3.5" />确认恢复
+                      </Button>
+                    </>
+                  )}
+                </div>
               </div>
             </article>
           ))}

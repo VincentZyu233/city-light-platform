@@ -45,7 +45,12 @@ export function SectionCard({
       {(title || description || action) && (
         <div className="mb-4 flex items-start justify-between gap-4">
           <div>
-            {title && <h2 className="text-sm font-semibold text-foreground">{title}</h2>}
+            {title && (
+              <h2 className="flex items-center text-sm font-semibold text-foreground">
+                <span className="mr-2 inline-block h-3.5 w-1 rounded-full bg-brand-600 dark:bg-brand-400" />
+                {title}
+              </h2>
+            )}
             {description && <p className="mt-1 text-xs leading-5 text-muted-foreground">{description}</p>}
           </div>
           {action}
@@ -74,19 +79,22 @@ export function StatCard({
   tone?: 'blue' | 'cyan' | 'green' | 'amber';
 }) {
   const toneStyles = {
-    blue: 'bg-brand-50 text-brand-600 ring-brand-500/20 dark:bg-brand-950/50 dark:text-brand-300',
-    cyan: 'bg-sky-50 text-sky-600 ring-sky-500/20 dark:bg-sky-950/50 dark:text-sky-300',
-    green: 'bg-emerald-50 text-emerald-600 ring-emerald-500/20 dark:bg-emerald-950/50 dark:text-emerald-300',
-    amber: 'bg-amber-50 text-amber-600 ring-amber-500/20 dark:bg-amber-950/50 dark:text-amber-300',
+    blue: 'bg-brand-50 text-brand-600 ring-brand-500/20 dark:bg-brand-500/15 dark:text-brand-300 dark:ring-brand-400/30',
+    cyan: 'bg-sky-50 text-sky-600 ring-sky-500/20 dark:bg-sky-500/15 dark:text-sky-300 dark:ring-sky-400/30',
+    green: 'bg-emerald-50 text-emerald-600 ring-emerald-500/20 dark:bg-emerald-500/15 dark:text-emerald-300 dark:ring-emerald-400/30',
+    amber: 'bg-amber-50 text-amber-600 ring-amber-500/20 dark:bg-amber-500/15 dark:text-amber-300 dark:ring-amber-400/30',
   }[tone];
 
   return (
-    <div className="app-surface relative overflow-hidden rounded-2xl p-5">
+    <div className="app-surface relative overflow-hidden rounded-2xl p-5 transition-shadow hover:shadow-md">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <p className="text-xs font-medium text-muted-foreground">{label}</p>
+          <p className="flex items-center gap-1.5 text-xs font-medium text-muted-foreground">
+            <span className="size-1 rounded-full bg-brand-500" />
+            {label}
+          </p>
           <div className="mt-3 flex items-baseline gap-2">
-            <span className="font-mono text-3xl font-semibold tracking-tight text-foreground">{value}</span>
+            <span className="font-mono text-3xl font-semibold tracking-tight text-foreground dark:text-brand-100">{value}</span>
             {unit && <span className="text-xs text-muted-foreground">{unit}</span>}
           </div>
         </div>

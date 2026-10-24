@@ -64,32 +64,31 @@ export function AppSidebar({ session, onLogout }: { session: AuthSession; onLogo
     <Sidebar collapsible="icon" className="border-r border-sidebar-border bg-sidebar">
       <SidebarHeader className="border-b border-sidebar-border/80 px-3 py-3">
         <div className="flex h-11 items-center gap-3 overflow-hidden rounded-xl px-2">
-          <div className="flex size-9 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-brand-500/25 bg-white/90 p-1 shadow-sm shadow-brand-500/10 dark:bg-white/95">
-            <img src={topstarLogo} alt="通士达" className="size-full object-contain dark:hidden" />
-            <img src={topstarLogoDark} alt="通士达" className="hidden size-full object-contain dark:block" />
+          <div className="flex size-9 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-brand-500/25 bg-white p-1 shadow-sm">
+            <img src={topstarLogo} alt="通士达" className="size-full object-contain" />
           </div>
           <div className="min-w-0 group-data-[collapsible=icon]:hidden">
-            <p className="truncate text-sm font-semibold tracking-tight text-sidebar-foreground">通士达智慧照明</p>
-            <p className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.17em] text-sidebar-foreground/55">Smart Lighting SaaS</p>
+            <p className="truncate text-sm font-semibold tracking-tight text-white">通士达智慧照明</p>
+            <p className="mt-0.5 font-mono text-[9px] uppercase tracking-[0.17em] text-slate-400">Smart Lighting SaaS</p>
           </div>
         </div>
 
-        <button className="mt-2 flex w-full items-center justify-between rounded-xl border border-sidebar-border bg-white/55 px-3 py-2.5 text-left shadow-xs transition-colors hover:bg-sidebar-accent/70 dark:bg-sidebar-accent/35 group-data-[collapsible=icon]:hidden">
+        <button className="mt-2 flex w-full items-center justify-between rounded-xl border border-white/10 bg-white/5 px-3 py-2.5 text-left shadow-xs transition-colors hover:bg-white/10 group-data-[collapsible=icon]:hidden">
           <span className="flex min-w-0 items-center gap-2.5">
-            <MapPin className="size-4 shrink-0 text-brand-600 dark:text-brand-300" />
+            <MapPin className="size-4 shrink-0 text-brand-400" />
             <span className="min-w-0">
-              <span className="block text-[9px] font-medium uppercase tracking-wider text-sidebar-foreground/45">当前工作区</span>
-              <span className="mt-0.5 block truncate text-xs font-medium text-sidebar-foreground">厦门智慧照明</span>
+              <span className="block text-[9px] font-medium uppercase tracking-wider text-slate-400">当前工作区</span>
+              <span className="mt-0.5 block truncate text-xs font-medium text-slate-200">厦门智慧照明</span>
             </span>
           </span>
-          <ChevronsUpDown className="size-3.5 text-sidebar-foreground/45" />
+          <ChevronsUpDown className="size-3.5 text-slate-400" />
         </button>
       </SidebarHeader>
 
       <SidebarContent className="px-1 py-2">
         {navigationGroups.map((group) => (
           <SidebarGroup key={group.label}>
-            <SidebarGroupLabel className="px-3 font-mono text-[9px] uppercase tracking-[0.18em] text-sidebar-foreground/45">
+            <SidebarGroupLabel className="px-3 font-mono text-[9px] uppercase tracking-[0.18em] text-slate-400">
               {group.label}
             </SidebarGroupLabel>
             <SidebarGroupContent>
@@ -105,8 +104,8 @@ export function AppSidebar({ session, onLogout }: { session: AuthSession; onLogo
                           isActive={active}
                           tooltip={item.label}
                           className={cn(
-                            'h-9 rounded-lg px-2.5 text-xs font-medium text-sidebar-foreground/72 hover:bg-sidebar-accent/75 hover:text-sidebar-accent-foreground',
-                            active && 'bg-brand-600 text-white font-medium shadow-sm hover:bg-brand-600 hover:text-white dark:bg-brand-500',
+                            'h-9 rounded-lg px-2.5 text-xs font-medium text-slate-300 hover:bg-white/10 hover:text-white',
+                            active && 'bg-brand-600 text-white font-medium shadow-sm hover:bg-brand-600 hover:text-white',
                           )}
                         >
                           <Link to={item.path!} onClick={handleNavigate}>
@@ -127,8 +126,8 @@ export function AppSidebar({ session, onLogout }: { session: AuthSession; onLogo
                         isActive={active}
                         onClick={() => toggleGroup(item.id)}
                         className={cn(
-                          'h-9 rounded-lg px-2.5 text-xs font-medium text-sidebar-foreground/72 hover:bg-sidebar-accent/75 hover:text-sidebar-accent-foreground',
-                          active && 'bg-sidebar-accent text-sidebar-accent-foreground font-medium',
+                          'h-9 rounded-lg px-2.5 text-xs font-medium text-slate-300 hover:bg-white/10 hover:text-white',
+                          active && 'bg-brand-500/20 text-brand-300 font-medium',
                         )}
                       >
                         <Icon className="size-4" />
@@ -153,8 +152,8 @@ export function AppSidebar({ session, onLogout }: { session: AuthSession; onLogo
                                     asChild
                                     isActive={childActive}
                                     className={cn(
-                                      'h-8 rounded-md text-[11px] text-sidebar-foreground/65',
-                                      childActive && 'bg-brand-500/12 font-medium text-brand-700 dark:bg-brand-400/12 dark:text-brand-200',
+                                      'h-8 rounded-md text-[11px] text-slate-400 hover:text-slate-200 hover:bg-white/5',
+                                      childActive && 'bg-brand-600/30 font-medium text-brand-300',
                                     )}
                                   >
                                     <Link to={child.path!} onClick={handleNavigate}>
@@ -179,20 +178,20 @@ export function AppSidebar({ session, onLogout }: { session: AuthSession; onLogo
       </SidebarContent>
 
       <SidebarFooter className="border-t border-sidebar-border/80 p-2">
-        <div className="flex items-center justify-between rounded-xl border border-sidebar-border/80 bg-sidebar-accent/45 px-3 py-2 text-[10px] text-sidebar-foreground/60 group-data-[collapsible=icon]:hidden">
-          <span className="flex items-center gap-1.5"><span className="size-1.5 animate-pulse rounded-full bg-emerald-500" />全网运行正常</span>
-          <span className="font-mono">99.8%</span>
+        <div className="flex items-center justify-between rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-[10px] text-slate-300 group-data-[collapsible=icon]:hidden">
+          <span className="flex items-center gap-1.5"><span className="size-1.5 animate-pulse rounded-full bg-emerald-400" />全网运行正常</span>
+          <span className="font-mono text-emerald-400">99.8%</span>
         </div>
-        <SidebarSeparator />
+        <SidebarSeparator className="bg-white/10" />
         <div className="flex items-center gap-2 rounded-xl px-2 py-2 group-data-[collapsible=icon]:justify-center">
-          <div className="flex size-8 shrink-0 items-center justify-center rounded-full bg-brand-500/12 text-xs font-semibold text-brand-700 ring-1 ring-brand-500/20 dark:text-brand-200">
+          <div className="flex size-8 shrink-0 items-center justify-center rounded-full bg-brand-500/25 text-xs font-semibold text-brand-300 ring-1 ring-brand-400/30">
             {session.username.slice(0, 1).toUpperCase()}
           </div>
           <div className="min-w-0 flex-1 group-data-[collapsible=icon]:hidden">
-            <p className="truncate text-xs font-medium text-sidebar-foreground">{session.username}</p>
-            <p className="mt-0.5 flex items-center gap-1 text-[9px] text-sidebar-foreground/45"><ShieldCheck className="size-2.5" />系统管理员</p>
+            <p className="truncate text-xs font-medium text-slate-200">{session.username}</p>
+            <p className="mt-0.5 flex items-center gap-1 text-[9px] text-slate-400"><ShieldCheck className="size-2.5" />系统管理员</p>
           </div>
-          <Button size="icon-xs" variant="ghost" onClick={onLogout} title="退出登录" className="text-sidebar-foreground/45 hover:text-rose-500 group-data-[collapsible=icon]:hidden">
+          <Button size="icon-xs" variant="ghost" onClick={onLogout} title="退出登录" className="text-slate-400 hover:bg-white/10 hover:text-rose-400 group-data-[collapsible=icon]:hidden">
             <LogOut className="size-3.5" />
           </Button>
         </div>

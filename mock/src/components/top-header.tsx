@@ -92,18 +92,18 @@ export function TopHeader({ theme, onThemeChange }: { theme: ThemeMode; onThemeC
         <div className="flex items-center gap-2">
           <div className="flex items-center rounded-xl border border-border/80 bg-card/70 p-0.5 shadow-xs">
             <button
-              onClick={() => { onThemeChange('dark'); toast.success('已切换为深色模式'); }}
-              title="深色模式"
-              className={cn('flex items-center gap-1 rounded-lg px-2 py-1.5 text-[11px] transition-colors', theme === 'dark' ? 'bg-brand-600 text-white shadow-sm' : 'text-muted-foreground hover:bg-muted hover:text-foreground')}
+              onClick={() => { onThemeChange('light'); toast.success('已切换为科技蓝模式'); }}
+              title="科技蓝模式"
+              className={cn('flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-[11px] font-medium transition-colors', theme === 'light' ? 'bg-brand-600 text-white shadow-sm' : 'text-muted-foreground hover:bg-muted hover:text-foreground')}
             >
-              <Moon className="size-3.5" /><span className="hidden sm:inline">深色</span>
+              <Sun className="size-3.5" /><span className="hidden sm:inline">科技蓝</span>
             </button>
             <button
-              onClick={() => { onThemeChange('light'); toast.success('已切换为浅色模式'); }}
-              title="浅色模式"
-              className={cn('flex items-center gap-1 rounded-lg px-2 py-1.5 text-[11px] transition-colors', theme === 'light' ? 'bg-brand-600 text-white shadow-sm' : 'text-muted-foreground hover:bg-muted hover:text-foreground')}
+              onClick={() => { onThemeChange('dark'); toast.success('已切换为深空蓝模式'); }}
+              title="深空蓝模式"
+              className={cn('flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-[11px] font-medium transition-colors', theme === 'dark' ? 'bg-brand-600 text-white shadow-sm' : 'text-muted-foreground hover:bg-muted hover:text-foreground')}
             >
-              <Sun className="size-3.5" /><span className="hidden sm:inline">浅色</span>
+              <Moon className="size-3.5" /><span className="hidden sm:inline">深空蓝</span>
             </button>
           </div>
           <div className="hidden items-center gap-1.5 font-mono text-[10px] text-muted-foreground xl:flex"><Clock3 className="size-3.5" />{timestamp}</div>

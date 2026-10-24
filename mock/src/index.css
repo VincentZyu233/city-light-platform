@@ -37,63 +37,65 @@
   --font-mono: 'Geist Mono Variable', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   --radius: 0.75rem;
 
-  --background: #e2f0ff;
-  --foreground: #10233f;
-  --card: rgba(244, 250, 255, 0.92);
-  --card-foreground: #10233f;
-  --popover: #f8fbff;
-  --popover-foreground: #10233f;
+  --background: #edf5ff;
+  --foreground: #0a192f;
+  --card: #ffffff;
+  --card-foreground: #0a192f;
+  --popover: #ffffff;
+  --popover-foreground: #0a192f;
   --primary: #2563eb;
   --primary-foreground: #ffffff;
-  --secondary: #d5eaff;
-  --secondary-foreground: #17345d;
-  --muted: #d9ebff;
-  --muted-foreground: #5c7494;
-  --accent: #06b6d4;
-  --accent-foreground: #06243a;
-  --destructive: #e11d48;
-  --border: #b8d2f2;
-  --input: #b8d2f2;
-  --ring: #3b82f6;
+  --secondary: #dbeafe;
+  --secondary-foreground: #1e40af;
+  --muted: #e2effe;
+  --muted-foreground: #4b6485;
+  --accent: #0284c7;
+  --accent-foreground: #082f49;
+  --destructive: #ef4444;
+  --border: #bfdbfe;
+  --input: #bfdbfe;
+  --ring: #2563eb;
 
-  --sidebar: rgba(221, 240, 255, 0.95);
-  --sidebar-foreground: #17345d;
-  --sidebar-primary: #2563eb;
+  /* 经典深海科技蓝立柱侧边栏 */
+  --sidebar: #091830;
+  --sidebar-foreground: #cbd5e1;
+  --sidebar-primary: #3b82f6;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #cce5ff;
-  --sidebar-accent-foreground: #0b2a52;
-  --sidebar-border: #bfd7f2;
-  --sidebar-ring: #3b82f6;
+  --sidebar-accent: #132b4f;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #132b4f;
+  --sidebar-ring: #2563eb;
 }
 
 .dark {
-  --background: #0d2242;
-  --foreground: #eaf4ff;
-  --card: rgba(20, 52, 90, 0.92);
-  --card-foreground: #eaf4ff;
-  --popover: #193b68;
-  --popover-foreground: #eaf4ff;
+  --background: #061326;
+  --foreground: #f1f5f9;
+  --card: #0b1d3a;
+  --card-foreground: #f1f5f9;
+  --popover: #0d2244;
+  --popover-foreground: #f1f5f9;
   --primary: #3b82f6;
   --primary-foreground: #ffffff;
-  --secondary: #1b426e;
-  --secondary-foreground: #dcecff;
-  --muted: #1a3b63;
-  --muted-foreground: #9db9d8;
-  --accent: #22d3ee;
-  --accent-foreground: #06243a;
-  --destructive: #fb7185;
-  --border: #2a5684;
-  --input: #2a5684;
-  --ring: #38bdf8;
+  --secondary: #162f55;
+  --secondary-foreground: #93c5fd;
+  --muted: #0f274d;
+  --muted-foreground: #94a3b8;
+  --accent: #38bdf8;
+  --accent-foreground: #082f49;
+  --destructive: #f43f5e;
+  --border: rgba(59, 130, 246, 0.28);
+  --input: rgba(59, 130, 246, 0.28);
+  --ring: #3b82f6;
 
-  --sidebar: rgba(15, 37, 68, 0.96);
-  --sidebar-foreground: #dcecff;
-  --sidebar-primary: #38bdf8;
-  --sidebar-primary-foreground: #061a33;
-  --sidebar-accent: #1b4677;
-  --sidebar-accent-foreground: #eaf4ff;
-  --sidebar-border: #2a5684;
-  --sidebar-ring: #38bdf8;
+  /* 深空科技蓝侧边栏 */
+  --sidebar: #061224;
+  --sidebar-foreground: #cbd5e1;
+  --sidebar-primary: #3b82f6;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #0e2444;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: rgba(59, 130, 246, 0.2);
+  --sidebar-ring: #3b82f6;
 }
 
 @theme inline {
@@ -201,14 +203,14 @@ body {
 
 .app-surface {
   background: #ffffff;
-  border: 1px solid hsl(var(--border));
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px -2px rgba(37, 99, 235, 0.08);
 }
 
 .dark .app-surface {
-  background: hsl(var(--card));
-  border: 1px solid hsl(var(--border));
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 20px -2px rgba(2, 6, 23, 0.5), inset 0 0 0 1px rgba(59, 130, 246, 0.12);
 }
 
 .brand-gradient {

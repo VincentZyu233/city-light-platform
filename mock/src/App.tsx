@@ -88,7 +88,7 @@ function LoginRoute({
 export default function App() {
   const [themeMode, setThemeMode] = useState<ThemeMode>(() => {
     const stored = localStorage.getItem(THEME_STORAGE_KEY);
-    return stored === 'light' ? 'light' : 'dark';
+    return stored === 'dark' ? 'dark' : 'light';
   });
   const [session, setSession] = useState<AuthSession | null>(readAuthSession);
 
