@@ -2,7 +2,7 @@ import os
 import time
 from playwright.sync_api import sync_playwright
 
-output_dir = "D:/aaaStuffsaaa/from_git/gitee/city-light-platform/temp/mock/live_verification"
+output_dir = "D:/aaaStuffsaaa/from_git/gitee/topstar-smart-lighting-saas/temp/mock/live_verification"
 os.makedirs(output_dir, exist_ok=True)
 
 with sync_playwright() as p:
@@ -10,7 +10,7 @@ with sync_playwright() as p:
     context = browser.new_context(viewport={"width": 1920, "height": 1080})
     page = context.new_page()
     
-    url = "https://vincentzyu233.github.io/city-light-platform/"
+    url = "https://vincentzyu233.github.io/topstar-smart-lighting-saas/"
     print(f"Navigating to live page: {url}")
     page.goto(url, wait_until="networkidle")
     time.sleep(3)
@@ -44,7 +44,7 @@ with sync_playwright() as p:
     time.sleep(1)
     
     # Check localStorage value
-    stored_mode = page.evaluate("() => localStorage.getItem('citylight_theme')")
+    stored_mode = page.evaluate("() => localStorage.getItem('topstar_theme')")
     print(f"Stored theme mode in localStorage: {stored_mode}")
 
     browser.close()

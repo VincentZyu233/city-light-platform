@@ -2,7 +2,7 @@ import json
 import urllib.request
 import ssl
 
-with open("D:/aaaStuffsaaa/from_git/gitee/city-light-platform/temp/mock/intercepted_requests.json", "r", encoding="utf-8") as f:
+with open("D:/aaaStuffsaaa/from_git/gitee/topstar-smart-lighting-saas/temp/mock/intercepted_requests.json", "r", encoding="utf-8") as f:
     reqs = json.load(f)
 
 token = None
@@ -28,7 +28,7 @@ if token:
     )
     with urllib.request.urlopen(req, context=ctx) as resp:
         data = json.loads(resp.read().decode("utf-8"))
-        with open("D:/aaaStuffsaaa/from_git/gitee/city-light-platform/temp/mock/mainMenu_full.json", "w", encoding="utf-8") as f:
+        with open("D:/aaaStuffsaaa/from_git/gitee/topstar-smart-lighting-saas/temp/mock/mainMenu_full.json", "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
         print("Successfully saved full mainMenu_full.json!")
         

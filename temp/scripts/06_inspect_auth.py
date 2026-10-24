@@ -1,7 +1,7 @@
 import json
 import os
 
-with open("D:/aaaStuffsaaa/from_git/gitee/city-light-platform/temp/mock/intercepted_requests.json", "r", encoding="utf-8") as f:
+with open("D:/aaaStuffsaaa/from_git/gitee/topstar-smart-lighting-saas/temp/mock/intercepted_requests.json", "r", encoding="utf-8") as f:
     reqs = json.load(f)
 
 for r in reqs:

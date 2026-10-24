@@ -22,5 +22,5 @@ config_js = fetch("https://b.iots.city/static/config.js")
 print("=== static/config.js ===")
 print(config_js[:2000])
 
-with open("D:/aaaStuffsaaa/from_git/gitee/city-light-platform/temp/mock/config.js", "w", encoding="utf-8") as f:
+with open("D:/aaaStuffsaaa/from_git/gitee/topstar-smart-lighting-saas/temp/mock/config.js", "w", encoding="utf-8") as f:
     f.write(config_js)
