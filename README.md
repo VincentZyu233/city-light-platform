@@ -1,5 +1,9 @@
 # 通士达智慧照明SaaS平台
 
+> [!TIP]
+> **当前项目仅提供前端 UI Mock Preview（Frontend UI Mock Preview Only）。**
+> 页面数据、登录验证和业务交互均为本地模拟，暂未接入真实后端、数据库或鉴权服务。
+
 面向智慧照明与空间感知场景的 SaaS 平台。
 
 ## 演示信息
