@@ -3,7 +3,7 @@ import time
 import json
 from playwright.sync_api import sync_playwright
 
-output_dir = "D:/aaaStuffsaaa/from_git/gitee/city-light-platform/temp/mock"
+output_dir = "D:/aaaStuffsaaa/from_git/gitee/topstar-smart-lighting-saas/temp/mock"
 api_log_dir = os.path.join(output_dir, "apis")
 os.makedirs(api_log_dir, exist_ok=True)
 

@@ -1,7 +1,7 @@
 import json
 import os
 
-mock_dir = "D:/aaaStuffsaaa/from_git/gitee/city-light-platform/temp/mock"
+mock_dir = "D:/aaaStuffsaaa/from_git/gitee/topstar-smart-lighting-saas/temp/mock"
 resp_file = os.path.join(mock_dir, "intercepted_responses.json")
 
 with open(resp_file, "r", encoding="utf-8") as f:

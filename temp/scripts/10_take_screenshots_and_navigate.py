@@ -2,7 +2,7 @@ import os
 import time
 from playwright.sync_api import sync_playwright
 
-output_dir = "D:/aaaStuffsaaa/from_git/gitee/city-light-platform/temp/mock/screenshots"
+output_dir = "D:/aaaStuffsaaa/from_git/gitee/topstar-smart-lighting-saas/temp/mock/screenshots"
 os.makedirs(output_dir, exist_ok=True)
 
 routes_to_visit = [

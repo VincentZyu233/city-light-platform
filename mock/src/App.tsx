@@ -14,9 +14,9 @@ import {
   Eye,
   Filter,
   Flame,
-  Laptop,
   Layers,
   Lightbulb,
+  LogOut,
   Maximize2,
   Moon,
   Navigation,
@@ -39,10 +39,50 @@ import {
   Wifi,
   Zap
 } from 'lucide-react';
+import LoginPage from './LoginPage';
 
 // Types
 type TabType = 'overview' | 'monitor' | 'assets' | 'lighting' | 'incidents';
-type ThemeMode = 'system' | 'dark' | 'light';
+type ThemeMode = 'dark' | 'light';
+
+interface AuthSession {
+  username: string;
+  authenticatedAt: number;
+}
+
+const AUTH_STORAGE_KEY = 'topstar_auth';
+const AUTH_SESSION_KEY = 'topstar_auth_session';
+const THEME_STORAGE_KEY = 'topstar_theme';
+
+function readAuthSession(): AuthSession | null {
+  const rawSession = localStorage.getItem(AUTH_STORAGE_KEY) || sessionStorage.getItem(AUTH_SESSION_KEY);
+  if (!rawSession) return null;
+
+  try {
+    const session = JSON.parse(rawSession) as AuthSession;
+    return session.username ? session : null;
+  } catch {
+    return null;
+  }
+}
+
+function persistAuthSession(username: string, remember: boolean) {
+  const session: AuthSession = { username, authenticatedAt: Date.now() };
+  const serialized = JSON.stringify(session);
+
+  if (remember) {
+    localStorage.setItem(AUTH_STORAGE_KEY, serialized);
+    sessionStorage.removeItem(AUTH_SESSION_KEY);
+  } else {
+    sessionStorage.setItem(AUTH_SESSION_KEY, serialized);
+    localStorage.removeItem(AUTH_STORAGE_KEY);
+  }
+}
+
+function clearAuthSession() {
+  localStorage.removeItem(AUTH_STORAGE_KEY);
+  sessionStorage.removeItem(AUTH_SESSION_KEY);
+}
 
 interface PoleData {
   id: string;
@@ -123,10 +163,12 @@ export default function App() {
   const [filterStatus, setFilterStatus] = useState<string>('all');
   const [isCommandOpen, setIsCommandOpen] = useState(false);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+  const [authSession, setAuthSession] = useState<AuthSession | null>(readAuthSession);
 
-  // 🌓 Three-State Theme Switcher (System / Dark / Light, default: System)
+  // Dashboard theme switcher (Dark / Light, default: Dark)
   const [themeMode, setThemeMode] = useState<ThemeMode>(() => {
-    return (localStorage.getItem('citylight_theme') as ThemeMode) || 'system';
+    const storedMode = localStorage.getItem(THEME_STORAGE_KEY);
+    return storedMode === 'light' || storedMode === 'dark' ? storedMode : 'dark';
   });
 
   // Lighting schedules
@@ -161,38 +203,8 @@ export default function App() {
   // Theme Sync Handler
   useEffect(() => {
     const root = document.documentElement;
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-
-    const applyTheme = (mode: ThemeMode) => {
-      localStorage.setItem('citylight_theme', mode);
-      if (mode === 'dark') {
-        root.classList.add('dark');
-      } else if (mode === 'light') {
-        root.classList.remove('dark');
-      } else {
-        // system
-        if (mediaQuery.matches) {
-          root.classList.add('dark');
-        } else {
-          root.classList.remove('dark');
-        }
-      }
-    };
-
-    applyTheme(themeMode);
-
-    const handleSystemChange = (e: MediaQueryListEvent) => {
-      if (themeMode === 'system') {
-        if (e.matches) {
-          root.classList.add('dark');
-        } else {
-          root.classList.remove('dark');
-        }
-      }
-    };
-
-    mediaQuery.addEventListener('change', handleSystemChange);
-    return () => mediaQuery.removeEventListener('change', handleSystemChange);
+    localStorage.setItem(THEME_STORAGE_KEY, themeMode);
+    root.classList.toggle('dark', themeMode === 'dark');
   }, [themeMode]);
 
   const showToast = (msg: string) => {
@@ -253,12 +265,33 @@ export default function App() {
     return '概览';
   }, [activeTab]);
 
+  const handleLogout = () => {
+    clearAuthSession();
+    setAuthSession(null);
+    setActiveTab('overview');
+    setToastMessage(null);
+  };
+
+  if (!authSession) {
+    return (
+      <LoginPage
+        themeMode={themeMode}
+        onThemeChange={setThemeMode}
+        onLogin={(username, remember) => {
+          persistAuthSession(username, remember);
+          setAuthSession({ username, authenticatedAt: Date.now() });
+          setToastMessage(`欢迎回来，${username}`);
+        }}
+      />
+    );
+  }
+
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-[#050505] text-zinc-900 dark:text-zinc-100 flex font-sans selection:bg-amber-500/20 selection:text-amber-500 transition-colors duration-200">
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 flex font-sans selection:bg-brand-500/20 selection:text-brand-600 transition-colors duration-200">
       {/* Toast Notification */}
       {toastMessage && (
         <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-4 py-3 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 rounded-lg shadow-xl dark:shadow-2xl backdrop-blur-md animate-in fade-in slide-in-from-bottom-2 duration-200">
-          <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+          <div className="w-2 h-2 rounded-full bg-brand-500 animate-pulse" />
           <span className="text-sm font-medium">{toastMessage}</span>
         </div>
       )}
@@ -318,12 +351,12 @@ export default function App() {
         <div className="flex flex-col">
           <div className="h-14 border-b border-zinc-200 dark:border-zinc-800/80 px-3.5 flex items-center justify-between">
             <div className="flex items-center gap-3 overflow-hidden">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-amber-500/20 to-amber-500/10 dark:to-zinc-900 border border-amber-500/30 flex items-center justify-center text-amber-500 dark:text-amber-400 shrink-0 shadow-xs">
+              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-500/20 to-cyan-500/10 dark:to-zinc-900 border border-brand-500/30 flex items-center justify-center text-brand-600 dark:text-brand-400 shrink-0 shadow-xs shadow-brand-500/10">
                 <Lightbulb className="w-4 h-4" />
               </div>
               {!isSidebarCollapsed && (
                 <div className="flex items-center gap-2 overflow-hidden whitespace-nowrap">
-                  <span className="text-sm font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">CityLight</span>
+                  <span className="text-sm font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">通士达</span>
                   <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-zinc-100 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-800">
                     v2.4
                   </span>
@@ -388,7 +421,7 @@ export default function App() {
                       }`}
                     >
                       <div className="flex items-center gap-2.5">
-                        <Icon className={`w-4 h-4 shrink-0 ${isActive ? 'text-amber-500 dark:text-amber-400' : 'text-zinc-400 dark:text-zinc-500'}`} />
+                        <Icon className={`w-4 h-4 shrink-0 ${isActive ? 'text-brand-600 dark:text-brand-400' : 'text-zinc-400 dark:text-zinc-500'}`} />
                         {!isSidebarCollapsed && <span>{item.label}</span>}
                       </div>
 
@@ -429,24 +462,33 @@ export default function App() {
           >
             <div className="flex items-center gap-2.5 overflow-hidden">
               <div className="w-7 h-7 rounded-full bg-zinc-200 dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 flex items-center justify-center text-xs font-medium text-zinc-700 dark:text-zinc-300 shrink-0">
-                叶
+                {authSession.username.slice(0, 1).toUpperCase()}
               </div>
               {!isSidebarCollapsed && (
                 <div className="flex flex-col overflow-hidden">
-                  <span className="text-xs font-medium text-zinc-800 dark:text-zinc-200 truncate">叶文来</span>
-                  <span className="text-[10px] text-zinc-400 dark:text-zinc-500 font-mono truncate">运维调度总管</span>
+                  <span className="text-xs font-medium text-zinc-800 dark:text-zinc-200 truncate">{authSession.username}</span>
+                  <span className="text-[10px] text-zinc-400 dark:text-zinc-500 font-mono truncate">系统管理员</span>
                 </div>
               )}
             </div>
-            {!isSidebarCollapsed && (
+            <div className="flex items-center gap-0.5">
               <button
-                onClick={() => setIsSidebarCollapsed(true)}
-                title="收起侧边栏"
-                className="p-1 text-zinc-400 hover:text-zinc-700 dark:text-zinc-500 dark:hover:text-zinc-300"
+                onClick={handleLogout}
+                title="退出登录"
+                className="p-1 text-zinc-400 hover:text-rose-500 dark:text-zinc-500 dark:hover:text-rose-400"
               >
-                <ChevronRight className="w-3.5 h-3.5" />
+                <LogOut className="w-3.5 h-3.5" />
               </button>
-            )}
+              {!isSidebarCollapsed && (
+                <button
+                  onClick={() => setIsSidebarCollapsed(true)}
+                  title="收起侧边栏"
+                  className="p-1 text-zinc-400 hover:text-zinc-700 dark:text-zinc-500 dark:hover:text-zinc-300"
+                >
+                  <ChevronRight className="w-3.5 h-3.5" />
+                </button>
+              )}
+            </div>
           </div>
         </div>
       </aside>
@@ -496,44 +538,14 @@ export default function App() {
 
           {/* Right: Theme Switcher & Clock & Quick Mode */}
           <div className="flex items-center gap-2.5">
-            {/* 🌓 THREE-STATE THEME SWITCHER */}
+            {/* Dark / Light Theme Switcher */}
             <div className="flex items-center p-0.5 rounded-lg bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs">
               <button
                 onClick={() => {
-                  setThemeMode('system');
-                  showToast('已切换至「跟随系统」模式');
-                }}
-                title="跟随系统 (默认)"
-                className={`flex items-center gap-1 px-2 py-1 rounded-md transition-all text-xs ${
-                  themeMode === 'system'
-                    ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-xs font-medium'
-                    : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-300'
-                }`}
-              >
-                <Laptop className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">系统</span>
-              </button>
-              <button
-                onClick={() => {
-                  setThemeMode('light');
-                  showToast('已切换至「白天」模式');
-                }}
-                title="白天模式"
-                className={`flex items-center gap-1 px-2 py-1 rounded-md transition-all text-xs ${
-                  themeMode === 'light'
-                    ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-xs font-medium'
-                    : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-300'
-                }`}
-              >
-                <Sun className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">白天</span>
-              </button>
-              <button
-                onClick={() => {
                   setThemeMode('dark');
-                  showToast('已切换至「黑夜」模式');
+                  showToast('已切换至「深色」模式');
                 }}
-                title="黑夜模式"
+                title="深色模式"
                 className={`flex items-center gap-1 px-2 py-1 rounded-md transition-all text-xs ${
                   themeMode === 'dark'
                     ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-xs font-medium'
@@ -541,7 +553,22 @@ export default function App() {
                 }`}
               >
                 <Moon className="w-3.5 h-3.5" />
-                <span className="hidden sm:inline">黑夜</span>
+                <span className="hidden sm:inline">深色</span>
+              </button>
+              <button
+                onClick={() => {
+                  setThemeMode('light');
+                  showToast('已切换至「浅色」模式');
+                }}
+                title="浅色模式"
+                className={`flex items-center gap-1 px-2 py-1 rounded-md transition-all text-xs ${
+                  themeMode === 'light'
+                    ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-xs font-medium'
+                    : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-300'
+                }`}
+              >
+                <Sun className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">浅色</span>
               </button>
             </div>
 
@@ -557,7 +584,7 @@ export default function App() {
                 setPoles((prev) => prev.map((p) => ({ ...p, dimming: newDim, power: Number(((newDim / 100) * 140).toFixed(1)) })));
                 showToast(isEcoMode ? '已切换至「全功率迎宾模式」(100%)' : '已切换至「深度节能模式」(50%)');
               }}
-              className="flex items-center gap-1.5 px-2.5 py-1.2 rounded-md bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-850 border border-zinc-200 dark:border-zinc-800 text-xs font-medium text-amber-600 dark:text-amber-400 hover:border-amber-500/40 transition-colors shadow-xs"
+              className="flex items-center gap-1.5 px-2.5 py-1.2 rounded-md bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-850 border border-zinc-200 dark:border-zinc-800 text-xs font-medium text-brand-600 dark:text-brand-400 hover:border-brand-500/40 transition-colors shadow-xs"
             >
               <Zap className="w-3.5 h-3.5" />
               <span className="hidden sm:inline">{isEcoMode ? '节能模式' : '高亮模式'}</span>
@@ -598,12 +625,12 @@ export default function App() {
                     <span className="text-zinc-400 dark:text-zinc-500 font-mono text-[11px]">额定 320 kW</span>
                   </div>
                   <div className="mt-3 flex items-baseline gap-2">
-                    <span className="text-2xl font-mono font-semibold tracking-tight text-amber-500 dark:text-amber-400">184.6</span>
+                    <span className="text-2xl font-mono font-semibold tracking-tight text-brand-600 dark:text-brand-400">184.6</span>
                     <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400">kW</span>
                     <span className="text-xs text-zinc-400 dark:text-zinc-500 ml-auto font-mono">负载率 57.6%</span>
                   </div>
                   <div className="mt-3 w-full bg-zinc-100 dark:bg-zinc-900 rounded-full h-1 overflow-hidden">
-                    <div className="bg-amber-500 dark:bg-amber-400 h-1 rounded-full" style={{ width: '57.6%' }} />
+                    <div className="bg-brand-500 dark:bg-brand-400 h-1 rounded-full" style={{ width: '57.6%' }} />
                   </div>
                 </div>
 
@@ -653,7 +680,7 @@ export default function App() {
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-500 dark:text-zinc-400">
-                        <span className="w-2 h-2 rounded-full bg-amber-500 dark:bg-amber-400" /> 实际功率 (kW)
+                        <span className="w-2 h-2 rounded-full bg-brand-500 dark:bg-brand-400" /> 实际功率 (kW)
                       </span>
                       <span className="inline-flex items-center gap-1 text-[11px] font-mono text-zinc-400 dark:text-zinc-500 ml-2">
                         <span className="w-2 h-2 rounded-full bg-zinc-400 dark:bg-zinc-600" /> 基线满载
@@ -666,8 +693,8 @@ export default function App() {
                     <svg className="w-full h-full overflow-visible" viewBox="0 0 600 160">
                       <defs>
                         <linearGradient id="powerGrad" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="0%" stopColor="#f59e0b" stopOpacity="0.25" />
-                          <stop offset="100%" stopColor="#f59e0b" stopOpacity="0.0" />
+                          <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.25" />
+                          <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.0" />
                         </linearGradient>
                       </defs>
                       {[0, 40, 80, 120, 160].map((y, i) => (
@@ -688,12 +715,12 @@ export default function App() {
                       <path
                         d="M 0,140 Q 80,120 150,80 T 300,50 T 450,75 T 600,140"
                         fill="none"
-                        stroke="#f59e0b"
+                        stroke="#3b82f6"
                         strokeWidth="2.5"
                       />
-                      <circle cx="150" cy="80" r="3.5" fill="#f59e0b" stroke="#ffffff" strokeWidth="1.5" />
-                      <circle cx="300" cy="50" r="3.5" fill="#f59e0b" stroke="#ffffff" strokeWidth="1.5" />
-                      <circle cx="450" cy="75" r="3.5" fill="#f59e0b" stroke="#ffffff" strokeWidth="1.5" />
+                      <circle cx="150" cy="80" r="3.5" fill="#3b82f6" stroke="#ffffff" strokeWidth="1.5" />
+                      <circle cx="300" cy="50" r="3.5" fill="#3b82f6" stroke="#ffffff" strokeWidth="1.5" />
+                      <circle cx="450" cy="75" r="3.5" fill="#3b82f6" stroke="#ffffff" strokeWidth="1.5" />
                     </svg>
                     <div className="flex justify-between text-[11px] font-mono text-zinc-400 dark:text-zinc-500 pt-2 border-t border-zinc-200 dark:border-zinc-800/80">
                       <span>18:00 (日落启辉)</span>
@@ -710,7 +737,7 @@ export default function App() {
                   <div>
                     <div className="flex items-center justify-between pb-3 border-b border-zinc-200 dark:border-zinc-800/80">
                       <div className="flex items-center gap-2">
-                        <Radio className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400 animate-pulse" />
+                        <Radio className="w-3.5 h-3.5 text-brand-600 dark:text-brand-400 animate-pulse" />
                         <h3 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">边缘事件流水</h3>
                       </div>
                       <span className="text-[10px] font-mono text-zinc-400 dark:text-zinc-500">Live SSE</span>
@@ -769,10 +796,10 @@ export default function App() {
                 </div>
                 <div className="flex items-center gap-2 text-xs">
                   <span className="flex items-center gap-1 font-mono text-zinc-600 dark:text-zinc-400">
-                    <span className="w-2.5 h-2.5 rounded-full bg-amber-500 dark:bg-amber-400 shadow-[0_0_8px_#f59e0b]" /> 运行发光
+                    <span className="w-2.5 h-2.5 rounded-full bg-brand-500 dark:bg-brand-400 shadow-[0_0_8px_#3b82f6]" /> 运行发光
                   </span>
                   <span className="flex items-center gap-1 font-mono text-zinc-500 dark:text-zinc-400 ml-2">
-                    <span className="w-2.5 h-2.5 rounded-full bg-amber-500/30" /> 节能调光
+                    <span className="w-2.5 h-2.5 rounded-full bg-brand-500/30" /> 节能调光
                   </span>
                   <span className="flex items-center gap-1 font-mono text-zinc-500 dark:text-zinc-400 ml-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-rose-500" /> 告警离线
@@ -781,7 +808,7 @@ export default function App() {
               </div>
 
               {/* Dark / Light Mode Adaptive GIS Vector Canvas */}
-              <div className="relative w-full h-[580px] bg-slate-100 dark:bg-[#030303] rounded-xl border border-zinc-200 dark:border-zinc-800 overflow-hidden bg-grid-pattern flex items-center justify-center transition-colors">
+              <div className="relative w-full h-[580px] bg-slate-100 dark:bg-zinc-950 rounded-xl border border-zinc-200 dark:border-zinc-800 overflow-hidden bg-grid-pattern flex items-center justify-center transition-colors">
                 <svg className="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
                   {/* Coastline */}
                   <path d="M 0,420 Q 350,380 700,430 T 1300,400" fill="none" stroke="currentColor" className="text-slate-200 dark:text-zinc-900" strokeWidth="60" opacity="0.6" />
@@ -797,7 +824,7 @@ export default function App() {
                   const xPos = 80 + index * 130;
                   const yPos = 440 - index * 32 + (index % 2 === 0 ? 8 : -8);
                   const isSelected = selectedPole?.id === pole.id;
-                  const glowColor = pole.status === 'offline' ? '#f43f5e' : '#f59e0b';
+                  const glowColor = pole.status === 'offline' ? '#f43f5e' : '#3b82f6';
                   const opacity = pole.status === 'offline' ? 0.3 : pole.dimming / 100;
 
                   return (
@@ -822,17 +849,17 @@ export default function App() {
                       <div
                         className={`w-4 h-4 rounded-full border flex items-center justify-center transition-all ${
                           isSelected
-                            ? 'border-white bg-amber-500 scale-125 shadow-[0_0_14px_#f59e0b]'
+                            ? 'border-white bg-brand-500 scale-125 shadow-[0_0_14px_#3b82f6]'
                             : pole.status === 'offline'
                             ? 'border-rose-400 bg-rose-500'
                             : pole.status === 'warning'
-                            ? 'border-amber-400 bg-amber-500'
-                            : 'border-zinc-400 dark:border-zinc-500 bg-white dark:bg-zinc-900 group-hover:border-amber-500'
+                            ? 'border-brand-400 bg-brand-500'
+                            : 'border-zinc-400 dark:border-zinc-500 bg-white dark:bg-zinc-900 group-hover:border-brand-500'
                         }`}
                       >
                         <div
                           className={`w-1.5 h-1.5 rounded-full ${
-                            pole.status === 'offline' ? 'bg-white' : 'bg-amber-300'
+                            pole.status === 'offline' ? 'bg-white' : 'bg-brand-300'
                           }`}
                         />
                       </div>
@@ -849,7 +876,7 @@ export default function App() {
                     <div className="flex items-start justify-between">
                       <div>
                         <div className="flex items-center gap-2">
-                          <span className="text-xs font-mono font-medium text-amber-600 dark:text-amber-400">{selectedPole.id}</span>
+                          <span className="text-xs font-mono font-medium text-brand-600 dark:text-brand-400">{selectedPole.id}</span>
                           <span className={`text-[10px] font-mono px-1.5 py-0.2 rounded border ${
                             selectedPole.status === 'online' ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20' :
                             selectedPole.status === 'warning' ? 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/20' :
@@ -887,7 +914,7 @@ export default function App() {
                     <div className="space-y-1.5 pt-2 border-t border-zinc-200 dark:border-zinc-800">
                       <div className="flex justify-between text-xs">
                         <span className="text-zinc-500 dark:text-zinc-400 font-medium">即时调光控制</span>
-                        <span className="font-mono text-amber-600 dark:text-amber-400 font-semibold">{selectedPole.dimming}%</span>
+                        <span className="font-mono text-brand-600 dark:text-brand-400 font-semibold">{selectedPole.dimming}%</span>
                       </div>
                       <input
                         type="range"
@@ -895,7 +922,7 @@ export default function App() {
                         max="100"
                         value={selectedPole.dimming}
                         onChange={(e) => handlePoleDimming(selectedPole.id, Number(e.target.value))}
-                        className="w-full accent-amber-500 dark:accent-amber-400 bg-zinc-200 dark:bg-zinc-800 h-1.5 rounded-lg appearance-none cursor-pointer"
+                        className="w-full accent-brand-500 dark:accent-brand-400 bg-zinc-200 dark:bg-zinc-800 h-1.5 rounded-lg appearance-none cursor-pointer"
                       />
                       <div className="flex justify-between text-[10px] font-mono text-zinc-400 dark:text-zinc-500">
                         <span>0% 熄灯</span>
@@ -950,7 +977,7 @@ export default function App() {
                   </button>
                   <button
                     onClick={() => showToast('已批量下发巡检二维码并归档至资产卡片')}
-                    className="px-3 py-1.5 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 text-xs font-medium text-amber-700 dark:text-amber-300 transition-colors flex items-center gap-1.5"
+                    className="px-3 py-1.5 rounded-lg bg-brand-500/10 hover:bg-brand-500/20 border border-brand-500/30 text-xs font-medium text-brand-700 dark:text-brand-300 transition-colors flex items-center gap-1.5"
                   >
                     <QrCode className="w-3.5 h-3.5" />
                     <span>批量二维码</span>
@@ -1006,7 +1033,7 @@ export default function App() {
                               {p.status === 'online' ? '正常' : p.status === 'dimmed' ? '节能' : p.status === 'warning' ? '预警' : '离线'}
                             </span>
                           </td>
-                          <td className="py-3 px-4 font-mono font-medium text-amber-600 dark:text-amber-400">{p.dimming}%</td>
+                          <td className="py-3 px-4 font-mono font-medium text-brand-600 dark:text-brand-400">{p.dimming}%</td>
                           <td className="py-3 px-4 font-mono text-zinc-800 dark:text-zinc-200">{p.power} W</td>
                           <td className="py-3 px-4 font-mono text-zinc-500 dark:text-zinc-400 text-[11px]">
                             {p.voltage}V · <span className={p.temperature > 40 ? 'text-rose-500 dark:text-rose-400' : ''}>{p.temperature}°C</span>
@@ -1044,13 +1071,13 @@ export default function App() {
                     <p className="text-xs text-zinc-500">统一向所有活跃配电箱及 NB-IoT 单灯控制器下发 PWM 调光指令</p>
                   </div>
                   <div className="flex items-center gap-3">
-                    <span className="text-2xl font-mono font-bold text-amber-500 dark:text-amber-400">{globalDimming}%</span>
+                    <span className="text-2xl font-mono font-bold text-brand-600 dark:text-brand-400">{globalDimming}%</span>
                     <button
                       onClick={() => {
                         setPoles((prev) => prev.map((p) => ({ ...p, dimming: globalDimming, power: Number(((globalDimming / 100) * 140).toFixed(1)) })));
                         showToast(`已成功广播下发全局亮度: ${globalDimming}%`);
                       }}
-                      className="px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 font-semibold text-xs transition-colors shadow-md shadow-amber-500/20"
+                      className="px-4 py-2 rounded-lg bg-brand-600 hover:bg-brand-500 text-white font-semibold text-xs transition-colors shadow-md shadow-brand-500/20"
                     >
                       立即广播下发
                     </button>
@@ -1063,7 +1090,7 @@ export default function App() {
                   max="100"
                   value={globalDimming}
                   onChange={(e) => setGlobalDimming(Number(e.target.value))}
-                  className="w-full accent-amber-500 dark:accent-amber-400 bg-zinc-200 dark:bg-zinc-800 h-2 rounded-lg appearance-none cursor-pointer"
+                  className="w-full accent-brand-500 dark:accent-brand-400 bg-zinc-200 dark:bg-zinc-800 h-2 rounded-lg appearance-none cursor-pointer"
                 />
                 <div className="flex justify-between text-xs font-mono text-zinc-400 dark:text-zinc-500">
                   <span>0% 全关</span>
@@ -1085,7 +1112,7 @@ export default function App() {
                         setIsAstroActive(!isAstroActive);
                         showToast(isAstroActive ? '已暂停天文钟自动计算' : '已启动高精度经纬度日出日落自适应调控');
                       }}
-                      className={`w-10 h-5 rounded-full p-0.5 transition-colors ${isAstroActive ? 'bg-amber-500 dark:bg-amber-400' : 'bg-zinc-300 dark:bg-zinc-800'}`}
+                      className={`w-10 h-5 rounded-full p-0.5 transition-colors ${isAstroActive ? 'bg-brand-500 dark:bg-brand-400' : 'bg-zinc-300 dark:bg-zinc-800'}`}
                     >
                       <div className={`w-4 h-4 rounded-full bg-white dark:bg-zinc-950 transition-transform ${isAstroActive ? 'translate-x-5' : 'translate-x-0'}`} />
                     </button>
@@ -1190,7 +1217,7 @@ export default function App() {
 
         {/* Minimal Footer */}
         <footer className="w-full border-t border-zinc-200 dark:border-zinc-900/80 py-4 px-6 text-xs text-zinc-500 dark:text-zinc-600 font-mono flex items-center justify-between mt-auto">
-          <span>CityLight OS · Next-Gen Smart City IoT Platform</span>
+          <span>通士达智慧照明 SaaS 平台 · Smart Lighting IoT Platform</span>
           <span>Vercel & Cloudflare Aesthetic · 2026</span>
         </footer>
       </div>
