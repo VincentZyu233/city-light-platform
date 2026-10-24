@@ -38,3 +38,23 @@ bun run dev --host 127.0.0.1
 cd mock
 bun run build
 ```
+
+## 生成发布包
+
+默认会构建最新前端，并输出带 commit hash 和时间戳的 ZIP：
+
+```bash
+uv run python scripts/package_release.py
+```
+
+发布包输出到 `archive/`，该目录不会提交到 Git。复用已有构建时可使用：
+
+```bash
+uv run python scripts/package_release.py --skip-build
+```
+
+如需更新界面截图，先单独运行：
+
+```bash
+uv run --with playwright python mock/scripts/01_capture_theme_screenshots.py
+```

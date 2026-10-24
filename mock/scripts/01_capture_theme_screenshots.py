@@ -29,6 +29,7 @@ server_thread.start()
 time.sleep(1)
 
 TARGET_URL = f"http://localhost:{PORT}/index.html"
+AUTH_SESSION_JS = "JSON.stringify({ username: 'admin', authenticatedAt: Date.now() })"
 print(f"Local static server running at: {TARGET_URL}")
 print(f"Output screenshots directory: {SCREENSHOTS_DIR}")
 
@@ -67,15 +68,34 @@ with sync_playwright() as p:
 
     print(f"Loading page: {TARGET_URL}...")
     page.goto(TARGET_URL, wait_until="networkidle")
+    page.evaluate("localStorage.removeItem('topstar_auth'); localStorage.removeItem('topstar_auth_session'); localStorage.removeItem('topstar_theme'); location.reload()")
+    page.wait_for_load_state("networkidle")
     time.sleep(1)
 
     # Function to set theme
     def set_theme(theme: str):
         if theme == "white":
-            page.locator("button[title='白天模式']").first.click()
+            page.locator("button[title='浅色模式'], button[title='浅色']").first.click()
         elif theme == "dark":
-            page.locator("button[title='黑夜模式']").first.click()
+            page.locator("button[title='深色模式'], button[title='深色']").first.click()
         time.sleep(0.5)
+
+    # 0. Capture the login page in both themes
+    print("\n[Page] 登录页 (00_login)")
+    login_dark = os.path.join(SCREENSHOTS_DIR, "00_login_dark.png")
+    page.screenshot(path=login_dark)
+    print(f"  ✓ Saved: {os.path.basename(login_dark)}")
+
+    set_theme("white")
+    login_white = os.path.join(SCREENSHOTS_DIR, "00_login_white.png")
+    page.screenshot(path=login_white)
+    print(f"  ✓ Saved: {os.path.basename(login_white)}")
+
+    # Inject the mock session so the dashboard can be captured.
+    page.evaluate(f"localStorage.setItem('topstar_auth', {AUTH_SESSION_JS}); localStorage.setItem('topstar_theme', 'dark'); location.reload()")
+    page.wait_for_load_state("networkidle")
+    page.locator("button:has-text('态势感知')").first.wait_for()
+    time.sleep(0.8)
 
     # 1. Capture the 5 main pages in both White and Dark
     for cfg in PAGES_CONFIG:
@@ -141,4 +161,4 @@ with sync_playwright() as p:
 
     browser.close()
 
-print("\n🎉 All 7 pairs of screenshots (14 images total) have been captured successfully!")
+print("\n🎉 All 8 pairs of screenshots (16 images total) have been captured successfully!")
